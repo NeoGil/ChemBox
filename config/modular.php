@@ -4,7 +4,7 @@ return [
     'base_namespace' => 'App\Modules',
     'groupWithoutPrefix' => 'Pub',
 
-    'groupMidleware' => [
+    'groupMiddleware' => [
         'Admin' => [
             'web' => ['auth'],
             'api' => ['auth:api'],
@@ -13,11 +13,12 @@ return [
 
     'modules' => [
         'Admin' => [
-            'Test',
+            'User',
 
         ],
 
         'Pub' => [
+            'Auth',
         ],
     ]
 ];
