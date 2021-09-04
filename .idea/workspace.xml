@@ -26,11 +26,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="c34cc5f6-8abd-4384-aaab-abbf1e2906c8" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/resources/views/Pub/Auth/login.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Models/User.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/User.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/app.php" beforeDir="false" afterPath="$PROJECT_DIR$/config/app.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/auth.php" beforeDir="false" afterPath="$PROJECT_DIR$/config/auth.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Modules/Admin/User/Models/User.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Modules/Admin/User/Models/User.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Providers/AuthServiceProvider.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Providers/AuthServiceProvider.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/config/modular.php" beforeDir="false" afterPath="$PROJECT_DIR$/config/modular.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -177,7 +175,9 @@
     </include_path>
   </component>
   <component name="ProjectId" id="1xPf1BKmV85KM9ozOi8DlNONDCP" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="1" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -185,7 +185,7 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/database/seeders" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/app/Modules/Admin/Menu/Migrations" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -198,11 +198,11 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\OpenServer\domains\SchNk\app\Modules\Admin\Menu\Migrations" />
+      <recent name="C:\OpenServer\domains\SchNk\app\Modules\Admin\Role" />
+      <recent name="C:\OpenServer\domains\SchNk\app\Modules\Admin\Role\Migrations" />
+      <recent name="C:\OpenServer\domains\SchNk\app\Modules\Admin\Role\Models" />
       <recent name="C:\OpenServer\domains\SchNk\database\seeders" />
-      <recent name="C:\OpenServer\domains\SchNk\app\Modules\Pub\Auth" />
-      <recent name="C:\OpenServer\domains\SchNk\app" />
-      <recent name="C:\OpenServer\domains\SchNk\app\Modules\Pub\Auth\Controllers\Api" />
-      <recent name="C:\OpenServer\domains\SchNk\resources\views\Pub" />
     </key>
   </component>
   <component name="RunManager" selected="PHPUnit.phpunit.xml">
@@ -250,7 +250,8 @@
       <workItem from="1630419584680" duration="3699000" />
       <workItem from="1630442288786" duration="7865000" />
       <workItem from="1630529681523" duration="2900000" />
-      <workItem from="1630690200958" duration="7134000" />
+      <workItem from="1630690200958" duration="15709000" />
+      <workItem from="1630769010778" duration="5321000" />
     </task>
     <servers />
   </component>
@@ -282,14 +283,18 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="499" y="207" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1630696502521">
+    <state x="499" y="207" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1630713953038">
       <screen x="0" y="40" width="1536" height="824" />
     </state>
-    <state x="499" y="207" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.40.1536.824@0.40.1536.824" timestamp="1630696502521" />
+    <state x="499" y="207" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.40.1536.824@0.40.1536.824" timestamp="1630713953038" />
     <state x="545" y="364" width="445" height="239" key="ComposerInitDialogKey" timestamp="1630529423788">
       <screen x="0" y="40" width="1536" height="824" />
     </state>
     <state x="545" y="364" width="445" height="239" key="ComposerInitDialogKey/0.40.1536.824@0.40.1536.824" timestamp="1630529423788" />
+    <state x="549" y="207" key="FileChooserDialogImpl" timestamp="1630769788418">
+      <screen x="0" y="40" width="1536" height="824" />
+    </state>
+    <state x="549" y="207" key="FileChooserDialogImpl/0.40.1536.824@0.40.1536.824" timestamp="1630769788418" />
     <state width="1493" height="210" key="GridCell.Tab.0.bottom" timestamp="1630529528661">
       <screen x="0" y="40" width="1536" height="824" />
     </state>
