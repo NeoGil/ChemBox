@@ -2,6 +2,8 @@
 
 namespace App\Providers;
 
+use App\Modules\Admin\Course\Models\Course;
+use App\Modules\Admin\Course\Policies\CoursePolicy;
 use App\Modules\Admin\Role\Models\Role;
 use App\Modules\Admin\Role\Policies\RolePolicy;
 use App\Modules\Admin\User\Models\User;
@@ -17,7 +19,8 @@ class AuthServiceProvider extends ServiceProvider
      */
     protected $policies = [
         // 'App\Models\Model' => 'App\Policies\ModelPolicy',
-        Role::class => RolePolicy::class
+        Role::class => RolePolicy::class,
+        Course::class => CoursePolicy::class,
     ];
 
     /**
