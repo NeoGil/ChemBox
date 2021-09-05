@@ -33,4 +33,8 @@ class Menu extends Model
             $q->whereIn('id', $arr->toArray());
         });
     }
+
+    public function scopeMenuByType($query, $type) {
+        return $query->where('type', $type)->orderBy('parent')->orderBy('sort_order');
+    }
 }

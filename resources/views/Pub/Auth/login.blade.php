@@ -18,7 +18,7 @@
                     </div>
 
                     <div class="form-group form-group-feedback form-group-feedback-left">
-                        <input id="name" type="name"
+                        <input id="name" type="text"
                                class="form-control {{ $errors->has('name') ? ' is-invalid' : '' }}"
                                name="name" placeholder="{{ __('Name') }}" required autofocus>
                         <div class="form-control-feedback">

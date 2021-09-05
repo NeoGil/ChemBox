@@ -466,6 +466,15 @@
             'reference' => '07d725813350c695c779382cbd6dac0ab8665537',
             'dev_requirement' => false,
         ),
+        'lavary/laravel-menu' => array(
+            'pretty_version' => 'v1.8.3',
+            'version' => '1.8.3.0',
+            'type' => 'library',
+            'install_path' => __DIR__ . '/../lavary/laravel-menu',
+            'aliases' => array(),
+            'reference' => '4f14cb9b11cfcd9839d1d87c806632c84a94d3be',
+            'dev_requirement' => false,
+        ),
         'lcobucci/clock' => array(
             'pretty_version' => '2.0.0',
             'version' => '2.0.0.0',

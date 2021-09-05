@@ -7,4 +7,5 @@ $baseDir = dirname($vendorDir);
 
 return array(
     'Mockery' => array($vendorDir . '/mockery/mockery/library'),
+    'Lavary\\Menu\\' => array($vendorDir . '/lavary/laravel-menu/src'),
 );
