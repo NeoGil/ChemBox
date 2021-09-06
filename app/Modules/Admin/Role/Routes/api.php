@@ -7,3 +7,4 @@ Route::group(['prefix' => 'roles', 'middleware' => []], function () {
     Route::put('/{role}', 'Api\RoleController@update')->name('api.roles.update');
     Route::delete('/{role}', 'Api\RoleController@destroy')->name('api.roles.delete');
 });
+

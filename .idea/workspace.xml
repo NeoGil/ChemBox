@@ -26,34 +26,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="c34cc5f6-8abd-4384-aaab-abbf1e2906c8" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/SchNk.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/SchNk.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Modules/Admin/Menu/Models/Menu.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Modules/Admin/Menu/Models/Menu.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Modules/Admin/User/Models/User.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Modules/Admin/User/Models/User.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/composer.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/app.php" beforeDir="false" afterPath="$PROJECT_DIR$/config/app.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/modular.php" beforeDir="false" afterPath="$PROJECT_DIR$/config/modular.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/Admin/User/create.blade.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/Admin/User/edit.blade.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/Admin/User/index.blade.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/Admin/User/show.blade.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/Pub/Auth/login.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/Pub/Auth/login.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/autoload.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/autoload.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/composer/ClassLoader.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/composer/ClassLoader.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/composer/InstalledVersions.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/composer/InstalledVersions.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/composer/LICENSE" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/composer/LICENSE" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/composer/autoload_classmap.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/composer/autoload_classmap.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/composer/autoload_files.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/composer/autoload_files.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/composer/autoload_namespaces.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/composer/autoload_namespaces.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/composer/autoload_psr4.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/composer/autoload_psr4.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/composer/autoload_real.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/composer/autoload_real.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/composer/autoload_static.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/composer/autoload_static.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/composer/installed.json" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/composer/installed.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/composer/installed.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/composer/installed.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/composer/platform_check.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/composer/platform_check.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/laravel/ui/auth-backend/AuthenticatesUsers.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/laravel/ui/auth-backend/AuthenticatesUsers.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Modules/Admin/Role/Controllers/PermissionsController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Modules/Admin/Role/Controllers/PermissionsController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Modules/Admin/Role/Routes/api.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Modules/Admin/Role/Routes/api.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Modules/Admin/Role/Services/RoleService.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Modules/Admin/Role/Services/RoleService.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -210,7 +186,7 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/app/Modules/Admin/Menu/Routes" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/app/Modules/Admin/Role/Controllers" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -223,11 +199,11 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\OpenServer\domains\SchNk\app\Modules\Admin\Role\Controllers" />
+      <recent name="C:\OpenServer\domains\SchNk\app\Modules\Admin\Role\Routes" />
       <recent name="C:\OpenServer\domains\SchNk\app\Modules\Admin\Menu\Routes" />
       <recent name="C:\OpenServer\domains\SchNk\app\Modules\Admin\Menu\Controllers" />
       <recent name="C:\OpenServer\domains\SchNk\resources\views" />
-      <recent name="C:\OpenServer\domains\SchNk\resources\views\Admin" />
-      <recent name="C:\OpenServer\domains\SchNk\app\Modules\Admin" />
     </key>
   </component>
   <component name="RunManager" selected="PHPUnit.phpunit.xml">
@@ -277,7 +253,7 @@
       <workItem from="1630529681523" duration="2900000" />
       <workItem from="1630690200958" duration="15709000" />
       <workItem from="1630769010778" duration="5765000" />
-      <workItem from="1630789581847" duration="9296000" />
+      <workItem from="1630789581847" duration="11603000" />
     </task>
     <servers />
   </component>
