@@ -1,10 +1,4 @@
 <?php
-/**
- * Created by PhpStorm.
- * User: note
- * Date: 24.11.2020
- * Time: 22:51
- */
 
 namespace App\Modules\Admin\Dashboard\Classes;
 

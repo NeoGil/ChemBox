@@ -6,9 +6,7 @@ use App\Modules\Admin\Course\Models\Course;
 use App\Modules\Admin\Course\Policies\CoursePolicy;
 use App\Modules\Admin\Role\Models\Role;
 use App\Modules\Admin\Role\Policies\RolePolicy;
-use App\Modules\Admin\User\Models\User;
 use Illuminate\Foundation\Support\Providers\AuthServiceProvider as ServiceProvider;
-use Illuminate\Support\Facades\Gate;
 
 class AuthServiceProvider extends ServiceProvider
 {

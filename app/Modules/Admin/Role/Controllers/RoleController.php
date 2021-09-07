@@ -5,6 +5,7 @@ namespace App\Modules\Admin\Role\Controllers;
 use App\Modules\Admin\Dashboard\Classes\Base;
 use App\Modules\Admin\Role\Models\Role;
 use App\Modules\Admin\Role\Requests\RoleRequest;
+use App\Modules\Admin\Role\Services\CourseService;
 use App\Modules\Admin\Role\Services\RoleService;
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
@@ -70,7 +71,7 @@ class RoleController extends Base
      * Store a newly created resource in storage.
      *
      * @param  \Illuminate\Http\Request  $request
-     * @return \Illuminate\Http\Response
+     * @return \Illuminate\Http\RedirectResponse
      */
     public function store(RoleRequest $request)
     {
