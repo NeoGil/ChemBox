@@ -53,6 +53,17 @@
                             </div>
                         </div>
                     </div>
+                    <div class="form-group row">
+                        <label class="col-form-label col-lg-2">{{__('Description')}}<span
+                                class="text-danger">*</span></label>
+                        <div class="col-lg-10">
+                            <div class="input-group">
+                                <input type="text" name="description" class="form-control"
+                                       value="{{ $item->description ?? "" }}"
+                                       placeholder="{{__('Description')}}">
+                            </div>
+                        </div>
+                    </div>
 
 
                 </fieldset>

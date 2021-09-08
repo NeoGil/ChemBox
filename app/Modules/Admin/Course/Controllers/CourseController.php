@@ -131,10 +131,13 @@ class CourseController extends Base
      * Remove the specified resource from storage.
      *
      * @param  \App\Modules\Admin\Course\Models\Course  $course
-     * @return \Illuminate\Http\Response
+     * @return \Illuminate\Http\RedirectResponse
      */
     public function destroy(Course $course)
     {
-        //
+        $course->delete();
+        return  \Redirect::route('courses.index')->with([
+            'message' => __('Success')
+        ]);
     }
 }
