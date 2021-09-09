@@ -3,19 +3,33 @@
 namespace App\Modules\Admin\Course\Controllers\Api;
 
 use App\Modules\Admin\Course\Models\Course;
+use App\Modules\Admin\Course\Services\CourseService;
+use App\Services\Response\ResponseServise;
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
 
 class CourseController extends Controller
 {
+    private $service;
+
     /**
      * Display a listing of the resource.
      *
-     * @return \Illuminate\Http\Response
+     * @param CourseService $courseService
      */
+
+    public function __construct(CourseService $courseService)
+    {
+        $this->service = $courseService;
+    }
+
     public function index()
     {
-        //
+        $this->authorize('view', new Course());
+
+        return ResponseServise::sendJsonResponse(true, 200,[],[
+            'items' =>  $this->service->getSources()
+        ]);
     }
 
     /**

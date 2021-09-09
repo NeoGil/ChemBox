@@ -9,6 +9,7 @@
 namespace App\Modules\Admin\Course\Services;
 
 
+use App\Modules\Admin\Course\Models\Course;
 use App\Modules\Admin\Course\Requests\CourseRequest;
 use Illuminate\Database\Eloquent\Model;
 
@@ -20,5 +21,10 @@ class CourseService
         $model->save();
 
         return true;
+    }
+
+    public function getSources()
+    {
+        return Course::all();
     }
 }
