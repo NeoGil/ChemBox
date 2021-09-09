@@ -13,6 +13,7 @@ return [
 
     'modules' => [
         'Admin' => [
+            'Material',
             'Dashboard',
             'Course',
             'Role',

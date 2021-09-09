@@ -4,6 +4,8 @@ namespace App\Providers;
 
 use App\Modules\Admin\Course\Models\Course;
 use App\Modules\Admin\Course\Policies\CoursePolicy;
+use App\Modules\Admin\Material\Policies\MaterialPolicy;
+use App\Modules\Admin\Material\Models\Material;
 use App\Modules\Admin\Role\Models\Role;
 use App\Modules\Admin\Role\Policies\RolePolicy;
 use Illuminate\Foundation\Support\Providers\AuthServiceProvider as ServiceProvider;
@@ -18,6 +20,7 @@ class AuthServiceProvider extends ServiceProvider
     protected $policies = [
         Role::class => RolePolicy::class,
         Course::class => CoursePolicy::class,
+        Material::class => MaterialPolicy::class,
     ];
 
     /**

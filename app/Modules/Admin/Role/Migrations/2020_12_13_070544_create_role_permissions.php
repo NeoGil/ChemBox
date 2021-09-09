@@ -37,10 +37,6 @@ class CreateRolePermissions extends Migration
             $table->timestamps();
         });
 
-
-
-
-
     }
 
     /**
