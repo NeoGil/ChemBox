@@ -3,7 +3,7 @@
     <h1>{{$title}}</h1>
 </section>
 <!-- /page header -->
-
+<script src="https://cdn.ckeditor.com/ckeditor5/29.2.0/classic/ckeditor.js"></script>
 
 <!-- Content area -->
 <div class="content">
@@ -70,11 +70,9 @@
                         <label class="col-form-label col-lg-2">{{__('Content')}}<span
                                 class="text-danger">*</span></label>
                         <div class="col-lg-10">
-                            <div class="input-group">
-                                <input type="text" name="content" class="form-control"
-                                       value="{{old('content')}}"
-                                       placeholder="{{__('Content')}}">
-                            </div>
+                            <textarea id="content" type="text" name="content" class="form-control"
+                                      placeholder="{{__('Content')}}"></textarea>
+
                         </div>
                     </div>
 
@@ -88,6 +86,13 @@
     </div>
     <!-- /input group addons -->
 
+    <script>
+        ClassicEditor
+            .create( document.querySelector( '#content' ) )
+            .catch( error => {
+                console.error( error );
+            } );
+    </script>
 </div>
 
 <!-- /content area -->

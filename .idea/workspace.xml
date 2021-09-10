@@ -26,10 +26,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="c34cc5f6-8abd-4384-aaab-abbf1e2906c8" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/SchNk.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/SchNk.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Modules/Admin/Role/Migrations/2020_12_13_070544_create_role_permissions.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Modules/Admin/Role/Migrations/2020_12_13_070544_create_role_permissions.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Providers/AuthServiceProvider.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Providers/AuthServiceProvider.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/modular.php" beforeDir="false" afterPath="$PROJECT_DIR$/config/modular.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/Admin/Material/create.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/Admin/Material/create.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/Admin/Material/edit.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/Admin/Material/edit.blade.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -186,7 +186,7 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/app/Modules/Admin/Material" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/public" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -199,11 +199,11 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\OpenServer\domains\SchNk\public" />
+      <recent name="C:\OpenServer\domains\SchNk\public\ckeditor5-build-classic" />
       <recent name="C:\OpenServer\domains\SchNk\app\Modules\Admin\Material" />
       <recent name="C:\OpenServer\domains\SchNk\app\Modules\Admin\Course\Migrations" />
       <recent name="C:\OpenServer\domains\SchNk\app\Modules\Admin\Course" />
-      <recent name="C:\OpenServer\domains\SchNk\app\Modules\Admin\Course\Services" />
-      <recent name="C:\OpenServer\domains\SchNk\app\Modules\Admin\Role\Controllers" />
     </key>
   </component>
   <component name="RunManager" selected="PHPUnit.phpunit.xml">
@@ -256,7 +256,8 @@
       <workItem from="1630789581847" duration="14440000" />
       <workItem from="1631040514263" duration="7321000" />
       <workItem from="1631123264233" duration="2480000" />
-      <workItem from="1631208660634" duration="6243000" />
+      <workItem from="1631208660634" duration="8234000" />
+      <workItem from="1631298511456" duration="7282000" />
     </task>
     <servers />
   </component>
