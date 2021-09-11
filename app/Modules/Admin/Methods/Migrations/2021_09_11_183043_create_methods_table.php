@@ -14,7 +14,11 @@ class CreateMethodsTable extends Migration
     public function up()
     {
         Schema::create('methods', function (Blueprint $table) {
-            $table->id();
+            $table->increments('id');
+            $table->string('alias');
+            $table->string('title');
+            $table->string('type');
+            $table->string('description');
             $table->timestamps();
         });
     }

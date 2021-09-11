@@ -2,20 +2,40 @@
 
 namespace App\Modules\Admin\Methods\Controllers;
 
+use App\Modules\Admin\Dashboard\Classes\Base;
 use App\Modules\Admin\Methods\Models\Method;
+use App\Modules\Admin\Methods\Services\MethodService;
 use Illuminate\Http\Request;
-use App\Http\Controllers\Controller;
 
-class MethodsController extends Controller
+class MethodsController extends Base
 {
+    public function __construct(MethodService $methodService)
+    {
+        parent::__construct();
+        $this->service = $methodService;
+    }
     /**
      * Display a listing of the resource.
      *
-     * @return \Illuminate\Http\Response
+     * @return \Illuminate\Contracts\Foundation\Application|\Illuminate\Contracts\View\Factory|\Illuminate\Contracts\View\View|\Illuminate\Http\Response
      */
     public function index()
     {
-        //
+        $this->authorize('view', Method::class);
+
+
+        $methods = Method::all();
+
+        $this->title = "Title Methods Index";
+
+        $this->content = view('Admin::Methods.index')->
+        with([
+            'methods' => $methods,
+            'title' => $this->title,
+        ])->
+        render();
+
+        return $this->renderOutput();
     }
 
     /**
