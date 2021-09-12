@@ -10,7 +10,7 @@
 
     <!-- Input group addons -->
     <div class="box card">
-        <form role="form" enctype="multipart/form-data" method="post" action="{{ route('courses.update',['course' => $item->id ]) }}">
+        <form role="form" enctype="multipart/form-data" method="post" action="{{ route('methods.update',['method' => $item->id ]) }}">
 
             @csrf
             @method('PUT')
@@ -53,6 +53,20 @@
                             </div>
                         </div>
                     </div>
+
+                    <div class="form-group row">
+                        <label class="col-form-label col-lg-2">{{__('Type')}}<span
+                                class="text-danger">*</span></label>
+                        <div class="col-lg-10">
+                            <div class="input-group">
+                                <select name="type" class="form-control">
+                                    <option value="standard" @if($item->type == "standard") selected @endif>standard</option>
+                                    <option value="specific" @if($item->type == "specific") selected @endif>specific</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+
                     <div class="form-group row">
                         <label class="col-form-label col-lg-2">{{__('Description')}}<span
                                 class="text-danger">*</span></label>

@@ -27,8 +27,9 @@ class MethodRequest extends FormRequest
     {
         return [
             //
-            'title' => 'required',
             'alias' => 'required',
+            'title' => 'required',
+            'type' => 'required'
         ];
     }
 }

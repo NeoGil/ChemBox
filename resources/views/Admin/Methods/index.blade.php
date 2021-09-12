@@ -28,11 +28,11 @@
                             <td>{{$method->title}}</td>
                             <td>{{$method->alias}}</td>
                             <td>
-                                <a href="{{route('methods.edit',['course'=>$method->id])}}"
+                                <a href="{{route('methods.edit',['method'=>$method->id])}}"
                                    class="btn btn-primary btn-labeled">{{ __('Edit') }}
                                 </a>
-                                
-                                <form method="post"  action="{{route('methods.delete',['course'=>$method->id])}}">
+
+                                <form method="post"  action="{{route('methods.delete',['method'=>$method->id])}}">
                                     @csrf
                                     @method('DELETE')
                                     <button  type="submit" class="btn btn-danger">{{ __('Delete') }}

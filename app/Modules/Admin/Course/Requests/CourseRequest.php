@@ -15,7 +15,6 @@ class CourseRequest extends FormRequest
     public function authorize()
     {
         return Auth::user()->canDo(['SUPER_ADMINISTRATOR','COURSE_ACCESS']);
-
     }
 
     /**
@@ -27,8 +26,8 @@ class CourseRequest extends FormRequest
     {
         return [
             //
-            'title' => 'required',
             'alias' => 'required',
+            'title' => 'required',
         ];
     }
 }

@@ -10,10 +10,9 @@
 
     <!-- Input group addons -->
     <div class="box card">
-        <form role="form" enctype="multipart/form-data" method="post" action="{{ route('courses.store') }}">
+        <form role="form" enctype="multipart/form-data" method="post" action="{{ route('methods.store') }}">
 
             @csrf
-
             <div class="card-body">
 
                 @if ($errors->any())
@@ -31,6 +30,18 @@
                     <legend class="">{{__('Common info')}}</legend>
 
                     <div class="form-group row">
+                        <label class="col-form-label col-lg-2">{{__('Alias')}}<span
+                                class="text-danger">*</span></label>
+                        <div class="col-lg-10">
+                            <div class="input-group">
+                                <input type="text" name="alias" class="form-control"
+                                       value="{{old('alias')}}"
+                                       placeholder="{{__('Alias')}}">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="form-group row">
                         <label class="col-form-label col-lg-2">{{__('Title')}}<span
                                 class="text-danger">*</span></label>
                         <div class="col-lg-10">
@@ -43,13 +54,14 @@
                     </div>
 
                     <div class="form-group row">
-                        <label class="col-form-label col-lg-2">{{__('Alias')}}<span
+                        <label class="col-form-label col-lg-2">{{__('Type')}}<span
                                 class="text-danger">*</span></label>
                         <div class="col-lg-10">
                             <div class="input-group">
-                                <input type="text" name="alias" class="form-control"
-                                       value="{{old('alias')}}"
-                                       placeholder="{{__('Alias')}}">
+                                <select name="type" class="form-control">
+                                    <option value="standard">standard</option>
+                                    <option value="specific">specific</option>
+                                </select>
                             </div>
                         </div>
                     </div>
@@ -65,7 +77,6 @@
                             </div>
                         </div>
                     </div>
-
 
                 </fieldset>
                 <button type="submit" class="btn btn-success">{{__('Submit')}}</button>

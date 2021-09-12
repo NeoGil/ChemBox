@@ -4,6 +4,7 @@ namespace App\Modules\Admin\Methods\Controllers;
 
 use App\Modules\Admin\Dashboard\Classes\Base;
 use App\Modules\Admin\Methods\Models\Method;
+use App\Modules\Admin\Methods\Requests\MethodRequest;
 use App\Modules\Admin\Methods\Services\MethodService;
 use Illuminate\Http\Request;
 
@@ -41,22 +42,36 @@ class MethodsController extends Base
     /**
      * Create of the resource.
      *
-     * @return \Illuminate\Http\Response
+     * @return \Illuminate\Contracts\Foundation\Application|\Illuminate\Contracts\View\Factory|\Illuminate\Contracts\View\View|\Illuminate\Http\Response
      */
     public function create()
     {
-        //
+        $this->authorize('create', Method::class);
+
+
+        $this->title = "Title Method create";
+
+        $this->content = view('Admin::Methods.create')->
+        with([
+            'title' => $this->title,
+        ])->
+        render();
+
+        return $this->renderOutput();
     }
 
     /**
      * Store a newly created resource in storage.
      *
-     * @param  \Illuminate\Http\Request  $request
-     * @return \Illuminate\Http\Response
+     * @param MethodRequest $request
+     * @return \Illuminate\Http\RedirectResponse
      */
-    public function store(Request $request)
+    public function store(MethodRequest $request)
     {
-        //
+        $this->service->save($request, new Method());
+        return  \Redirect::route('methods.index')->with([
+            'message' => __('Success')
+        ]);
     }
 
     /**
@@ -74,11 +89,22 @@ class MethodsController extends Base
      * Display the specified resource.
      *
      * @param  \App\Modules\Admin\Methods\Models\Method  $method
-     * @return \Illuminate\Http\Response
+     * @return \Illuminate\Contracts\Foundation\Application|\Illuminate\Contracts\View\Factory|\Illuminate\Contracts\View\View|\Illuminate\Http\Response
      */
     public function edit(Method $method)
     {
-        //
+        $this->authorize('edit', Method::class);
+
+        $this->title = "Title Course edit";
+
+        $this->content = view('Admin::Methods.edit')->
+        with([
+            'title' => $this->title,
+            'item' => $method,
+        ])->
+        render();
+
+        return $this->renderOutput();
     }
 
     /**
@@ -86,21 +112,27 @@ class MethodsController extends Base
      *
      * @param  \Illuminate\Http\Request  $request
      * @param  \App\Modules\Admin\Methods\Models\Method  $method
-     * @return \Illuminate\Http\Response
+     * @return \Illuminate\Http\RedirectResponse
      */
-    public function update(Request $request, Method $method)
+    public function update(MethodRequest $request, Method $method)
     {
-        //
+        $this->service->save($request, $method);
+        return  \Redirect::route('methods.index')->with([
+            'message' => __('Success')
+        ]);
     }
 
     /**
      * Remove the specified resource from storage.
      *
      * @param  \App\Modules\Admin\Methods\Models\Method  $method
-     * @return \Illuminate\Http\Response
+     * @return \Illuminate\Http\RedirectResponse
      */
     public function destroy(Method $method)
     {
-        //
+        $method->delete();
+        return  \Redirect::route('methods.index')->with([
+            'message' => __('Success')
+        ]);
     }
 }

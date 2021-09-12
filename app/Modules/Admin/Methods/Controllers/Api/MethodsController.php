@@ -3,19 +3,36 @@
 namespace App\Modules\Admin\Methods\Controllers\Api;
 
 use App\Modules\Admin\Methods\Models\Method;
+use App\Modules\Admin\Methods\Services\MethodService;
+use App\Services\Response\ResponseServise;
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
 
 class MethodsController extends Controller
 {
     /**
+     * @var MethodService
+     */
+    private $service;
+
+    /**
      * Display a listing of the resource.
      *
-     * @return \Illuminate\Http\Response
+     * @param MethodService $methodService
      */
+
+    public function __construct(MethodService $methodService)
+    {
+        $this->service = $methodService;
+    }
+
     public function index()
     {
-        //
+        $this->authorize('view', new Method());
+
+        return ResponseServise::sendJsonResponse(true, 200,[],[
+            'items' =>  $this->service->getSources()
+        ]);
     }
 
     /**
