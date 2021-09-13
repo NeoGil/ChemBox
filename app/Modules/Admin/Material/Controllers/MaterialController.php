@@ -2,6 +2,7 @@
 
 namespace App\Modules\Admin\Material\Controllers;
 
+use App\Modules\Admin\Course\Models\Course;
 use App\Modules\Admin\Material\Models\Material;
 use App\Modules\Admin\Material\Requests\MaterialRequest;
 use App\Modules\Admin\Material\Services\MaterialService;
@@ -59,7 +60,7 @@ class MaterialController extends Base
         }
 
         $this->authorize('create', Material::class);
-
+        $courses = Course::all();
 
         $this->title = "Title Material create";
 
@@ -67,6 +68,7 @@ class MaterialController extends Base
         with([
             'title' => $this->title,
             'method' => $method,
+            'courses' => $courses,
         ])->
         render();
 

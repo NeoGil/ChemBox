@@ -2,6 +2,7 @@
 <section class="content-header">
     <h1>{{$title}}</h1>
 </section>
+
 <!-- /page header -->
 <script src="https://cdn.ckeditor.com/ckeditor5/29.2.0/classic/ckeditor.js"></script>
 
@@ -55,7 +56,19 @@
                     </div>
 
                     <div class="form-group row">
-                        <label class="col-form-label col-lg-2">{{__('Method')}}</label>
+                        <label class="col-form-label col-lg-2">{{__('Course')}}</label>
+                        <div class="col-lg-10">
+                            <select name="courses_id" class="form-control">
+                                @foreach($courses as $course)
+                                    <option value={{$course->id}}>{{$course->title}}</option>
+                                @endforeach
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="form-group row">
+                        <label class="col-form-label col-lg-2">{{__('Method')}}<span
+                                class="text-danger">*</span></label>
                         <div class="col-lg-10">
                             <div class="input-group">
                                 <input type="number" name="methods_id" class="form-control"
