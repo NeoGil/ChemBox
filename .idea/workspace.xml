@@ -28,15 +28,6 @@
     <list default="true" id="c34cc5f6-8abd-4384-aaab-abbf1e2906c8" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Modules/Admin/Material/Controllers/MaterialController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Modules/Admin/Material/Controllers/MaterialController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Modules/Admin/Material/Migrations/2021_09_09_210502_create_materials_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Modules/Admin/Material/Migrations/2021_09_13_210502_create_materials_table.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Modules/Admin/Material/Models/Material.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Modules/Admin/Material/Models/Material.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Modules/Admin/Material/Requests/MaterialRequest.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Modules/Admin/Material/Requests/MaterialRequest.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Modules/Admin/Material/Routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Modules/Admin/Material/Routes/web.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Modules/Admin/Material/Services/MaterialService.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Modules/Admin/Material/Services/MaterialService.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Modules/Admin/Methods/Models/Method.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Modules/Admin/Methods/Models/Method.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/Admin/Material/create.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/Admin/Material/create.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/Admin/Material/edit.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/Admin/Material/edit.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/Admin/Material/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/Admin/Material/index.blade.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -193,7 +184,7 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/app/Modules/Admin/Methods/Migrations" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/app/Modules/Admin/Material/Migrations" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -206,11 +197,11 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\OpenServer\domains\SchNk\app\Modules\Admin\Material\Migrations" />
       <recent name="C:\OpenServer\domains\SchNk\app\Modules\Admin\Methods\Migrations" />
       <recent name="C:\OpenServer\domains\SchNk\app\Modules\Admin\Methods" />
       <recent name="C:\OpenServer\domains\SchNk\resources\views\Admin\Methods" />
       <recent name="C:\OpenServer\domains\SchNk\public" />
-      <recent name="C:\OpenServer\domains\SchNk\public\ckeditor5-build-classic" />
     </key>
   </component>
   <component name="RunManager" selected="PHPUnit.phpunit.xml">
@@ -266,7 +257,8 @@
       <workItem from="1631208660634" duration="8234000" />
       <workItem from="1631298511456" duration="7814000" />
       <workItem from="1631383798185" duration="3528000" />
-      <workItem from="1631465827923" duration="17635000" />
+      <workItem from="1631465827923" duration="17788000" />
+      <workItem from="1631552971076" duration="3272000" />
     </task>
     <servers />
   </component>
@@ -334,5 +326,9 @@
       <screen x="0" y="40" width="1536" height="824" />
     </state>
     <state x="425" y="207" key="run.anything.popup/0.40.1536.824@0.40.1536.824" timestamp="1631471097783" />
+    <state x="431" y="185" width="672" height="678" key="search.everywhere.popup" timestamp="1631557312584">
+      <screen x="0" y="40" width="1536" height="824" />
+    </state>
+    <state x="431" y="185" width="672" height="678" key="search.everywhere.popup/0.40.1536.824@0.40.1536.824" timestamp="1631557312584" />
   </component>
 </project>

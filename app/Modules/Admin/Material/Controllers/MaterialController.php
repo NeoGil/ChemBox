@@ -81,7 +81,7 @@ class MaterialController extends Base
      */
     public function store(MaterialRequest $request)
     {
-        
+
         $this->service->save($request, new Material());
 
         return  \Redirect::route('materials.index')->with([
@@ -107,6 +107,7 @@ class MaterialController extends Base
      * @return \Illuminate\Contracts\Foundation\Application|\Illuminate\Contracts\View\Factory|\Illuminate\Contracts\View\View|\Illuminate\Http\Response
      * @throws \Illuminate\Auth\Access\AuthorizationException
      */
+
     public function edit(Material $material)
     {
         $this->authorize('edit', Material::class);
