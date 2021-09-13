@@ -17,9 +17,13 @@ class CreateMaterialsTable extends Migration
             $table->increments('id');
             $table->string('alias');
             $table->string('title');
+            $table->integer('methods_id')->unsigned()->nullable();
+            $table->foreign('methods_id')->references('id')->on('methods')->onDelete('cascade');
             $table->string('description');
             $table->string('content');
             $table->timestamps();
+
+
         });
     }
 

@@ -12,7 +12,6 @@ class MaterialService
 
         $model->fill($request->only($model->getFillable()));
         $model->save();
-
         return true;
     }
 

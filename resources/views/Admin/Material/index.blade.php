@@ -1,8 +1,17 @@
 <!-- Page header -->
 <section class="content-header">
     <h1>{{$title}}</h1>
-    <a href="{{route('materials.create')}}" class="btn btn-success">{{ __('Create') }}</a>
-
+{{--    <a href="{{route('materials.create', ['method'=>'2'])}}" class="btn btn-success">{{ __('Create') }}</a>--}}
+    <div class="dropdown">
+        <a class="btn btn-success dropdown-toggle" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            Create
+        </a>
+        <div class="dropdown-menu" aria-labelledby="dropdownLink">
+            @foreach($methods as $method)
+                <a class="dropdown-item" href="{{route('materials.create', ['method'=> $method->id])}}">{{$method->title}}</a>
+            @endforeach
+        </div>
+    </div>
 </section>
 <!-- /page header -->
 

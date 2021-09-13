@@ -55,6 +55,16 @@
                     </div>
 
                     <div class="form-group row">
+                        <label class="col-form-label col-lg-2">{{__('Method')}}</label>
+                        <div class="col-lg-10">
+                            <div class="input-group">
+                                <input type="number" name="methods_id" class="form-control"
+                                       value="{{$method->id}}" readonly>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="form-group row">
                         <label class="col-form-label col-lg-2">{{__('Description')}}<span
                                 class="text-danger">*</span></label>
                         <div class="col-lg-10">

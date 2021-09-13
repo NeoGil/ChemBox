@@ -12,6 +12,7 @@ class Material extends Model
     protected $fillable = [
         'alias',
         'title',
+        'methods_id',
         'description',
         'content'
     ];

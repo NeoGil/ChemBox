@@ -5,6 +5,7 @@ namespace App\Modules\Admin\Material\Controllers;
 use App\Modules\Admin\Material\Models\Material;
 use App\Modules\Admin\Material\Requests\MaterialRequest;
 use App\Modules\Admin\Material\Services\MaterialService;
+use App\Modules\Admin\Methods\Models\Method;
 use Illuminate\Http\Request;
 use App\Modules\Admin\Dashboard\Classes\Base;
 
@@ -28,13 +29,15 @@ class MaterialController extends Base
 
 
         $materials = Material::all();
-
+        $methods = Method::all();
         $this->title = "Title Materials Index";
 
         $this->content = view('Admin::Material.index')->
         with([
             'materials' => $materials,
+            'methods' => $methods,
             'title' => $this->title,
+
         ])->
         render();
 
@@ -44,11 +47,17 @@ class MaterialController extends Base
     /**
      * Create of the resource.
      *
-     * @return \Illuminate\Contracts\Foundation\Application|\Illuminate\Contracts\View\Factory|\Illuminate\Contracts\View\View|\Illuminate\Http\Response
+     * @return \Illuminate\Contracts\Foundation\Application|\Illuminate\Contracts\View\Factory|\Illuminate\Contracts\View\View|\Illuminate\Http\RedirectResponse|\Illuminate\Http\Response
      * @throws \Illuminate\Auth\Access\AuthorizationException
      */
-    public function create()
+    public function create(Method $method)
     {
+        if($method->type == 'specific') {
+            return  \Redirect::route('materials.index')->with([
+                'message' => __('Success')
+            ]);
+        }
+
         $this->authorize('create', Material::class);
 
 
@@ -57,6 +66,7 @@ class MaterialController extends Base
         $this->content = view('Admin::Material.create')->
         with([
             'title' => $this->title,
+            'method' => $method,
         ])->
         render();
 
@@ -71,7 +81,9 @@ class MaterialController extends Base
      */
     public function store(MaterialRequest $request)
     {
+        
         $this->service->save($request, new Material());
+
         return  \Redirect::route('materials.index')->with([
             'message' => __('Success')
         ]);
