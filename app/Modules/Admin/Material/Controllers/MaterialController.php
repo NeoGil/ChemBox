@@ -9,6 +9,7 @@ use App\Modules\Admin\Material\Services\MaterialService;
 use App\Modules\Admin\Methods\Models\Method;
 use Illuminate\Http\Request;
 use App\Modules\Admin\Dashboard\Classes\Base;
+use Illuminate\Support\Facades\DB;
 
 class MaterialController extends Base
 {
@@ -89,6 +90,7 @@ class MaterialController extends Base
         return  \Redirect::route('materials.index')->with([
             'message' => __('Success')
         ]);
+
     }
 
     /**
@@ -116,10 +118,21 @@ class MaterialController extends Base
 
         $this->title = "Title Course edit";
 
-        $this->content = view('Admin::Material.edit')->
+        $courses = Course::all();
+
+
+        $course_old = DB::table('courses')->where('id', $material->courses_id)->first();
+        $method = DB::table('methods')->where('id', $material->methods_id)->first();
+
+        $this->content = view('Admin::Material.editStandard')->
         with([
+
             'title' => $this->title,
             'item' => $material,
+            'courses' => $courses,
+            'course_old' => $course_old,
+            'method' => $method,
+
         ])->
         render();
 
