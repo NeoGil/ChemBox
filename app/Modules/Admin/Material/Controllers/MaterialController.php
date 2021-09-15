@@ -7,12 +7,16 @@ use App\Modules\Admin\Material\Models\Material;
 use App\Modules\Admin\Material\Requests\MaterialRequest;
 use App\Modules\Admin\Material\Services\MaterialService;
 use App\Modules\Admin\Methods\Models\Method;
-use Illuminate\Http\Request;
 use App\Modules\Admin\Dashboard\Classes\Base;
 use Illuminate\Support\Facades\DB;
 
 class MaterialController extends Base
 {
+
+    const TEST_METHOD = 'TEST';
+    const TYPE_METHOD = 'specific';
+
+    private $create_name =  'createSt';
 
     public function __construct(MaterialService $materialService)
     {
@@ -52,20 +56,28 @@ class MaterialController extends Base
      * @return \Illuminate\Contracts\Foundation\Application|\Illuminate\Contracts\View\Factory|\Illuminate\Contracts\View\View|\Illuminate\Http\RedirectResponse|\Illuminate\Http\Response
      * @throws \Illuminate\Auth\Access\AuthorizationException
      */
+
     public function create(Method $method)
     {
-        if($method->type == 'specific') {
+        $this->authorize('create', Material::class);
+
+        $this->title = "Title Material create";
+
+        $courses = Course::all();
+
+        if($method->type == self::TYPE_METHOD && $method->alias == self::TEST_METHOD) {
+
+            $create_name = 'createTEST';
+            $this->title = "Title Material Test create";
+
+        }
+        elseif ($method->type == self::TYPE_METHOD) {
             return  \Redirect::route('materials.index')->with([
                 'message' => __('Success')
             ]);
         }
 
-        $this->authorize('create', Material::class);
-        $courses = Course::all();
-
-        $this->title = "Title Material create";
-
-        $this->content = view('Admin::Material.create')->
+        $this->content = view('Admin::Material.create.'. $create_name)->
         with([
             'title' => $this->title,
             'method' => $method,

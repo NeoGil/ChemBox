@@ -184,7 +184,7 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/resources/views/Admin/Material" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/resources/views/Admin/Material/create" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -196,12 +196,15 @@
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\OpenServer\domains\SchNk\resources\views\Admin\Material\create" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\OpenServer\domains\SchNk\resources\views\Admin\Material\create" />
       <recent name="C:\OpenServer\domains\SchNk\resources\views\Admin\Material" />
       <recent name="C:\OpenServer\domains\SchNk\app\Modules\Admin\Material\Migrations" />
       <recent name="C:\OpenServer\domains\SchNk\app\Modules\Admin\Methods\Migrations" />
       <recent name="C:\OpenServer\domains\SchNk\app\Modules\Admin\Methods" />
-      <recent name="C:\OpenServer\domains\SchNk\resources\views\Admin\Methods" />
     </key>
   </component>
   <component name="RunManager" selected="PHPUnit.phpunit.xml">
@@ -258,7 +261,7 @@
       <workItem from="1631298511456" duration="7814000" />
       <workItem from="1631383798185" duration="3528000" />
       <workItem from="1631465827923" duration="17788000" />
-      <workItem from="1631552971076" duration="15759000" />
+      <workItem from="1631552971076" duration="19863000" />
     </task>
     <servers />
   </component>
