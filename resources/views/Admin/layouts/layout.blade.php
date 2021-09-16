@@ -60,7 +60,7 @@
 <!-- AdminLTE App -->
 <script src="{{asset('dist/js/adminlte.js')}}"></script>
 
-
+<script src="{{asset('js/app.js')}}"></script>
 
 </body>
 </html>

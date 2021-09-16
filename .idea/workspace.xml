@@ -26,8 +26,22 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="c34cc5f6-8abd-4384-aaab-abbf1e2906c8" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/SchNk.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/SchNk.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Modules/Admin/Material/Controllers/MaterialController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Modules/Admin/Material/Controllers/MaterialController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/cp/.npmignore" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/cp/.npmignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/cp/.travis.yml" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/cp/.travis.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/cp/History.md" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/cp/History.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/cp/Makefile" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/cp/Makefile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/cp/Readme.md" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/cp/Readme.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/cp/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/cp/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/cp/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/cp/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/js/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/app.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/js/bootstrap.js" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/bootstrap.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/Admin/Methods/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/Admin/Methods/index.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/Admin/layouts/layout.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/Admin/layouts/layout.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/webpack.mix.js" beforeDir="false" afterPath="$PROJECT_DIR$/webpack.mix.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -262,6 +276,7 @@
       <workItem from="1631383798185" duration="3528000" />
       <workItem from="1631465827923" duration="17788000" />
       <workItem from="1631552971076" duration="19863000" />
+      <workItem from="1631812732105" duration="2000000" />
     </task>
     <servers />
   </component>
@@ -329,10 +344,10 @@
       <screen x="0" y="40" width="1536" height="824" />
     </state>
     <state width="1493" height="210" key="GridCell.Tab.0.right/0.40.1536.824@0.40.1536.824" timestamp="1630529528661" />
-    <state x="425" y="207" key="run.anything.popup" timestamp="1631471097783">
+    <state x="425" y="207" key="run.anything.popup" timestamp="1631814139798">
       <screen x="0" y="40" width="1536" height="824" />
     </state>
-    <state x="425" y="207" key="run.anything.popup/0.40.1536.824@0.40.1536.824" timestamp="1631471097783" />
+    <state x="425" y="207" key="run.anything.popup/0.40.1536.824@0.40.1536.824" timestamp="1631814139798" />
     <state x="431" y="185" width="672" height="678" key="search.everywhere.popup" timestamp="1631557312584">
       <screen x="0" y="40" width="1536" height="824" />
     </state>

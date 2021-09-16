@@ -8,6 +8,7 @@
 
 <!-- Content area -->
 <div class="content">
+    <div id="app"><example-component></example-component></div>
     <!-- Hover rows -->
     <div class="card">
         <div class="table-responsive">
