@@ -56,11 +56,14 @@ class MaterialController extends Controller
      * Display the specified resource.
      *
      * @param  \App\Modules\Admin\Material\Models\Material  $material
-     * @return \Illuminate\Http\Response
+     * @return \Illuminate\Http\JsonResponse
      */
     public function show(Material $material)
     {
-        //
+        $this->authorize('view', Material::class);
+        return ResponseServise::sendJsonResponse(true, 200, [],[
+            'item' => $material
+        ]);
     }
 
     /**
