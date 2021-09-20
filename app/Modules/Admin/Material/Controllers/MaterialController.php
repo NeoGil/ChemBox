@@ -97,7 +97,8 @@ class MaterialController extends Base
     public function store(MaterialRequest $request)
     {
 
-        $this->service->save($request, new Material());
+        dd($request);
+        //$this->service->save($request, new Material());
 
         return  \Redirect::route('materials.index')->with([
             'message' => __('Success')

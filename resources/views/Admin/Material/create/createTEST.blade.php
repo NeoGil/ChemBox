@@ -89,6 +89,10 @@
                         </div>
                     </div>
 
+
+
+
+
                     <div class="form-group row">
                         <label class="col-form-label col-lg-2">{{__('Content')}}<span
                                 class="text-danger">*</span></label>
@@ -99,6 +103,9 @@
                         </div>
                     </div>
 
+                    <div id="app-2">
+                        <test></test>
+                    </div>
 
                 </fieldset>
                 <button type="submit" class="btn btn-success">{{__('Submit')}}</button>
@@ -116,6 +123,8 @@
                 console.error( error );
             } );
     </script>
+
+    <script src="{{asset('js/app.js')}}"></script>
 </div>
 
 <!-- /content area -->

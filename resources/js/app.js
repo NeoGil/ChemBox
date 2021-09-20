@@ -19,20 +19,22 @@ window.Vue = require('vue').default;
 // const files = require.context('./', true, /\.vue$/i)
 // files.keys().map(key => Vue.component(key.split('/').pop().split('.')[0], files(key).default))
 
-window.Vue = require('vue');
+//window.Vue = require('vue');
 
 Vue.component('example-component', require('./components/ExampleComponent.vue').default);
-
+Vue.component('test', require('./components/Admin/test.vue').default);
 /**
  * Next, we will create a fresh Vue application instance and attach it to
  * the page. Then, you may begin adding components to this application
  * or customize the JavaScript scaffolding to fit your unique needs.
  */
 
-const app = new Vue({
-    el: '#app',
-    data: {
-        message: 'Hello Vue!'
-    }
-});
+Vue.component('todo-item', {
+    template: '<div></div>'
+})
+
+var app = new Vue({
+    el: '#app-2',
+})
+
 
