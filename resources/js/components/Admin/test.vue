@@ -2,46 +2,93 @@
     <div class="container">
         <div class="row justify-content-center">
             <div class="form-group row">
-                <label class="col-form-label col-lg-12">Test<span
-                    class="text-danger">*</span></label>
-                <div class="col-lg-12">
+                <h3>{{ name }}</h3>
+                <div class="test" v-for="(item, index) in inputs" >
                     <div class="input-group">
-                        <input type="text" name="test[0][question]" class="form-control">
+                        <h5>{{ item.label }}</h5>
+                        <input type="text" v-bind:name="'test['+ index +'][question]'" class="form-control">
                     </div>
-                </div>
-
-                <div class="test" style="display: flex">
-                    <div class="col-lg-6">
-                        <label class="col-form-label">1</label>
-                        <div class="input-group">
-                            <input type="text" name="test[0][answer][1]" class="form-control">
+                    <div class="test">
+                        <div class="item" v-for="(item_q, index_q) in item.inputs_q">
+                            <div class="">
+                                <h6>Вариант ответа-{{ index_q }}</h6><br>
+                                <input type="text" v-bind:name="'test['+ index +'][answer]['+ index_q +']'" class="form-control">
+                            </div>
                         </div>
                     </div>
-                    <div class="col-lg-6">
-                        <label class="col-form-label">2</label>
-                        <div class="input-group">
-                            <input type="text" name="test[0][answer][2]" class="form-control">
-                        </div>
-                    </div>
+                    <br>
+                    <input type="button" @click="pushInputAns(item.inputs_q)" value="Добавить ответ">
+                    <input type="button" @click="spliceAns(item.inputs_q)" value="Удалить ответ">
                 </div>
+                <input type="button" @click="pushInputQ" value="Добавить вопрос">
+                <input type="button" @click="spliceQ" value="Удалить вопрос">
             </div>
         </div>
     </div>
 </template>
 
 <style lang="scss">
+    .test {
+        display: flex;
+        flex-wrap: wrap;
+        background: #80808024;
+        margin: 10px;
+        padding: 10px;
+    }
 
+    .item {
+        margin: 10px;
+        h6 {
+            margin: 10px;
+        }
+    }
 </style>
 
 <script>
     export default {
         data() {
             return {
-
+                name: 'Test',
+                inputs: [
+                    {label: 'Вопрос-1', inputs_q: [
+                            {label_q: 'Вариант ответа-1'},
+                            {label_q: 'Вариант ответа-2'},
+                            {label_q: 'Вариант ответа-3'},
+                            {label_q: 'Вариант ответа-4'},
+                        ]},
+                    {label: 'Вопрос-2', inputs_q: [
+                            {label_q: 'Вариант ответа-1'},
+                            {label_q: 'Вариант ответа-2'},
+                            {label_q: 'Вариант ответа-3'},
+                            {label_q: 'Вариант ответа-4'},
+                        ]},
+                ]
             }
         },
         methods: {
+            pushInputQ() {
+                this.$set(this.inputs, this.inputs.length, {
+                    label: 'Вопрос-' + (this.inputs.length + 1),
+                    inputs_q: [
+                        {label_q: 'Вариант ответа-1'},
+                        {label_q: 'Вариант ответа-2'},
+                        {label_q: 'Вариант ответа-3'},
+                        {label_q: 'Вариант ответа-4'},
+                    ]
+                })
 
+            },
+            pushInputAns(item_q) {
+                this.$set(item_q, item_q.length, {
+                    label: 'Вариант ответа-' + (item_q.length + 1)
+                })
+            },
+            spliceQ() {
+                this.inputs.splice(this.inputs.lastIndexOf(this.inputs))
+            },
+            spliceAns(item_q) {
+                item_q.splice(item_q.indexOf(item_q))
+            }
         }
     }
 </script>
