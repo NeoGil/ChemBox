@@ -89,20 +89,6 @@
                         </div>
                     </div>
 
-
-
-
-
-                    <div class="form-group row">
-                        <label class="col-form-label col-lg-2">{{__('Content')}}<span
-                                class="text-danger">*</span></label>
-                        <div class="col-lg-10">
-                            <textarea id="content" type="text" name="content" class="form-control"
-                                      placeholder="{{__('Content')}}"></textarea>
-
-                        </div>
-                    </div>
-
                     <div id="app-2">
                         <test></test>
                     </div>
@@ -116,13 +102,7 @@
     </div>
     <!-- /input group addons -->
 
-    <script>
-        ClassicEditor
-            .create( document.querySelector( '#content' ) )
-            .catch( error => {
-                console.error( error );
-            } );
-    </script>
+
 
     <script src="{{asset('js/app.js')}}"></script>
 </div>

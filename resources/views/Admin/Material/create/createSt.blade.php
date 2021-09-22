@@ -93,7 +93,7 @@
                         <label class="col-form-label col-lg-2">{{__('Content')}}<span
                                 class="text-danger">*</span></label>
                         <div class="col-lg-10">
-                            <textarea id="content" type="text" name="content" class="form-control"
+                            <textarea id="content" type="text" name="contents" class="form-control"
                                       placeholder="{{__('Content')}}"></textarea>
 
                         </div>

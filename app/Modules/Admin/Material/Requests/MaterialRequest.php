@@ -30,7 +30,7 @@ class MaterialRequest extends FormRequest
             'title' => 'required',
             'alias' => 'required',
             'methods_id' => 'required',
-            'content' => 'required',
+            'contents' => 'required',
         ];
     }
 

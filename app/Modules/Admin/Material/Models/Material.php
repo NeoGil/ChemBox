@@ -15,6 +15,6 @@ class Material extends Model
         'courses_id',
         'methods_id',
         'description',
-        'content'
+        'contents'
     ];
 }

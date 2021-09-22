@@ -65,6 +65,8 @@ class MaterialController extends Base
 
         $courses = Course::all();
 
+        $create_name = 'createSt';
+
         if($method->type == self::TYPE_METHOD && $method->alias == self::TEST_METHOD) {
 
             $create_name = 'createTEST';
@@ -96,12 +98,14 @@ class MaterialController extends Base
      */
     public function store(MaterialRequest $request)
     {
-        dd($request->test);
-        //$this->service->save($request, new Material());
+        $test = serialize($request['contents']);
+        $request['contents'] = $test;
+        //dd($request);
+        $this->service->save($request, new Material());
 
-//        return  \Redirect::route('materials.index')->with([
-//            'message' => __('Success')
-//        ]);
+        return  \Redirect::route('materials.index')->with([
+            'message' => __('Success')
+        ]);
 
     }
 

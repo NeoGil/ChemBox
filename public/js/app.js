@@ -2113,6 +2113,23 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({
   data: function data() {
     return {
@@ -6752,7 +6769,7 @@ __webpack_require__.r(__webpack_exports__);
 
 var ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0___default()(function(i){return i[1]});
 // Module
-___CSS_LOADER_EXPORT___.push([module.id, ".test {\n  display: flex;\n  flex-wrap: wrap;\n  background: #00000d0d;\n  margin: 10px;\n  padding: 10px;\n  border-radius: 10px;\n}\n.item {\n  margin: 10px;\n}\n.item h6 {\n  margin: 10px;\n}", ""]);
+___CSS_LOADER_EXPORT___.push([module.id, ".test {\n  display: flex;\n  flex-wrap: wrap;\n  background: #00000d0d;\n  margin: 10px;\n  padding: 10px;\n  border-radius: 10px;\n}\n.test .quest {\n  flex: none !important;\n}\n.item {\n  margin: 10px;\n}\n.item h6 {\n  margin: 10px;\n}\n.buttonGroupe {\n  margin: 10px;\n}", ""]);
 // Exports
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
 
@@ -38275,8 +38292,11 @@ var render = function() {
                 _c("h5", [_vm._v(_vm._s(item.label))]),
                 _vm._v(" "),
                 _c("input", {
-                  staticClass: "form-control",
-                  attrs: { type: "text", name: "test[" + index + "][question]" }
+                  staticClass: "form-control quest",
+                  attrs: {
+                    type: "text",
+                    name: "contents[" + index + "][question]"
+                  }
                 })
               ]),
               _vm._v(" "),
@@ -38289,23 +38309,45 @@ var render = function() {
                       _c("h6", [
                         _vm._v("Вариант ответа-" + _vm._s(index_q + 1))
                       ]),
-                      _c("br"),
                       _vm._v(" "),
                       _c("input", {
                         staticClass: "form-control",
                         attrs: {
                           type: "text",
-                          name: "test[" + index + "][answer][" + index_q + "]"
+                          name:
+                            "contents[" + index + "][answer][" + index_q + "]"
                         }
                       }),
                       _vm._v(" "),
-                      _c("input", {
-                        attrs: {
-                          type: "checkbox",
-                          value: "1",
-                          name: "test[" + index + "][choice][" + index_q + "]"
-                        }
-                      })
+                      _c("div", { staticClass: "form-check" }, [
+                        _c("input", {
+                          staticClass: "form-check-input",
+                          attrs: {
+                            type: "checkbox",
+                            value: "1",
+                            name:
+                              "contents[" +
+                              index +
+                              "][choice][" +
+                              index_q +
+                              "]",
+                            id: "Check" + index + index_q
+                          }
+                        }),
+                        _vm._v(" "),
+                        _c(
+                          "label",
+                          {
+                            staticClass: "form-check-label",
+                            attrs: { for: "Check" + index + index_q }
+                          },
+                          [
+                            _vm._v(
+                              "\n                                    Верно\n                                "
+                            )
+                          ]
+                        )
+                      ])
                     ])
                   ])
                 }),
@@ -38314,35 +38356,43 @@ var render = function() {
               _vm._v(" "),
               _c("br"),
               _vm._v(" "),
-              _c("input", {
-                attrs: { type: "button", value: "Добавить ответ" },
-                on: {
-                  click: function($event) {
-                    return _vm.pushInputAns(item.inputs_q)
+              _c("div", [
+                _c("input", {
+                  staticClass: "buttonGroupe",
+                  attrs: { type: "button", value: "Добавить ответ" },
+                  on: {
+                    click: function($event) {
+                      return _vm.pushInputAns(item.inputs_q)
+                    }
                   }
-                }
-              }),
-              _vm._v(" "),
-              _c("input", {
-                attrs: { type: "button", value: "Удалить ответ" },
-                on: {
-                  click: function($event) {
-                    return _vm.spliceAns(item.inputs_q)
+                }),
+                _vm._v(" "),
+                _c("input", {
+                  staticClass: "buttonGroupe",
+                  attrs: { type: "button", value: "Удалить ответ" },
+                  on: {
+                    click: function($event) {
+                      return _vm.spliceAns(item.inputs_q)
+                    }
                   }
-                }
-              })
+                })
+              ])
             ])
           }),
           _vm._v(" "),
-          _c("input", {
-            attrs: { type: "button", value: "Добавить вопрос" },
-            on: { click: _vm.pushInputQ }
-          }),
-          _vm._v(" "),
-          _c("input", {
-            attrs: { type: "button", value: "Удалить вопрос" },
-            on: { click: _vm.spliceQ }
-          })
+          _c("div", [
+            _c("input", {
+              staticClass: "buttonGroupe",
+              attrs: { type: "button", value: "Добавить вопрос" },
+              on: { click: _vm.pushInputQ }
+            }),
+            _vm._v(" "),
+            _c("input", {
+              staticClass: "buttonGroupe",
+              attrs: { type: "button", value: "Удалить вопрос" },
+              on: { click: _vm.spliceQ }
+            })
+          ])
         ],
         2
       )
