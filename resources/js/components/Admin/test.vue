@@ -11,8 +11,9 @@
                     <div class="test">
                         <div class="item" v-for="(item_q, index_q) in item.inputs_q">
                             <div class="">
-                                <h6>Вариант ответа-{{ index_q }}</h6><br>
+                                <h6>Вариант ответа-{{ index_q+1 }}</h6><br>
                                 <input type="text" v-bind:name="'test['+ index +'][answer]['+ index_q +']'" class="form-control">
+                                <input type="checkbox" value="1" v-bind:name="'test['+ index +'][choice]['+ index_q +']'">
                             </div>
                         </div>
                     </div>
@@ -31,9 +32,10 @@
     .test {
         display: flex;
         flex-wrap: wrap;
-        background: #80808024;
+        background: #00000d0d;
         margin: 10px;
         padding: 10px;
+        border-radius: 10px;
     }
 
     .item {

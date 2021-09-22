@@ -2111,6 +2111,8 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({
   data: function data() {
     return {
@@ -6750,7 +6752,7 @@ __webpack_require__.r(__webpack_exports__);
 
 var ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0___default()(function(i){return i[1]});
 // Module
-___CSS_LOADER_EXPORT___.push([module.id, ".test {\n  display: flex;\n  flex-wrap: wrap;\n  background: #80808024;\n  margin: 10px;\n  padding: 10px;\n}\n.item {\n  margin: 10px;\n}\n.item h6 {\n  margin: 10px;\n}", ""]);
+___CSS_LOADER_EXPORT___.push([module.id, ".test {\n  display: flex;\n  flex-wrap: wrap;\n  background: #00000d0d;\n  margin: 10px;\n  padding: 10px;\n  border-radius: 10px;\n}\n.item {\n  margin: 10px;\n}\n.item h6 {\n  margin: 10px;\n}", ""]);
 // Exports
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
 
@@ -38284,7 +38286,9 @@ var render = function() {
                 _vm._l(item.inputs_q, function(item_q, index_q) {
                   return _c("div", { staticClass: "item" }, [
                     _c("div", {}, [
-                      _c("h6", [_vm._v("Вариант ответа-" + _vm._s(index_q))]),
+                      _c("h6", [
+                        _vm._v("Вариант ответа-" + _vm._s(index_q + 1))
+                      ]),
                       _c("br"),
                       _vm._v(" "),
                       _c("input", {
@@ -38292,6 +38296,14 @@ var render = function() {
                         attrs: {
                           type: "text",
                           name: "test[" + index + "][answer][" + index_q + "]"
+                        }
+                      }),
+                      _vm._v(" "),
+                      _c("input", {
+                        attrs: {
+                          type: "checkbox",
+                          value: "1",
+                          name: "test[" + index + "][choice][" + index_q + "]"
                         }
                       })
                     ])
