@@ -136,11 +136,15 @@ class MaterialController extends Base
 
         $courses = Course::all();
 
+        $edit_name = 'editStandard';
 
         $course_old = DB::table('courses')->where('id', $material->courses_id)->first();
         $method = DB::table('methods')->where('id', $material->methods_id)->first();
-
-        $this->content = view('Admin::Material.editStandard')->
+        if($method->alias == 'TEST') {
+            $material->contents = unserialize($material->contents);
+            $edit_name = 'editTest';
+        }
+        $this->content = view('Admin::Material.edit.'.$edit_name)->
         with([
 
             'title' => $this->title,
@@ -165,6 +169,9 @@ class MaterialController extends Base
 
     public function update(MaterialRequest $request, Material $material)
     {
+        $test = serialize($request['contents']);
+        $request['contents'] = $test;
+
         $this->service->save($request, $material);
         return  \Redirect::route('materials.index')->with([
             'message' => __('Success')

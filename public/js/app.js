@@ -2130,60 +2130,44 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({
+  props: ['data'],
   data: function data() {
     return {
       name: 'Test',
       inputs: [{
-        label: 'Вопрос-1',
-        inputs_q: [{
-          label_q: 'Вариант ответа-1'
-        }, {
-          label_q: 'Вариант ответа-2'
-        }, {
-          label_q: 'Вариант ответа-3'
-        }, {
-          label_q: 'Вариант ответа-4'
-        }]
+        question: '',
+        choice: {},
+        answer: ['', '', '', '']
       }, {
-        label: 'Вопрос-2',
-        inputs_q: [{
-          label_q: 'Вариант ответа-1'
-        }, {
-          label_q: 'Вариант ответа-2'
-        }, {
-          label_q: 'Вариант ответа-3'
-        }, {
-          label_q: 'Вариант ответа-4'
-        }]
+        question: '',
+        choice: {},
+        answer: ['', '', '', '']
       }]
     };
   },
   methods: {
     pushInputQ: function pushInputQ() {
       this.$set(this.inputs, this.inputs.length, {
-        label: 'Вопрос-' + (this.inputs.length + 1),
-        inputs_q: [{
-          label_q: 'Вариант ответа-1'
-        }, {
-          label_q: 'Вариант ответа-2'
-        }, {
-          label_q: 'Вариант ответа-3'
-        }, {
-          label_q: 'Вариант ответа-4'
-        }]
+        question: '',
+        choice: {},
+        answer: ['', '', '', '']
       });
     },
     pushInputAns: function pushInputAns(item_q) {
-      this.$set(item_q, item_q.length, {
-        label: 'Вариант ответа-' + (item_q.length + 1)
-      });
+      this.$set(item_q, item_q.length, '');
     },
     spliceQ: function spliceQ() {
       this.inputs.splice(this.inputs.lastIndexOf(this.inputs));
     },
     spliceAns: function spliceAns(item_q) {
       item_q.splice(item_q.indexOf(item_q));
+    }
+  },
+  mounted: function mounted() {
+    if (this.data) {
+      this.inputs = this.data;
     }
   }
 });
@@ -38289,21 +38273,23 @@ var render = function() {
           _vm._l(_vm.inputs, function(item, index) {
             return _c("div", { staticClass: "test" }, [
               _c("div", { staticClass: "input-group" }, [
-                _c("h5", [_vm._v(_vm._s(item.label))]),
+                _c("h5", [_vm._v("Вопрос-" + _vm._s(index + 1))]),
                 _vm._v(" "),
                 _c("input", {
                   staticClass: "form-control quest",
                   attrs: {
                     type: "text",
-                    name: "contents[" + index + "][question]"
-                  }
+                    name: "contents[" + index + "][question]",
+                    required: ""
+                  },
+                  domProps: { value: item.question }
                 })
               ]),
               _vm._v(" "),
               _c(
                 "div",
                 { staticClass: "test" },
-                _vm._l(item.inputs_q, function(item_q, index_q) {
+                _vm._l(item.answer, function(item_q, index_q) {
                   return _c("div", { staticClass: "item" }, [
                     _c("div", {}, [
                       _c("h6", [
@@ -38315,25 +38301,43 @@ var render = function() {
                         attrs: {
                           type: "text",
                           name:
-                            "contents[" + index + "][answer][" + index_q + "]"
-                        }
+                            "contents[" + index + "][answer][" + index_q + "]",
+                          required: ""
+                        },
+                        domProps: { value: item_q }
                       }),
                       _vm._v(" "),
                       _c("div", { staticClass: "form-check" }, [
-                        _c("input", {
-                          staticClass: "form-check-input",
-                          attrs: {
-                            type: "checkbox",
-                            value: "1",
-                            name:
-                              "contents[" +
-                              index +
-                              "][choice][" +
-                              index_q +
-                              "]",
-                            id: "Check" + index + index_q
-                          }
-                        }),
+                        item.choice[index_q]
+                          ? _c("input", {
+                              staticClass: "form-check-input",
+                              attrs: {
+                                type: "checkbox",
+                                value: "1",
+                                name:
+                                  "contents[" +
+                                  index +
+                                  "][choice][" +
+                                  index_q +
+                                  "]",
+                                checked: "",
+                                id: "Check" + index + index_q
+                              }
+                            })
+                          : _c("input", {
+                              staticClass: "form-check-input",
+                              attrs: {
+                                type: "checkbox",
+                                value: "1",
+                                name:
+                                  "contents[" +
+                                  index +
+                                  "][choice][" +
+                                  index_q +
+                                  "]",
+                                id: "Check" + index + index_q
+                              }
+                            }),
                         _vm._v(" "),
                         _c(
                           "label",
@@ -38362,7 +38366,7 @@ var render = function() {
                   attrs: { type: "button", value: "Добавить ответ" },
                   on: {
                     click: function($event) {
-                      return _vm.pushInputAns(item.inputs_q)
+                      return _vm.pushInputAns(item.answer)
                     }
                   }
                 }),
@@ -38372,7 +38376,7 @@ var render = function() {
                   attrs: { type: "button", value: "Удалить ответ" },
                   on: {
                     click: function($event) {
-                      return _vm.spliceAns(item.inputs_q)
+                      return _vm.spliceAns(item.answer)
                     }
                   }
                 })

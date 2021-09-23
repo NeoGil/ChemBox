@@ -5,16 +5,17 @@
                 <h3>{{ name }}</h3>
                 <div class="test" v-for="(item, index) in inputs" >
                     <div class="input-group">
-                        <h5>{{ item.label }}</h5>
-                        <input type="text" v-bind:name="'contents['+ index +'][question]'" class="form-control quest">
+                        <h5>Вопрос-{{ index+1 }}</h5>
+                        <input type="text" v-bind:name="'contents['+ index +'][question]'" required v-bind:value="item.question" class="form-control quest">
                     </div>
                     <div class="test">
-                        <div class="item" v-for="(item_q, index_q) in item.inputs_q">
+                        <div class="item" v-for="(item_q, index_q) in item.answer">
                             <div class="">
                                 <h6>Вариант ответа-{{ index_q+1 }}</h6>
-                                <input type="text" v-bind:name="'contents['+ index +'][answer]['+ index_q +']'" class="form-control">
+                                <input type="text" v-bind:name="'contents['+ index +'][answer]['+ index_q +']'" required v-bind:value="item_q" class="form-control">
                                 <div class="form-check">
-                                    <input type="checkbox" value="1" v-bind:name="'contents['+ index +'][choice]['+ index_q +']'" v-bind:id="'Check' + index +index_q " class="form-check-input">
+                                    <input type="checkbox" value="1" v-bind:name="'contents['+ index +'][choice]['+ index_q +']'" v-if="item.choice[index_q]" checked v-bind:id="'Check' + index +index_q " class="form-check-input">
+                                    <input type="checkbox" value="1" v-bind:name="'contents['+ index +'][choice]['+ index_q +']'" v-else v-bind:id="'Check' + index +index_q " class="form-check-input">
                                     <label class="form-check-label" v-bind:for="'Check' + index +index_q">
                                         Верно
                                     </label>
@@ -24,8 +25,8 @@
                     </div>
                     <br>
                     <div>
-                        <input class="buttonGroupe" type="button" @click="pushInputAns(item.inputs_q)" value="Добавить ответ">
-                        <input class="buttonGroupe" type="button" @click="spliceAns(item.inputs_q)" value="Удалить ответ">
+                        <input class="buttonGroupe" type="button" @click="pushInputAns(item.answer)" value="Добавить ответ">
+                        <input class="buttonGroupe" type="button" @click="spliceAns(item.answer)" value="Удалить ответ">
                     </div>
 
                 </div>
@@ -65,21 +66,22 @@
 
 <script>
     export default {
+        props: ['data'],
         data() {
             return {
                 name: 'Test',
                 inputs: [
-                    {label: 'Вопрос-1', inputs_q: [
-                            {label_q: 'Вариант ответа-1'},
-                            {label_q: 'Вариант ответа-2'},
-                            {label_q: 'Вариант ответа-3'},
-                            {label_q: 'Вариант ответа-4'},
+                    {question: '', choice: {}, answer: [
+                            '',
+                            '',
+                            '',
+                            '',
                         ]},
-                    {label: 'Вопрос-2', inputs_q: [
-                            {label_q: 'Вариант ответа-1'},
-                            {label_q: 'Вариант ответа-2'},
-                            {label_q: 'Вариант ответа-3'},
-                            {label_q: 'Вариант ответа-4'},
+                    {question: '', choice: {} , answer: [
+                            '',
+                            '',
+                            '',
+                            '',
                         ]},
                 ]
             }
@@ -87,20 +89,18 @@
         methods: {
             pushInputQ() {
                 this.$set(this.inputs, this.inputs.length, {
-                    label: 'Вопрос-' + (this.inputs.length + 1),
-                    inputs_q: [
-                        {label_q: 'Вариант ответа-1'},
-                        {label_q: 'Вариант ответа-2'},
-                        {label_q: 'Вариант ответа-3'},
-                        {label_q: 'Вариант ответа-4'},
+                    question: '',
+                    choice: {},
+                    answer: [
+                        '',
+                        '',
+                        '',
+                        '',
                     ]
-                })
-
+                });
             },
             pushInputAns(item_q) {
-                this.$set(item_q, item_q.length, {
-                    label: 'Вариант ответа-' + (item_q.length + 1)
-                })
+                this.$set(item_q, item_q.length, '')
             },
             spliceQ() {
                 this.inputs.splice(this.inputs.lastIndexOf(this.inputs))
@@ -108,6 +108,11 @@
             spliceAns(item_q) {
                 item_q.splice(item_q.indexOf(item_q))
             }
-        }
+        },
+        mounted () {
+            if(this.data){
+                this.inputs = this.data;
+            }
+        },
     }
 </script>

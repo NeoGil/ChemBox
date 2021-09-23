@@ -28,12 +28,11 @@
     <list default="true" id="c34cc5f6-8abd-4384-aaab-abbf1e2906c8" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Modules/Admin/Material/Controllers/MaterialController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Modules/Admin/Material/Controllers/MaterialController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Modules/Admin/Material/Models/Material.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Modules/Admin/Material/Models/Material.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Modules/Admin/Material/Requests/MaterialRequest.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Modules/Admin/Material/Requests/MaterialRequest.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/public/js/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/js/app.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/js/components/Admin/test.vue" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/components/Admin/test.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/Admin/Material/create/createSt.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/Admin/Material/create/createSt.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/Admin/Material/create/createTEST.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/Admin/Material/create/createTEST.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/Admin/Material/edit.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/Admin/Material/edit/edit.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/Admin/Material/editStandard.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/Admin/Material/edit/editStandard.blade.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -190,7 +189,7 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/resources/views/Admin/Material/create" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/resources/views/Admin/Material/edit" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -202,15 +201,16 @@
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\OpenServer\domains\SchNk\resources\views\Admin\Material\create" />
-    </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\OpenServer\domains\SchNk\resources\views\Admin\Material\edit" />
+      <recent name="C:\OpenServer\domains\SchNk\resources\js\components\Admin" />
       <recent name="C:\OpenServer\domains\SchNk\resources\views\Admin\Material\create" />
       <recent name="C:\OpenServer\domains\SchNk\resources\views\Admin\Material" />
       <recent name="C:\OpenServer\domains\SchNk\app\Modules\Admin\Material\Migrations" />
-      <recent name="C:\OpenServer\domains\SchNk\app\Modules\Admin\Methods\Migrations" />
-      <recent name="C:\OpenServer\domains\SchNk\app\Modules\Admin\Methods" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\OpenServer\domains\SchNk\resources\views\Admin\Material\edit" />
+      <recent name="C:\OpenServer\domains\SchNk\resources\views\Admin\Material\create" />
     </key>
   </component>
   <component name="RunManager" selected="PHPUnit.phpunit.xml">
@@ -272,7 +272,8 @@
       <workItem from="1631902428090" duration="407000" />
       <workItem from="1632151685004" duration="8494000" />
       <workItem from="1632235107729" duration="17943000" />
-      <workItem from="1632330305298" duration="5165000" />
+      <workItem from="1632330305298" duration="9633000" />
+      <workItem from="1632413769348" duration="15179000" />
     </task>
     <servers />
   </component>
