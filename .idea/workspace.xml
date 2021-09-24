@@ -26,8 +26,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="c34cc5f6-8abd-4384-aaab-abbf1e2906c8" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/frontend/AppSchNk/src/app/app.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/resources/frontend/AppSchNk/src/app/app.component.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/frontend/AppSchNk/src/app/app.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/resources/frontend/AppSchNk/src/app/app.module.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/frontend/AppSchNk/src/app/modules/material/material.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/resources/frontend/AppSchNk/src/app/modules/material/material.module.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/frontend/AppSchNk/src/styles.sass" beforeDir="false" afterPath="$PROJECT_DIR$/resources/frontend/AppSchNk/src/styles.sass" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -184,7 +188,7 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/resources/views/Admin/Material/edit" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/resources/frontend/AppSchNk/src/assets" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -197,16 +201,16 @@
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\OpenServer\domains\SchNk\resources\views\Admin\Material\edit" />
+      <recent name="C:\OpenServer\domains\SchNk\resources\views\Admin\Material\create" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\OpenServer\domains\SchNk\resources\frontend\AppSchNk\src\assets" />
       <recent name="C:\OpenServer\domains\SchNk\resources\views\Admin\Material\edit" />
       <recent name="C:\OpenServer\domains\SchNk\resources\js\components\Admin" />
       <recent name="C:\OpenServer\domains\SchNk\resources\views\Admin\Material\create" />
       <recent name="C:\OpenServer\domains\SchNk\resources\views\Admin\Material" />
-      <recent name="C:\OpenServer\domains\SchNk\app\Modules\Admin\Material\Migrations" />
-    </key>
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\OpenServer\domains\SchNk\resources\views\Admin\Material\edit" />
-      <recent name="C:\OpenServer\domains\SchNk\resources\views\Admin\Material\create" />
     </key>
   </component>
   <component name="RunManager" selected="PHPUnit.phpunit.xml">
@@ -270,7 +274,9 @@
       <workItem from="1632235107729" duration="17943000" />
       <workItem from="1632330305298" duration="9633000" />
       <workItem from="1632413769348" duration="15179000" />
-      <workItem from="1632502044333" duration="2595000" />
+      <workItem from="1632502044333" duration="4089000" />
+      <workItem from="1632511484656" duration="428000" />
+      <workItem from="1632512034180" duration="3834000" />
     </task>
     <servers />
   </component>
@@ -306,6 +312,10 @@
       <screen x="0" y="40" width="1536" height="824" />
     </state>
     <state x="194" y="293" key="#SQL_Dialects/0.40.1536.824@0.40.1536.824" timestamp="1631641920742" />
+    <state x="245" y="171" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1632514704521">
+      <screen x="0" y="40" width="1536" height="824" />
+    </state>
+    <state x="245" y="171" key="#com.intellij.fileTypes.FileTypeChooser/0.40.1536.824@0.40.1536.824" timestamp="1632514704521" />
     <state x="450" y="40" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1631223040278">
       <screen x="0" y="40" width="1536" height="824" />
     </state>
