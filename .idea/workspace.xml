@@ -27,11 +27,7 @@
   <component name="ChangeListManager">
     <list default="true" id="c34cc5f6-8abd-4384-aaab-abbf1e2906c8" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/frontend/AppSchNk/angular.json" beforeDir="false" afterPath="$PROJECT_DIR$/resources/frontend/AppSchNk/angular.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/frontend/AppSchNk/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/resources/frontend/AppSchNk/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/frontend/AppSchNk/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/resources/frontend/AppSchNk/package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/frontend/AppSchNk/src/app/app.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/resources/frontend/AppSchNk/src/app/app.module.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/frontend/AppSchNk/src/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/resources/frontend/AppSchNk/src/index.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -274,7 +270,7 @@
       <workItem from="1632235107729" duration="17943000" />
       <workItem from="1632330305298" duration="9633000" />
       <workItem from="1632413769348" duration="15179000" />
-      <workItem from="1632502044333" duration="1756000" />
+      <workItem from="1632502044333" duration="2595000" />
     </task>
     <servers />
   </component>
