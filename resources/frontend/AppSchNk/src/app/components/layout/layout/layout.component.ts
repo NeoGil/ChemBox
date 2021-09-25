@@ -1,4 +1,7 @@
 import { Component, OnInit } from '@angular/core';
+import {NavigationService} from "../../../services/navigation.service";
+import {Navigation} from "../../../Models/navigation";
+import {NavigationEnd, Router} from "@angular/router";
 
 @Component({
   selector: 'app-layout',
@@ -7,9 +10,25 @@ import { Component, OnInit } from '@angular/core';
 })
 export class LayoutComponent implements OnInit {
 
-  constructor() { }
+  navigation: Navigation[]
+  navMenu: boolean = true;
+
+  constructor(
+    private navigationService: NavigationService,
+    private router: Router,
+  ) { }
 
   ngOnInit(): void {
+    this.getMenu();
+  }
+
+  getMenu(): void {
+    this.navigationService.getNavigation().subscribe(
+      (data: Navigation[]) => {
+        this.navigation = data;
+        console.log(this.navigation);
+      }
+    );
   }
 
 }

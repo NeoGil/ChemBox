@@ -11,6 +11,7 @@ import { LayoutComponent } from './components/layout/layout/layout.component';
 import { NavigationComponent } from './components/layout/navigation/navigation.component';
 import { PreloaderComponent } from './components/layout/preloader/preloader.component';
 import { SidenavListComponent } from './components/layout/sidenav-list/sidenav-list.component';
+import {HttpClientModule} from "@angular/common/http";
 
 
 @NgModule({
@@ -27,6 +28,7 @@ import { SidenavListComponent } from './components/layout/sidenav-list/sidenav-l
     NgbModule,
     BrowserAnimationsModule,
     MaterialModule,
+    HttpClientModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

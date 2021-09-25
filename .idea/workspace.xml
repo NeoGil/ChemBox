@@ -28,10 +28,21 @@
     <list default="true" id="c34cc5f6-8abd-4384-aaab-abbf1e2906c8" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/frontend/AppSchNk/src/app/app.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/resources/frontend/AppSchNk/src/app/app.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Modules/Admin/Menu/Controllers/Api/MenuController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Modules/Admin/Menu/Controllers/Api/MenuController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Modules/Admin/User/Models/User.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Modules/Admin/User/Models/User.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/modular.php" beforeDir="false" afterPath="$PROJECT_DIR$/config/modular.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/frontend/AppSchNk/src/app/app.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/resources/frontend/AppSchNk/src/app/app.module.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/frontend/AppSchNk/src/app/modules/material/material.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/resources/frontend/AppSchNk/src/app/modules/material/material.module.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/frontend/AppSchNk/src/styles.sass" beforeDir="false" afterPath="$PROJECT_DIR$/resources/frontend/AppSchNk/src/styles.sass" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/frontend/AppSchNk/src/app/components/layout/layout/layout.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/resources/frontend/AppSchNk/src/app/components/layout/layout/layout.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/frontend/AppSchNk/src/app/components/layout/layout/layout.component.sass" beforeDir="false" afterPath="$PROJECT_DIR$/resources/frontend/AppSchNk/src/app/components/layout/layout/layout.component.sass" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/frontend/AppSchNk/src/app/components/layout/layout/layout.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/resources/frontend/AppSchNk/src/app/components/layout/layout/layout.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/frontend/AppSchNk/src/app/components/layout/navigation/navigation.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/resources/frontend/AppSchNk/src/app/components/layout/navigation/navigation.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/frontend/AppSchNk/src/app/components/layout/navigation/navigation.component.sass" beforeDir="false" afterPath="$PROJECT_DIR$/resources/frontend/AppSchNk/src/app/components/layout/navigation/navigation.component.sass" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/frontend/AppSchNk/src/app/components/layout/navigation/navigation.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/resources/frontend/AppSchNk/src/app/components/layout/navigation/navigation.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/frontend/AppSchNk/src/app/components/layout/sidenav-list/sidenav-list.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/resources/frontend/AppSchNk/src/app/components/layout/sidenav-list/sidenav-list.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/frontend/AppSchNk/src/app/components/layout/sidenav-list/sidenav-list.component.sass" beforeDir="false" afterPath="$PROJECT_DIR$/resources/frontend/AppSchNk/src/app/components/layout/sidenav-list/sidenav-list.component.sass" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/frontend/AppSchNk/src/app/components/layout/sidenav-list/sidenav-list.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/resources/frontend/AppSchNk/src/app/components/layout/sidenav-list/sidenav-list.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/frontend/AppSchNk/src/environments/environment.ts" beforeDir="false" afterPath="$PROJECT_DIR$/resources/frontend/AppSchNk/src/environments/environment.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/frontend/AppSchNk/tsconfig.json" beforeDir="false" afterPath="$PROJECT_DIR$/resources/frontend/AppSchNk/tsconfig.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -188,7 +199,7 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/resources/frontend/AppSchNk/src/assets" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/resources/frontend/AppSchNk/src/app/Models" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -201,16 +212,16 @@
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\OpenServer\domains\SchNk\resources\views\Admin\Material\edit" />
-      <recent name="C:\OpenServer\domains\SchNk\resources\views\Admin\Material\create" />
-    </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\OpenServer\domains\SchNk\resources\frontend\AppSchNk\src\app\Models" />
       <recent name="C:\OpenServer\domains\SchNk\resources\frontend\AppSchNk\src\assets" />
       <recent name="C:\OpenServer\domains\SchNk\resources\views\Admin\Material\edit" />
       <recent name="C:\OpenServer\domains\SchNk\resources\js\components\Admin" />
       <recent name="C:\OpenServer\domains\SchNk\resources\views\Admin\Material\create" />
-      <recent name="C:\OpenServer\domains\SchNk\resources\views\Admin\Material" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\OpenServer\domains\SchNk\resources\views\Admin\Material\edit" />
+      <recent name="C:\OpenServer\domains\SchNk\resources\views\Admin\Material\create" />
     </key>
   </component>
   <component name="RunManager" selected="PHPUnit.phpunit.xml">
@@ -276,7 +287,8 @@
       <workItem from="1632413769348" duration="15179000" />
       <workItem from="1632502044333" duration="4089000" />
       <workItem from="1632511484656" duration="428000" />
-      <workItem from="1632512034180" duration="3834000" />
+      <workItem from="1632512034180" duration="4433000" />
+      <workItem from="1632576302092" duration="4858000" />
     </task>
     <servers />
   </component>
