@@ -3,19 +3,39 @@
 namespace App\Modules\Admin\User\Controllers\Api;
 
 use App\Modules\Admin\User\Models\User;
-use Illuminate\Http\Request;
+use App\Modules\Admin\User\Requests\UserRequest;
+use App\Modules\Admin\User\Services\UserService;
+use App\Services\Response\ResponseServise;
 use App\Http\Controllers\Controller;
 
 class UserController extends Controller
 {
+
+    private $service;
+
+    /**
+     * RoleController constructor.
+     * @param UserService $userService
+     */
+    public function __construct(UserService $userService)
+    {
+        $this->service = $userService;
+    }
     /**
      * Display a listing of the resource.
      *
-     * @return \Illuminate\Http\Response
+     * @return \Illuminate\Http\JsonResponse
      */
     public function index()
     {
         //
+        $this->authorize('view', new User());
+
+        $users = $this->service->getUsers();
+
+        return ResponseServise::sendJsonResponse(true, 200,[],[
+            'items' =>  $users->toArray()
+        ]);
     }
 
     /**
@@ -32,22 +52,27 @@ class UserController extends Controller
      * Store a newly created resource in storage.
      *
      * @param  \Illuminate\Http\Request  $request
-     * @return \Illuminate\Http\Response
+     * @return \Illuminate\Http\JsonResponse
      */
-    public function store(Request $request)
+    public function store(UserRequest $request)
     {
-        //
+        $user = $this->service->save($request, new User());
+        return ResponseServise::sendJsonResponse(true, 200,[],[
+            'item' =>  $user->toArray()
+        ]);
     }
 
     /**
      * Display the specified resource.
      *
      * @param  \App\Modules\Admin\User\Models\User  $user
-     * @return \Illuminate\Http\Response
+     * @return \Illuminate\Http\JsonResponse
      */
     public function show(User $user)
     {
-        //
+        return ResponseServise::sendJsonResponse(true, 200,[],[
+            'item' =>  $user->toArray()
+        ]);
     }
 
     /**
@@ -58,7 +83,7 @@ class UserController extends Controller
      */
     public function edit(User $user)
     {
-        //
+
     }
 
     /**
@@ -66,21 +91,30 @@ class UserController extends Controller
      *
      * @param  \Illuminate\Http\Request  $request
      * @param  \App\Modules\Admin\User\Models\User  $user
-     * @return \Illuminate\Http\Response
+     * @return \Illuminate\Http\JsonResponse
      */
-    public function update(Request $request, User $user)
+    public function update(UserRequest $request, User $user)
     {
-        //
+        $user = $this->service->save($request, $user);
+        return ResponseServise::sendJsonResponse(true, 200,[],[
+            'item' =>  $user->toArray()
+        ]);
     }
 
     /**
      * Remove the specified resource from storage.
      *
      * @param  \App\Modules\Admin\User\Models\User  $user
-     * @return \Illuminate\Http\Response
+     * @return \Illuminate\Http\JsonResponse
      */
     public function destroy(User $user)
     {
-        //
+        $user->status = '0';
+        $user->update();
+
+        return ResponseServise::sendJsonResponse(true, 200,[],[
+            'item' =>  $user->toArray()
+        ]);
     }
+
 }

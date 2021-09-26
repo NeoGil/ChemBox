@@ -16,7 +16,7 @@ export class NavigationService {
 
   getNavigation(): Observable<Navigation[]> {
 
-    return this.http.get<ResponseHttp>( environment.apiUrl + 'api/admin/menus').pipe(
+    return this.http.get<ResponseHttp>( environment.apiUrl + 'api/pub/menus').pipe(
       map((data) =>{
         return data.data.items
       }),

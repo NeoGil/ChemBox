@@ -1,13 +1,11 @@
 <?php
 
-namespace App\Modules\Admin\Menu\Controllers\Api;
+namespace App\Modules\Pub\Menu\Controllers\Api;
 
-use App\Modules\Admin\Menu\Models\Menu;
-use App\Modules\Admin\User\Models\User;
+use App\Modules\Pub\Menu\Models\Menu;
 use App\Services\Response\ResponseServise;
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
-use Illuminate\Support\Facades\Auth;
 
 class MenuController extends Controller
 {
@@ -19,7 +17,7 @@ class MenuController extends Controller
     public function index()
     {
         return ResponseServise::sendJsonResponse(true, 200,[], [
-            'items' => (Menu::frontMenu(Auth::user())->get())->toArray()
+            'items' => (Menu::frontMenu()->get())->toArray()
         ]);
     }
 
@@ -47,7 +45,7 @@ class MenuController extends Controller
     /**
      * Display the specified resource.
      *
-     * @param  \App\Modules\Admin\Menu\Models\Menu  $menu
+     * @param  \App\Modules\Pub/Menu\Models\Menu  $menu
      * @return \Illuminate\Http\Response
      */
     public function show(Menu $menu)
@@ -58,7 +56,7 @@ class MenuController extends Controller
     /**
      * Display the specified resource.
      *
-     * @param  \App\Modules\Admin\Menu\Models\Menu  $menu
+     * @param  \App\Modules\Pub/Menu\Models\Menu  $menu
      * @return \Illuminate\Http\Response
      */
     public function edit(Menu $menu)
@@ -70,7 +68,7 @@ class MenuController extends Controller
      * Update the specified resource in storage.
      *
      * @param  \Illuminate\Http\Request  $request
-     * @param  \App\Modules\Admin\Menu\Models\Menu  $menu
+     * @param  \App\Modules\Pub/Menu\Models\Menu  $menu
      * @return \Illuminate\Http\Response
      */
     public function update(Request $request, Menu $menu)
@@ -81,7 +79,7 @@ class MenuController extends Controller
     /**
      * Remove the specified resource from storage.
      *
-     * @param  \App\Modules\Admin\Menu\Models\Menu  $menu
+     * @param  \App\Modules\Pub/Menu\Models\Menu  $menu
      * @return \Illuminate\Http\Response
      */
     public function destroy(Menu $menu)

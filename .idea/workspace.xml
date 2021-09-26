@@ -26,23 +26,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="c34cc5f6-8abd-4384-aaab-abbf1e2906c8" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Modules/Admin/Menu/Controllers/Api/MenuController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Modules/Admin/Menu/Controllers/Api/MenuController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Modules/Admin/User/Models/User.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Modules/Admin/User/Models/User.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Modules/Admin/Menu/Models/Menu.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Modules/Admin/Menu/Models/Menu.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Modules/Admin/User/Controllers/Api/UserController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Modules/Admin/User/Controllers/Api/UserController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Modules/Pub/Auth/Requests/LoginRequest.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Modules/Pub/Auth/Requests/LoginRequest.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/config/modular.php" beforeDir="false" afterPath="$PROJECT_DIR$/config/modular.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/frontend/AppSchNk/src/app/app.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/resources/frontend/AppSchNk/src/app/app.module.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/frontend/AppSchNk/src/app/components/layout/layout/layout.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/resources/frontend/AppSchNk/src/app/components/layout/layout/layout.component.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/frontend/AppSchNk/src/app/components/layout/layout/layout.component.sass" beforeDir="false" afterPath="$PROJECT_DIR$/resources/frontend/AppSchNk/src/app/components/layout/layout/layout.component.sass" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/frontend/AppSchNk/src/app/components/layout/layout/layout.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/resources/frontend/AppSchNk/src/app/components/layout/layout/layout.component.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/frontend/AppSchNk/src/app/components/layout/navigation/navigation.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/resources/frontend/AppSchNk/src/app/components/layout/navigation/navigation.component.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/frontend/AppSchNk/src/app/components/layout/navigation/navigation.component.sass" beforeDir="false" afterPath="$PROJECT_DIR$/resources/frontend/AppSchNk/src/app/components/layout/navigation/navigation.component.sass" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/frontend/AppSchNk/src/app/components/layout/navigation/navigation.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/resources/frontend/AppSchNk/src/app/components/layout/navigation/navigation.component.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/frontend/AppSchNk/src/app/components/layout/sidenav-list/sidenav-list.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/resources/frontend/AppSchNk/src/app/components/layout/sidenav-list/sidenav-list.component.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/frontend/AppSchNk/src/app/components/layout/sidenav-list/sidenav-list.component.sass" beforeDir="false" afterPath="$PROJECT_DIR$/resources/frontend/AppSchNk/src/app/components/layout/sidenav-list/sidenav-list.component.sass" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/frontend/AppSchNk/src/app/components/layout/sidenav-list/sidenav-list.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/resources/frontend/AppSchNk/src/app/components/layout/sidenav-list/sidenav-list.component.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/frontend/AppSchNk/src/environments/environment.ts" beforeDir="false" afterPath="$PROJECT_DIR$/resources/frontend/AppSchNk/src/environments/environment.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/frontend/AppSchNk/tsconfig.json" beforeDir="false" afterPath="$PROJECT_DIR$/resources/frontend/AppSchNk/tsconfig.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/frontend/AppSchNk/src/app/services/navigation.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/resources/frontend/AppSchNk/src/app/services/navigation.service.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -199,7 +190,7 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/resources/frontend/AppSchNk/src/app/Models" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/app/Modules/Pub/Menu" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -213,11 +204,11 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\OpenServer\domains\SchNk\app\Modules\Pub\Menu" />
+      <recent name="C:\OpenServer\domains\SchNk\app\Modules\Admin\User" />
       <recent name="C:\OpenServer\domains\SchNk\resources\frontend\AppSchNk\src\app\Models" />
       <recent name="C:\OpenServer\domains\SchNk\resources\frontend\AppSchNk\src\assets" />
       <recent name="C:\OpenServer\domains\SchNk\resources\views\Admin\Material\edit" />
-      <recent name="C:\OpenServer\domains\SchNk\resources\js\components\Admin" />
-      <recent name="C:\OpenServer\domains\SchNk\resources\views\Admin\Material\create" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\OpenServer\domains\SchNk\resources\views\Admin\Material\edit" />
@@ -288,7 +279,9 @@
       <workItem from="1632502044333" duration="4089000" />
       <workItem from="1632511484656" duration="428000" />
       <workItem from="1632512034180" duration="4433000" />
-      <workItem from="1632576302092" duration="4858000" />
+      <workItem from="1632576302092" duration="5458000" />
+      <workItem from="1632590509026" duration="6718000" />
+      <workItem from="1632667235990" duration="5377000" />
     </task>
     <servers />
   </component>
@@ -332,10 +325,10 @@
       <screen x="0" y="40" width="1536" height="824" />
     </state>
     <state x="450" y="40" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.40.1536.824@0.40.1536.824" timestamp="1631223040278" />
-    <state x="499" y="207" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1631474924869">
+    <state x="499" y="207" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1632593842699">
       <screen x="0" y="40" width="1536" height="824" />
     </state>
-    <state x="499" y="207" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.40.1536.824@0.40.1536.824" timestamp="1631474924869" />
+    <state x="499" y="207" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.40.1536.824@0.40.1536.824" timestamp="1632593842699" />
     <state x="545" y="364" width="445" height="239" key="ComposerInitDialogKey" timestamp="1630529423788">
       <screen x="0" y="40" width="1536" height="824" />
     </state>
