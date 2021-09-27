@@ -1,9 +1,9 @@
 <?php
 
-namespace App\Modules\Admin\Course\Controllers\Api;
+namespace App\Modules\Pub\Course\Controllers\Api;
 
-use App\Modules\Admin\Course\Models\Course;
-use App\Modules\Admin\Course\Services\CourseService;
+use App\Modules\Pub\Course\Services\CourseService;
+use App\Modules\Pub\Course\Models\Course;
 use App\Services\Response\ResponseServise;
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
@@ -25,8 +25,6 @@ class CourseController extends Controller
 
     public function index()
     {
-        $this->authorize('view', new Course());
-
         return ResponseServise::sendJsonResponse(true, 200,[],[
             'items' =>  $this->service->getSources()
         ]);
@@ -56,13 +54,12 @@ class CourseController extends Controller
     /**
      * Display the specified resource.
      *
-     * @param  \App\Modules\Admin\Course\Models\Course  $course
+     * @param  \App\Modules\Pub\Course\Models\Course  $course
      * @return \Illuminate\Http\JsonResponse
      */
     public function show(Course $course)
     {
-        //
-        $this->authorize('view', Course::class);
+
         return ResponseServise::sendJsonResponse(true, 200, [],[
             'item' => $course
         ]);
@@ -71,7 +68,7 @@ class CourseController extends Controller
     /**
      * Display the specified resource.
      *
-     * @param  \App\Modules\Admin\Course\Models\Course  $course
+     * @param  \App\Modules\Pub\Course\Models\Course  $course
      * @return \Illuminate\Http\Response
      */
     public function edit(Course $course)
@@ -83,7 +80,7 @@ class CourseController extends Controller
      * Update the specified resource in storage.
      *
      * @param  \Illuminate\Http\Request  $request
-     * @param  \App\Modules\Admin\Course\Models\Course  $course
+     * @param  \App\Modules\Pub\Course\Models\Course  $course
      * @return \Illuminate\Http\Response
      */
     public function update(Request $request, Course $course)
@@ -94,7 +91,7 @@ class CourseController extends Controller
     /**
      * Remove the specified resource from storage.
      *
-     * @param  \App\Modules\Admin\Course\Models\Course  $course
+     * @param  \App\Modules\Pub\Course\Models\Course  $course
      * @return \Illuminate\Http\Response
      */
     public function destroy(Course $course)
