@@ -26,11 +26,16 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="c34cc5f6-8abd-4384-aaab-abbf1e2906c8" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Modules/Admin/Course/Controllers/Api/CourseController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Modules/Admin/Course/Controllers/Api/CourseController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/modular.php" beforeDir="false" afterPath="$PROJECT_DIR$/config/modular.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/frontend/AppSchNk/angular.json" beforeDir="false" afterPath="$PROJECT_DIR$/resources/frontend/AppSchNk/angular.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/frontend/AppSchNk/src/app/app-routing.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/resources/frontend/AppSchNk/src/app/app-routing.module.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/frontend/AppSchNk/src/app/components/cources/cources.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/resources/frontend/AppSchNk/src/app/components/cources/cources.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/frontend/AppSchNk/src/app/app.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/resources/frontend/AppSchNk/src/app/app.module.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/frontend/AppSchNk/src/app/components/cources/cources.component.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/frontend/AppSchNk/src/app/components/cources/cources.component.sass" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/frontend/AppSchNk/src/app/components/cources/cources.component.spec.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/frontend/AppSchNk/src/app/components/cources/cources.component.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/frontend/AppSchNk/src/app/components/layout/layout/layout.component.sass" beforeDir="false" afterPath="$PROJECT_DIR$/resources/frontend/AppSchNk/src/app/components/layout/layout/layout.component.sass" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -187,7 +192,7 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/app/Modules/Pub/Course" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/resources/frontend/AppSchNk/src/app/Models" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -206,10 +211,10 @@
       <recent name="C:\OpenServer\domains\SchNk\resources\views\Admin\Material\create" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\OpenServer\domains\SchNk\resources\frontend\AppSchNk\src\app\Models" />
       <recent name="C:\OpenServer\domains\SchNk\app\Modules\Pub\Course" />
       <recent name="C:\OpenServer\domains\SchNk\app\Modules\Pub\Menu" />
       <recent name="C:\OpenServer\domains\SchNk\app\Modules\Admin\User" />
-      <recent name="C:\OpenServer\domains\SchNk\resources\frontend\AppSchNk\src\app\Models" />
       <recent name="C:\OpenServer\domains\SchNk\resources\frontend\AppSchNk\src\assets" />
     </key>
   </component>
@@ -281,7 +286,7 @@
       <workItem from="1632590509026" duration="6718000" />
       <workItem from="1632667235990" duration="12257000" />
       <workItem from="1632753168285" duration="64000" />
-      <workItem from="1632753707289" duration="2274000" />
+      <workItem from="1632753707289" duration="10085000" />
     </task>
     <servers />
   </component>

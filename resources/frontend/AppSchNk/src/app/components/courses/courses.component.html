@@ -1,0 +1,16 @@
+<div class="curses-content">
+  <div class="row">
+    <h1 class="center curses-title">Курсы</h1>
+    <div class="col-4" *ngFor="let course of courses">
+
+      <mat-card class="card-curses">
+        <mat-card-content class="white-text">
+          <h2>{{course.title}}</h2>
+          {{course.description}}
+        </mat-card-content>
+
+      </mat-card>
+    </div>
+  </div>
+</div>
+

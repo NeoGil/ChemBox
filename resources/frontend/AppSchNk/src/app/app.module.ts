@@ -13,7 +13,7 @@ import { PreloaderComponent } from './components/layout/preloader/preloader.comp
 import { SidenavListComponent } from './components/layout/sidenav-list/sidenav-list.component';
 import {HTTP_INTERCEPTORS, HttpClientModule} from "@angular/common/http";
 import {PreloaderInterceptor} from "./interceptors/preloader.interceptor";
-import { CourcesComponent } from './components/cources/cources.component';
+import { CoursesComponent } from './components/courses/courses.component';
 
 
 @NgModule({
@@ -23,7 +23,7 @@ import { CourcesComponent } from './components/cources/cources.component';
     NavigationComponent,
     PreloaderComponent,
     SidenavListComponent,
-    CourcesComponent
+    CoursesComponent
   ],
   imports: [
     BrowserModule,
