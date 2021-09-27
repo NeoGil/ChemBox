@@ -25,4 +25,15 @@ export class CoursesService {
       })
     )
   }
+
+  storeLeadComment(courses: Courses): Observable<Courses[]> {
+    return  this.http.post<ResponseHttp>(environment.apiUrl + 'api/pub/courses/', courses).pipe(
+      map((data) => {
+        return data.data.item
+      }),
+      catchError(err => {
+        return throwError(err);
+      })
+    );
+  }
 }

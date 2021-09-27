@@ -26,16 +26,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="c34cc5f6-8abd-4384-aaab-abbf1e2906c8" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/frontend/AppSchNk/angular.json" beforeDir="false" afterPath="$PROJECT_DIR$/resources/frontend/AppSchNk/angular.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/frontend/AppSchNk/src/app/app-routing.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/resources/frontend/AppSchNk/src/app/app-routing.module.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/frontend/AppSchNk/src/app/app.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/resources/frontend/AppSchNk/src/app/app.module.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/frontend/AppSchNk/src/app/components/cources/cources.component.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/frontend/AppSchNk/src/app/components/cources/cources.component.sass" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/frontend/AppSchNk/src/app/components/cources/cources.component.spec.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/frontend/AppSchNk/src/app/components/cources/cources.component.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/frontend/AppSchNk/src/app/components/layout/layout/layout.component.sass" beforeDir="false" afterPath="$PROJECT_DIR$/resources/frontend/AppSchNk/src/app/components/layout/layout/layout.component.sass" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/frontend/AppSchNk/src/app/services/courses.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/resources/frontend/AppSchNk/src/app/services/courses.service.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -206,6 +199,8 @@
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\OpenServer\domains\SchNk\resources\frontend\AppSchNk\src\app\services" />
+      <recent name="C:\OpenServer\domains\SchNk\resources\frontend\AppSchNk\src\app\services\course" />
       <recent name="C:\OpenServer\domains\SchNk\resources\frontend\AppSchNk\src\app\services\preloaders" />
       <recent name="C:\OpenServer\domains\SchNk\resources\views\Admin\Material\edit" />
       <recent name="C:\OpenServer\domains\SchNk\resources\views\Admin\Material\create" />
@@ -286,7 +281,7 @@
       <workItem from="1632590509026" duration="6718000" />
       <workItem from="1632667235990" duration="12257000" />
       <workItem from="1632753168285" duration="64000" />
-      <workItem from="1632753707289" duration="10085000" />
+      <workItem from="1632753707289" duration="12168000" />
     </task>
     <servers />
   </component>

@@ -14,6 +14,7 @@ import { SidenavListComponent } from './components/layout/sidenav-list/sidenav-l
 import {HTTP_INTERCEPTORS, HttpClientModule} from "@angular/common/http";
 import {PreloaderInterceptor} from "./interceptors/preloader.interceptor";
 import { CoursesComponent } from './components/courses/courses.component';
+import { CourseComponent } from './components/course/course.component';
 
 
 @NgModule({
@@ -23,7 +24,8 @@ import { CoursesComponent } from './components/courses/courses.component';
     NavigationComponent,
     PreloaderComponent,
     SidenavListComponent,
-    CoursesComponent
+    CoursesComponent,
+    CourseComponent
   ],
   imports: [
     BrowserModule,
