@@ -25,7 +25,7 @@ import { CourseComponent } from './components/course/course.component';
     PreloaderComponent,
     SidenavListComponent,
     CoursesComponent,
-    CourseComponent
+    CourseComponent,
   ],
   imports: [
     BrowserModule,

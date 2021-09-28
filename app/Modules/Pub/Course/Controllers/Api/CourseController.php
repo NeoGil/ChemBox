@@ -2,11 +2,13 @@
 
 namespace App\Modules\Pub\Course\Controllers\Api;
 
+use App\Modules\Pub\Course\Requests\CourseRequest;
 use App\Modules\Pub\Course\Services\CourseService;
 use App\Modules\Pub\Course\Models\Course;
 use App\Services\Response\ResponseServise;
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
+use Illuminate\Support\Facades\DB;
 
 class CourseController extends Controller
 {
@@ -54,12 +56,13 @@ class CourseController extends Controller
     /**
      * Display the specified resource.
      *
-     * @param  \App\Modules\Pub\Course\Models\Course  $course
+     * @param CourseRequest $request
      * @return \Illuminate\Http\JsonResponse
      */
-    public function show(Course $course)
+    public function show($alias)
     {
-
+        //$course =  DB::table('courses')->where('alias', $alias)->get();
+        $course = Course::where('alias', $alias)->first();
         return ResponseServise::sendJsonResponse(true, 200, [],[
             'item' => $course
         ]);

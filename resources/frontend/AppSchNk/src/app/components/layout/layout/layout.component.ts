@@ -26,7 +26,6 @@ export class LayoutComponent implements OnInit {
     this.navigationService.getNavigation().subscribe(
       (data: Navigation[]) => {
         this.navigation = data;
-        console.log(this.navigation);
       }
     );
   }
