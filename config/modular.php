@@ -24,6 +24,7 @@ return [
         ],
 
         'Pub' => [
+            'Methods',
             'Course',
             'Menu',
             'Auth',

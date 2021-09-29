@@ -1,7 +1,9 @@
 import { Component, OnInit } from '@angular/core';
 import {Courses} from "../../Models/courses";
 import {CoursesService} from "../../services/courses.service";
+import {MethodsService} from "../../services/methods.service";
 import {ActivatedRoute} from "@angular/router";
+import {Methods} from "../../Models/methods";
 
 @Component({
   selector: 'app-course',
@@ -10,12 +12,14 @@ import {ActivatedRoute} from "@angular/router";
 })
 export class CourseComponent implements OnInit {
 
-  public course: Courses;
+  course: Courses;
   alias: string;
+  methods: Methods[];
 
   constructor(
     private route: ActivatedRoute,
-    private coursesService: CoursesService
+    private coursesService: CoursesService,
+    private methodsService: MethodsService
   ) { }
 
   ngOnInit(): void {
@@ -28,6 +32,10 @@ export class CourseComponent implements OnInit {
 
     this.coursesService.storeCourse(this.alias).subscribe((data) => {
       this.course = data;
+    })
+
+    this.methodsService.getMethods().subscribe((data) => {
+      this.methods = data;
     })
   }
 }

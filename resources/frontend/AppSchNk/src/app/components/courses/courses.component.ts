@@ -11,6 +11,7 @@ export class CoursesComponent implements OnInit {
 
   courses: Courses[];
 
+
   constructor(
     private coursesService: CoursesService
   ) { }
@@ -18,7 +19,6 @@ export class CoursesComponent implements OnInit {
   ngOnInit(): void {
     this.coursesService.getCourses().subscribe((data) => {
       this.courses = data;
-      console.log(this.courses)
     })
   }
 
