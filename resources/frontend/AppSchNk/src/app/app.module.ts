@@ -15,6 +15,7 @@ import {HTTP_INTERCEPTORS, HttpClientModule} from "@angular/common/http";
 import {PreloaderInterceptor} from "./interceptors/preloader.interceptor";
 import { CoursesComponent } from './components/courses/courses.component';
 import { CourseComponent } from './components/course/course.component';
+import { MaterialsComponent } from './components/materials/materials.component';
 
 
 @NgModule({
@@ -26,6 +27,7 @@ import { CourseComponent } from './components/course/course.component';
     SidenavListComponent,
     CoursesComponent,
     CourseComponent,
+    MaterialsComponent,
   ],
   imports: [
     BrowserModule,

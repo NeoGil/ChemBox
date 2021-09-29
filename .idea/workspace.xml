@@ -25,13 +25,7 @@
     </select>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c34cc5f6-8abd-4384-aaab-abbf1e2906c8" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/modular.php" beforeDir="false" afterPath="$PROJECT_DIR$/config/modular.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/frontend/AppSchNk/src/app/components/course/course.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/resources/frontend/AppSchNk/src/app/components/course/course.component.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/frontend/AppSchNk/src/app/components/course/course.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/resources/frontend/AppSchNk/src/app/components/course/course.component.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/frontend/AppSchNk/src/app/components/courses/courses.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/resources/frontend/AppSchNk/src/app/components/courses/courses.component.ts" afterDir="false" />
-    </list>
+    <list default="true" id="c34cc5f6-8abd-4384-aaab-abbf1e2906c8" name="Default Changelist" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -284,7 +278,7 @@
       <workItem from="1632667235990" duration="12257000" />
       <workItem from="1632753168285" duration="64000" />
       <workItem from="1632753707289" duration="26739000" />
-      <workItem from="1632934345381" duration="4683000" />
+      <workItem from="1632934345381" duration="4991000" />
     </task>
     <servers />
   </component>
