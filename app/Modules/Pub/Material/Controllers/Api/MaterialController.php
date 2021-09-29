@@ -1,32 +1,35 @@
 <?php
 
-namespace App\Modules\Pub\Course\Controllers\Api;
+namespace App\Modules\Pub\Material\Controllers\Api;
 
-use App\Modules\Pub\Course\Services\CourseService;
 use App\Modules\Pub\Course\Models\Course;
+use App\Modules\Pub\Material\Models\Material;
+use App\Modules\Pub\Material\Services\MaterialService;
+use App\Modules\Pub\Methods\Models\Method;
 use App\Services\Response\ResponseServise;
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
 
-class CourseController extends Controller
+class MaterialController extends Controller
 {
     private $service;
 
     /**
      * Display a listing of the resource.
      *
-     * @param CourseService $courseService
+     * @param MaterialService $materialService
      */
-
-    public function __construct(CourseService $courseService)
+    public function __construct(MaterialService $materialService)
     {
-        $this->service = $courseService;
+        $this->service = $materialService;
     }
 
-    public function index()
+    public function index($curse, $method)
     {
+        $curse = Course::where('alias', $curse)->select('id')->first();
+        $method = Method::where('alias', $method)->select('id')->first();
         return ResponseServise::sendJsonResponse(true, 200,[],[
-            'items' =>  $this->service->getSources()
+            'items' => $this->service->getSources($curse->id, $method->id)
         ]);
     }
 
@@ -54,24 +57,21 @@ class CourseController extends Controller
     /**
      * Display the specified resource.
      *
-     * @param CourseRequest $request
-     * @return \Illuminate\Http\JsonResponse
+     * @param  \App\Modules\Pub\Material\Models\Material  $material
+     * @return \Illuminate\Http\Response
      */
-    public function show($alias)
+    public function show(Material $material)
     {
-        $course = Course::where('alias', $alias)->select()->first();
-        return ResponseServise::sendJsonResponse(true, 200, [],[
-            'item' => $course
-        ]);
+        //
     }
 
     /**
      * Display the specified resource.
      *
-     * @param  \App\Modules\Pub\Course\Models\Course  $course
+     * @param  \App\Modules\Pub\Material\Models\Material  $material
      * @return \Illuminate\Http\Response
      */
-    public function edit(Course $course)
+    public function edit(Material $material)
     {
         //
     }
@@ -80,10 +80,10 @@ class CourseController extends Controller
      * Update the specified resource in storage.
      *
      * @param  \Illuminate\Http\Request  $request
-     * @param  \App\Modules\Pub\Course\Models\Course  $course
+     * @param  \App\Modules\Pub\Material\Models\Material  $material
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, Course $course)
+    public function update(Request $request, Material $material)
     {
         //
     }
@@ -91,10 +91,10 @@ class CourseController extends Controller
     /**
      * Remove the specified resource from storage.
      *
-     * @param  \App\Modules\Pub\Course\Models\Course  $course
+     * @param  \App\Modules\Pub\Material\Models\Material  $material
      * @return \Illuminate\Http\Response
      */
-    public function destroy(Course $course)
+    public function destroy(Material $material)
     {
         //
     }

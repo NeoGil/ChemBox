@@ -24,6 +24,8 @@ return [
         ],
 
         'Pub' => [
+            'Material',
+            'Pub',
             'Methods',
             'Course',
             'Menu',
