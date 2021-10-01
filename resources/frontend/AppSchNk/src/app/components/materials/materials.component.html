@@ -1,15 +1,13 @@
 <div class="curse-content">
   <div class="row">
     <h1></h1>
-    <div class="col-4"  *ngFor=" let material of materials">
-      <a [routerLink]='material.alias'>
-        <mat-card class="card-curses">
-          <mat-card-content class="white-text">
-            <h2>{{material.title}}</h2>
-            {{material.description}}
-          </mat-card-content>
-        </mat-card>
-      </a>
+    <div class="col-10">
+      <mat-nav-list>
+        <mat-list-item *ngFor="let material of materials; let i = index">
+          <a matLine [routerLink]='material.alias' ><b>{{i+1}}.</b> {{ material.title }}. <br>Описание:<br/> {{material.description}}</a>
+        </mat-list-item>
+      </mat-nav-list>
     </div>
+
   </div>
 </div>

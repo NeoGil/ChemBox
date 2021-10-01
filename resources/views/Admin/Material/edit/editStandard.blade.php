@@ -91,9 +91,9 @@
                         <label class="col-form-label col-lg-2">{{__('Content')}}<span
                                 class="text-danger">*</span></label>
                         <div class="col-lg-10">
-                            <textarea id="content" type="text" name="content" class="form-control"
+                            <textarea id="contents" type="text" name="contents" class="form-control"
                                    placeholder="{{__('Content')}}">
-                                {{ $item->content ?? "" }}</textarea>
+                                {{ $item->contents ?? "" }}</textarea>
                         </div>
                     </div>
 
@@ -108,7 +108,7 @@
     <!-- /input group addons -->
     <script>
         ClassicEditor
-            .create( document.querySelector( '#content' ) )
+            .create( document.querySelector( '#contents' ) )
             .catch( error => {
                 console.error( error );
             } );
