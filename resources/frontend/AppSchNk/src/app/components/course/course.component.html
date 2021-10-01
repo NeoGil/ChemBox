@@ -1,6 +1,6 @@
 <div class="curse-content">
   <div class="row">
-    <h1 *ngIf="course" class="center curses-title">{{course.alias}}</h1>
+    <h1  class="center curses-title">{{course.alias}}</h1>
     <div class="col-4"  *ngFor="let method of methods">
       <a [routerLink]='method.alias'>
         <mat-card class="card-curses">

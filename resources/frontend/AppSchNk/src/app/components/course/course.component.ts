@@ -4,6 +4,7 @@ import {CoursesService} from "../../services/courses.service";
 import {MethodsService} from "../../services/methods.service";
 import {ActivatedRoute} from "@angular/router";
 import {Methods} from "../../Models/methods";
+import {errorObject} from "rxjs/internal-compatibility";
 
 @Component({
   selector: 'app-course',
@@ -20,7 +21,10 @@ export class CourseComponent implements OnInit {
     private route: ActivatedRoute,
     private coursesService: CoursesService,
     private methodsService: MethodsService
-  ) { }
+  ) {
+    this.methods = [];
+    this.course = errorObject;
+  }
 
   ngOnInit(): void {
 
