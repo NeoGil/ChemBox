@@ -58,11 +58,18 @@ class MaterialController extends Controller
      * Display the specified resource.
      *
      * @param  \App\Modules\Pub\Material\Models\Material  $material
-     * @return \Illuminate\Http\Response
+     * @return \Illuminate\Http\JsonResponse
      */
-    public function show(Material $material)
+    public function show($curse, $method, $alias)
     {
         //
+        $curse = Course::where('alias', $curse)->select('id')->first()->id;
+        $method = Method::where('alias', $method)->select('id')->first()->id;
+        $material = Material::where('alias', $alias)->where('courses_id', $curse)->where('methods_id', $method)->first();
+        return ResponseServise::sendJsonResponse(true, 200, [],[
+            'item' => $material
+        ]);
+
     }
 
     /**
