@@ -9,11 +9,12 @@ class MaterialService
 
     public function getSources($curse, $method)
     {
-        $material = Material::all()->where('courses_id', $curse)->where('methods_id', $method);
-        foreach ($material as $item) {
-            $new_material[] = $item;
-        }
-        return $new_material;
+        $material = DB::table('materials')->
+        select('id', 'alias', 'title', 'courses_id', 'methods_id', 'description')->
+        where('courses_id', $curse)->
+        where('methods_id', $method)->
+        get();
 
+        return $material;
     }
 }

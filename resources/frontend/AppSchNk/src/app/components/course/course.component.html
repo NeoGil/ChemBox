@@ -2,14 +2,20 @@
   <div class="row">
     <h1  class="center curses-title">{{course.alias}}</h1>
     <div class="col-4"  *ngFor="let method of methods">
-      <a [routerLink]='method.alias'>
+
         <mat-card class="card-curses">
           <mat-card-content class="white-text">
             <h2>{{method.title}}</h2>
             {{method.description}}
+            <a [routerLink]='method.alias'>
+              <button mat-icon-button>
+                <mat-icon>launch</mat-icon>
+              </button>
+            </a>
           </mat-card-content>
+
         </mat-card>
-      </a>
+
     </div>
   </div>
 </div>

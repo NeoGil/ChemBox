@@ -1,8 +1,8 @@
 import { Component, OnInit } from '@angular/core';
-import {ActivatedRoute, NavigationEnd, Router} from "@angular/router";
-import {NavigationService} from "../../services/navigation.service";
+import {ActivatedRoute} from "@angular/router";
 import {Material} from "../../Models/material";
 import {MaterialsService} from "../../services/materials.service";
+import {Materials} from "../../Models/materials";
 
 @Component({
   selector: 'app-materials',
@@ -11,7 +11,7 @@ import {MaterialsService} from "../../services/materials.service";
 })
 export class MaterialsComponent implements OnInit {
 
-  materials: Material[]
+  materials: Materials[]
   private course: string;
   private method: string;
 
@@ -34,20 +34,9 @@ export class MaterialsComponent implements OnInit {
   }
 
   getMenu(): void {
-    this.materialsService.getMaterials(this.course, this.method).subscribe((data: Material[]) => {
+    this.materialsService.getMaterials(this.course, this.method).subscribe((data: Materials[]) => {
         this.materials = data;
         console.log(this.materials)
-        // let tmpLeads : Material[] = this.materials;
-        // // data[1].forEach(function (item) {
-        // //     console.log(item)
-        // //   })
-        // for (let item of data as Material[]) {
-        //   tmpLeads.push(item as Material)
-        // }
-        //console.log(tmpLeads)
-
-
-        // this.materials = tmpLeads;
       }
     );
   }
