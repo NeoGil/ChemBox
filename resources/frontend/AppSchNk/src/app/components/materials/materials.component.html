@@ -1,7 +1,7 @@
 <div class="materials-content">
   <div class="row">
     <h1></h1>
-    <div class="col-10">
+    <div class="col-12">
       <mat-nav-list>
         <mat-list-item *ngFor="let material of materials; let i = index">
           <a matLine [routerLink]='material.alias' ><b>{{i+1}}.</b> {{ material.title }}. <br>Описание:<br/> {{material.description}}</a>

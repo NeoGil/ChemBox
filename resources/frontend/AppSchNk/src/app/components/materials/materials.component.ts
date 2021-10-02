@@ -29,11 +29,10 @@ export class MaterialsComponent implements OnInit {
         this.method = params['method'];
       }
     );
-    this.getMenu();
-    //console.log(this.materials)
+    this.getMaterials();
   }
 
-  getMenu(): void {
+  getMaterials(): void {
     this.materialsService.getMaterials(this.course, this.method).subscribe((data: Materials[]) => {
         this.materials = data;
         console.log(this.materials)

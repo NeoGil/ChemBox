@@ -16,6 +16,7 @@ import {PreloaderInterceptor} from "./interceptors/preloader.interceptor";
 import { CoursesComponent } from './components/courses/courses.component';
 import { CourseComponent } from './components/course/course.component';
 import { MaterialsComponent } from './components/materials/materials.component';
+import { MaterialComponent } from './components/material/material.component';
 
 
 @NgModule({
@@ -28,6 +29,7 @@ import { MaterialsComponent } from './components/materials/materials.component';
     CoursesComponent,
     CourseComponent,
     MaterialsComponent,
+    MaterialComponent,
   ],
   imports: [
     BrowserModule,
