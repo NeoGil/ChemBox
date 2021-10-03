@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import {Component, NgModule, OnInit, ViewChild} from '@angular/core';
 import {MaterialsService} from "../../services/materials.service";
 import {ActivatedRoute} from "@angular/router";
 import {errorObject} from "rxjs/internal-compatibility";
@@ -15,6 +15,10 @@ export class MaterialComponent implements OnInit {
   private course: string;
   private method: string;
   private alias: string;
+
+  isQuestionCardShow = false;
+
+  @ViewChild('questionTest') questionTest: any;
 
   constructor(
     private materialsService: MaterialsService,
@@ -36,10 +40,15 @@ export class MaterialComponent implements OnInit {
 
   storeMaterials(): void {
     this.materialsService.storeMaterials(this.course, this.method, this.alias).subscribe((data: Material) => {
+
         this.material = data;
+
         console.log(this.material)
       }
     );
   }
 
+  startQuiz() {
+    this.isQuestionCardShow = true;
+  }
 }

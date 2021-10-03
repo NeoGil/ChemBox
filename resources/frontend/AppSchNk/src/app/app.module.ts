@@ -17,6 +17,8 @@ import { CoursesComponent } from './components/courses/courses.component';
 import { CourseComponent } from './components/course/course.component';
 import { MaterialsComponent } from './components/materials/materials.component';
 import { MaterialComponent } from './components/material/material.component';
+import {CommonModule} from "@angular/common";
+import {FormsModule} from "@angular/forms";
 
 
 @NgModule({
@@ -33,11 +35,13 @@ import { MaterialComponent } from './components/material/material.component';
   ],
   imports: [
     BrowserModule,
+    CommonModule,
     AppRoutingModule,
     NgbModule,
     BrowserAnimationsModule,
     MaterialModule,
     HttpClientModule,
+    FormsModule,
   ],
   providers: [
     {

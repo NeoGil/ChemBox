@@ -1,4 +1,4 @@
-export interface Material {
+export interface Material_test {
     id: number,
     alias: string,
     title: string,
