@@ -7,41 +7,15 @@
         <h2 style="text-align:center">
           {{material.title}}
         </h2>
-        <div class="card" [hidden]="isQuestionCardShow">
+        <div class="card" >
           <div class="card-body">
-            <!-- <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p> -->
-            <div class="row center">
-              <button class="btn btn-block btn-outline-primary cursor-restriction" style="margin-top: 24px;" (click)="startQuiz()">
-                Start Quiz </button>
+            <div class="center">
+              <div id="quiz" *ngIf="content" [innerHTML]="content | sanitizeHtml"></div>
+              <button id="submit" (click)="startQuiz()">{{isQuestionCardShow}}</button>
             </div>
           </div>
         </div>
 
-        <div class="card" [hidden]="!isQuestionCardShow">
-          <div class="card-body">
-            <form novalidate>
-              <div *ngFor="let ques of material.contents">
-                <div>{{ques.question}}</div>
-                <div class="form-group row">
-                  <label class="col-md-3 col-form-label">Choose Correct Option</label>
-                  <div class="col-md-9 col-form-label" >
-                    <div class="form-check form-check-inline mr-1" *ngFor="let answer of ques.answer">
-                      <input class="form-check-input" type="checkbox" name="{{answer}}" value="a">
-                      <label class="form-check-label">a) {{answer}} </label>
-                    </div>
-                  </div>
-                </div>
-                <hr>
-              </div>
-            </form>
-            <div class="row">
-              <div class="col-12" style="justify-content: center;display: flex;">
-                <button type="button" class="btn btn-default" style="margin-right: 30px;">Cancel</button>
-                <button type="button" class="btn btn-primary">Submit</button>
-              </div>
-            </div>
-          </div>
-        </div>
       </div>
     </div>
   </div>
