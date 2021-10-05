@@ -13,7 +13,7 @@ use Illuminate\Support\Facades\DB;
 class MaterialController extends Base
 {
 
-    const TEST_METHOD = 'TEST';
+    const TEST_METHOD = 'test';
     const TYPE_METHOD = 'specific';
 
     private $create_name =  'createSt';
@@ -53,6 +53,7 @@ class MaterialController extends Base
     /**
      * Create of the resource.
      *
+     * @param Method $method
      * @return \Illuminate\Contracts\Foundation\Application|\Illuminate\Contracts\View\Factory|\Illuminate\Contracts\View\View|\Illuminate\Http\RedirectResponse|\Illuminate\Http\Response
      * @throws \Illuminate\Auth\Access\AuthorizationException
      */
@@ -140,7 +141,7 @@ class MaterialController extends Base
 
         $course_old = DB::table('courses')->where('id', $material->courses_id)->first();
         $method = DB::table('methods')->where('id', $material->methods_id)->first();
-        if($method->alias == 'TEST') {
+        if($method->alias == self::TEST_METHOD) {
             $material->contents = unserialize($material->contents);
             $edit_name = 'editTest';
         }

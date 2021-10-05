@@ -4,6 +4,7 @@ import {ActivatedRoute} from "@angular/router";
 import {errorObject} from "rxjs/internal-compatibility";
 import {Material} from "../../Models/material";
 import {Quest} from "../../Models/quest";
+import {Material_test} from "../../Models/material_test";
 
 @Component({
   selector: 'app-material',
@@ -57,19 +58,20 @@ export class MaterialComponent implements OnInit {
   startQuiz() {
     if(this.isQuestionCardShow == "Проверить") {
       this.showResults()
-    } else {
+    }
+    else if(this.isQuestionCardShow == "Начать тест" || this.isQuestionCardShow == "Заново") {
       this.isQuestionCardShow = "Проверить";
       this.buildQuiz();
     }
 
   }
 
-  private myqvest: any;
+  private myqvest: Quest[];
 
   buildQuiz(){
     // variable to store the HTML output
     const output = [];
-
+    console.log(this.material.contents);
     // for each question...
     this.myqvest =this.Recycling(this.material.contents);
     this.myqvest.forEach(
@@ -105,46 +107,34 @@ export class MaterialComponent implements OnInit {
   }
 
   showResults(){
-    const answerContainers = []
-    // gather answer containers from our quiz correctAnswer
-    if(!(this.quizContainer.querySelectorAll('.answers') === null)) {
-      const answerContainers = this.quizContainer.querySelectorAll('.answers');
-    }
 
-
-
-    // keep track of user's answers
+    this.isQuestionCardShow = "Заново"
     let numCorrect = 0;
+
     // for each question...
     this.myqvest.forEach( (currentQuestion, questionNumber) => {
+      let id = 0;
+      let checkbox_check: any = []
+      let checkbox_current: any = []
+      for (let i = 0; i < currentQuestion.answer.length; i++) {
+        let checkbox = document.getElementsByName(`question${i}`)[questionNumber] as any;
 
-      // find selected answer
-      const answerContainer = answerContainers[questionNumber];
-      const selector = `input[name=question${questionNumber}]:checked`;
-      //const userAnswer = (answerContainer.querySelector(selector) || {}).value;
-      //console.log(answerContainer);
-      var checkbox = document.getElementsByName(`question${questionNumber}`) as any;
-
-      var userAnswer = "";
-
-      for(var i=0; i<checkbox.length; i++){
-        if(checkbox[i].checked) {
-          userAnswer+=checkbox[i].value+" ";
-          userAnswer = userAnswer.replace(/\s+/g, '');
+        if(checkbox.checked) {
+          checkbox_check[checkbox_check.length] = checkbox.value
         }
+
+        if(currentQuestion.choice[checkbox.value]) {
+          checkbox_current[checkbox_current.length] = checkbox.value
+        }
+
       }
-
-
-      // if answer is correct
-      if(userAnswer === currentQuestion.correctAnswer){
-        // add to the number of correct answers
-        numCorrect++;
+      if(checkbox_current.join('') == checkbox_check.join('')) {
+        console.log('a')
+        numCorrect++
       }
     });
     let persent = numCorrect/this.myqvest.length*100;
-    // show number of correct answers out of total
-    //console.log(persent.toFixed());
-    this.resultsContainer.innerHTML = `${persent.toFixed()}%`;
+    this.content = `${persent.toFixed()}%`;
   }
 
   Recycling(material){
