@@ -4,7 +4,7 @@
 </section>
 
 <!-- /page header -->
-<script src="https://cdn.ckeditor.com/ckeditor5/29.2.0/classic/ckeditor.js"></script>
+<script src="http://schnk/ckeditor4-major/ckeditor.js"></script>
 
 <!-- Content area -->
 <div class="content">
@@ -110,11 +110,7 @@
     <!-- /input group addons -->
 
     <script>
-        ClassicEditor
-            .create( document.querySelector( '#content' ) )
-            .catch( error => {
-                console.error( error );
-            } );
+        CKEDITOR.replace( 'content' );
     </script>
 </div>
 

@@ -49,8 +49,6 @@ export class MaterialComponent implements OnInit {
     this.materialsService.storeMaterials(this.course, this.method, this.alias).subscribe((data: Material) => {
 
         this.material = data;
-
-        console.log(this.material)
       }
     );
   }
@@ -71,7 +69,6 @@ export class MaterialComponent implements OnInit {
   buildQuiz(){
     // variable to store the HTML output
     const output = [];
-    console.log(this.material.contents);
     // for each question...
     this.myqvest =this.Recycling(this.material.contents);
     this.myqvest.forEach(
@@ -129,7 +126,6 @@ export class MaterialComponent implements OnInit {
 
       }
       if(checkbox_current.join('') == checkbox_check.join('')) {
-        console.log('a')
         numCorrect++
       }
     });

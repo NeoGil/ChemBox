@@ -3,7 +3,7 @@
     <h1>{{$title}}</h1>
 </section>
 <!-- /page header -->
-<script src="https://cdn.ckeditor.com/ckeditor5/29.2.0/classic/ckeditor.js"></script>
+<script src="http://schnk/ckeditor4-major/ckeditor.js"></script>
 <!-- Content area -->
 <div class="content">
 
@@ -107,11 +107,7 @@
     </div>
     <!-- /input group addons -->
     <script>
-        ClassicEditor
-            .create( document.querySelector( '#contents' ) )
-            .catch( error => {
-                console.error( error );
-            } );
+        CKEDITOR.replace( 'contents' );
     </script>
 
 </div>

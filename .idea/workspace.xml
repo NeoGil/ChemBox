@@ -27,8 +27,10 @@
   <component name="ChangeListManager">
     <list default="true" id="c34cc5f6-8abd-4384-aaab-abbf1e2906c8" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Modules/Admin/Material/Controllers/MaterialController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Modules/Admin/Material/Controllers/MaterialController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/frontend/AppSchNk/src/app/components/material/material.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/resources/frontend/AppSchNk/src/app/components/material/material.component.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/frontend/AppSchNk/src/app/components/material/material.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/resources/frontend/AppSchNk/src/app/components/material/material.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/Admin/Material/create/createSt.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/Admin/Material/create/createSt.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/Admin/Material/edit/editStandard.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/Admin/Material/edit/editStandard.blade.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -221,7 +223,13 @@
       <recent name="C:\OpenServer\domains\SchNk\resources\views\Admin\Material\create" />
     </key>
   </component>
-  <component name="RunManager" selected="PHPUnit.phpunit.xml">
+  <component name="RunManager" selected="JavaScript Debug.index.html (1)">
+    <configuration name="index.html (1)" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/SchNk/public/ckeditor4-major/samples/index.html" useBuiltInWebServerPort="true">
+      <method v="2" />
+    </configuration>
+    <configuration name="index.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/SchNk/public/ckeditor/samples/index.html" useBuiltInWebServerPort="true">
+      <method v="2" />
+    </configuration>
     <configuration name="phpunit.xml" type="PHPUnitRunConfigurationType" factoryName="PHPUnit">
       <TestRunner scope="XML" />
       <method v="2" />
@@ -248,6 +256,8 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JavaScript Debug.index.html (1)" />
+        <item itemvalue="JavaScript Debug.index.html" />
         <item itemvalue="npm.development" />
         <item itemvalue="npm.dev" />
       </list>
@@ -297,7 +307,7 @@
       <workItem from="1633188416103" duration="9323000" />
       <workItem from="1633279265438" duration="7827000" />
       <workItem from="1633364079616" duration="13630000" />
-      <workItem from="1633453035108" duration="12872000" />
+      <workItem from="1633453035108" duration="18259000" />
     </task>
     <servers />
   </component>
