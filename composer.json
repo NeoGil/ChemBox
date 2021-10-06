@@ -14,7 +14,8 @@
         "laravel/tinker": "^2.5",
         "laravel/ui": "^3.3",
         "lavary/laravel-menu": "^1.8",
-        "ext-json": "*"
+        "ext-json": "*",
+        "ckfinder/ckfinder-laravel-package": "^3.4.4.1"
     },
     "require-dev": {
         "facade/ignition": "^2.5",
