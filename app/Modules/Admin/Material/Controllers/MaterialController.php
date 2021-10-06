@@ -99,9 +99,10 @@ class MaterialController extends Base
      */
     public function store(MaterialRequest $request)
     {
-        $test = serialize($request['contents']);
-        $request['contents'] = $test;
-        //dd($request);
+        if($request['methods_id'] == 2) {
+            $test = serialize($request['contents']);
+            $request['contents'] = $test;
+        }
         $this->service->save($request, new Material());
 
         return  \Redirect::route('materials.index')->with([
@@ -170,8 +171,10 @@ class MaterialController extends Base
 
     public function update(MaterialRequest $request, Material $material)
     {
-        $test = serialize($request['contents']);
-        $request['contents'] = $test;
+        if($request['methods_id'] == 2) {
+            $test = serialize($request['contents']);
+            $request['contents'] = $test;
+        }
 
         $this->service->save($request, $material);
         return  \Redirect::route('materials.index')->with([
