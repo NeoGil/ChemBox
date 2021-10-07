@@ -98,7 +98,7 @@
                                 {{ $item->contents ?? "" }}</textarea>
                         </div>
                     </div>
-                    
+
                 </fieldset>
                 <button type="submit" class="btn btn-success">{{__('Submit')}}</button>
             </div>
