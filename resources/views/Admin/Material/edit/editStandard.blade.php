@@ -4,6 +4,8 @@
 </section>
 <!-- /page header -->
 <script src="http://schnk/ckeditor4-major/ckeditor.js"></script>
+<script type="text/javascript" src="http://schnk/js/ckfinder/ckfinder.js"></script>
+@include('ckfinder::setup')
 <!-- Content area -->
 <div class="content">
 
@@ -107,8 +109,14 @@
     </div>
     <!-- /input group addons -->
     <script>
-        CKEDITOR.replace( 'contents' );
+        document.addEventListener("DOMContentLoaded", function (event) {
+            var editor = CKEDITOR.replace('contents');
+            CKFinder.setupCKEditor(editor);
+        });
     </script>
+
+    <script>CKFinder.config( { connectorPath: '/ckfinder/connector' } );</script>
+
 
 </div>
 
