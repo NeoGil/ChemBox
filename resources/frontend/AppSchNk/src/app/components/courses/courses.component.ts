@@ -7,6 +7,7 @@ import {Courses} from "../../Models/courses";
   templateUrl: './courses.component.html',
   styleUrls: ['./courses.component.sass']
 })
+
 export class CoursesComponent implements OnInit {
 
   courses: Courses[];

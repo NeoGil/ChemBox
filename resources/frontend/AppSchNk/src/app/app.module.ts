@@ -20,6 +20,7 @@ import { MaterialComponent } from './components/material/material.component';
 import {CommonModule} from "@angular/common";
 import {FormsModule} from "@angular/forms";
 import {SanitizeHtmlPipe} from "./components/materials/sanitizeHtml.component";
+import { SidenavComponent } from './components/sidenav/sidenav.component';
 
 
 @NgModule({
@@ -34,6 +35,7 @@ import {SanitizeHtmlPipe} from "./components/materials/sanitizeHtml.component";
     MaterialsComponent,
     MaterialComponent,
     SanitizeHtmlPipe,
+    SidenavComponent,
   ],
   imports: [
     BrowserModule,

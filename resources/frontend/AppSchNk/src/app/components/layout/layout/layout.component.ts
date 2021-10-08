@@ -10,6 +10,7 @@ import {NavigationEnd, Router} from "@angular/router";
 })
 export class LayoutComponent implements OnInit {
 
+  showFiller = false;
   navigation: Navigation[]
   navMenu: boolean = true;
 
