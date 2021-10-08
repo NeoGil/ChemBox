@@ -1,13 +1,9 @@
-<mat-toolbar class="navigation-toolbar" color="primary">
-  <div>
-    <button mat-icon-button (click)="onToggleSidenav()">
-      <mat-icon>menu</mat-icon>
-    </button>
+<nav>
+  <div class="nav-wrapper">
+    <a (click)="onToggleSidenav()" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+    <a [routerLink]="'/'" class="brand-logo">SchNk</a>
+    <ul class="right hide-on-med-and-down">
+      <li *ngFor="let item of navigation"><a [routerLink]="item.path">{{item.title}}</a></li>
+    </ul>
   </div>
-
-  <a [routerLink]="'/'"><span>SchNk</span></a>
-
-  <div class="navigation-desctop">
-    <a mat-button color="accent" *ngFor="let item of navigation" [routerLink]="item.path">{{item.title}}</a>
-  </div>
-</mat-toolbar>
+</nav>
