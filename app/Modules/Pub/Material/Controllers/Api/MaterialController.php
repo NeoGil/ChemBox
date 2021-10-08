@@ -26,10 +26,10 @@ class MaterialController extends Controller
 
     public function index($curse, $method)
     {
-        $curse = Course::where('alias', $curse)->select('id')->first();
-        $method = Method::where('alias', $method)->select('id')->first();
+        $course = Course::where('alias', $curse)->select('id', 'title')->first();
+        $method = Method::where('alias', $method)->select('id', 'title')->first();
         return ResponseServise::sendJsonResponse(true, 200,[],[
-            'items' => $this->service->getSources($curse->id, $method->id)
+            'item' => [ 'materials' => $this->service->getSources($course->id, $method->id), 'course' => $course->title, 'method' => $method->title]
         ]);
     }
 

@@ -4,9 +4,7 @@
     <h1></h1>
     <div class="col-12" >
 
-      <div class="content" *ngIf="material.methods_id == 4">
-        <p class="e2e-inner-html-bound" *ngIf="material.contents" [innerHTML]="material.contents | sanitizeHtml"></p>
-      </div>
+
       <div *ngIf="material.methods_id == 2">
         <h2 style="text-align:center">
           {{material.title}}
@@ -20,6 +18,9 @@
             </div>
           </div>
         </div>
+      </div>
+      <div class="content content_st" *ngIf="material.contents">
+        <p class="e2e-inner-html-bound" *ngIf="material.contents" [innerHTML]="material.contents | sanitizeHtml"></p>
       </div>
     </div>
   </div>

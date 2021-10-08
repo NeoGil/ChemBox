@@ -1,6 +1,7 @@
+import {Materials_c} from "./materials_c";
+
 export interface Materials {
-    id: number,
-    alias: string,
-    title: string,
-    description: string
+  materials: Materials_c[],
+  course: string,
+  method: string
 }

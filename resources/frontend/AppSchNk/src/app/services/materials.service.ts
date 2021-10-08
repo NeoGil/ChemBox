@@ -14,11 +14,11 @@ export class MaterialsService {
 
   constructor(private http: HttpClient) { }
 
-  getMaterials(course: string, method: string): Observable<Materials[]> {
+  getMaterials(course: string, method: string): Observable<Materials> {
 
     return this.http.get<ResponseHttp>( environment.apiUrl + 'api/pub/materials/'+ course + '/' + method).pipe(
       map((data) =>{
-          return data.data.items
+          return data.data.item
       }),
       catchError((error) => {
         console.log("Error - ", error);

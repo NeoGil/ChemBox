@@ -3,6 +3,7 @@ import {ActivatedRoute} from "@angular/router";
 import {Material} from "../../Models/material";
 import {MaterialsService} from "../../services/materials.service";
 import {Materials} from "../../Models/materials";
+import {errorObject} from "rxjs/internal-compatibility";
 
 @Component({
   selector: 'app-materials',
@@ -11,7 +12,7 @@ import {Materials} from "../../Models/materials";
 })
 export class MaterialsComponent implements OnInit {
 
-  materials: Materials[]
+  materials: Materials
   private course: string;
   private method: string;
 
@@ -19,7 +20,7 @@ export class MaterialsComponent implements OnInit {
     private materialsService: MaterialsService,
     private route: ActivatedRoute,
   ) {
-    this.materials = []
+    this.materials = errorObject
   }
 
   ngOnInit(): void {
@@ -33,9 +34,8 @@ export class MaterialsComponent implements OnInit {
   }
 
   getMaterials(): void {
-    this.materialsService.getMaterials(this.course, this.method).subscribe((data: Materials[]) => {
+    this.materialsService.getMaterials(this.course, this.method).subscribe((data: Materials) => {
         this.materials = data;
-        console.log(this.materials)
       }
     );
   }

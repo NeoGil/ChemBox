@@ -27,12 +27,14 @@
   <component name="ChangeListManager">
     <list default="true" id="c34cc5f6-8abd-4384-aaab-abbf1e2906c8" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/frontend/AppSchNk/src/app/components/course/course.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/resources/frontend/AppSchNk/src/app/components/course/course.component.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/frontend/AppSchNk/src/app/components/course/course.component.sass" beforeDir="false" afterPath="$PROJECT_DIR$/resources/frontend/AppSchNk/src/app/components/course/course.component.sass" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/frontend/AppSchNk/src/app/components/courses/courses.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/resources/frontend/AppSchNk/src/app/components/courses/courses.component.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/frontend/AppSchNk/src/app/components/courses/courses.component.sass" beforeDir="false" afterPath="$PROJECT_DIR$/resources/frontend/AppSchNk/src/app/components/courses/courses.component.sass" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Modules/Pub/Material/Controllers/Api/MaterialController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Modules/Pub/Material/Controllers/Api/MaterialController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/frontend/AppSchNk/src/app/Models/materials.ts" beforeDir="false" afterPath="$PROJECT_DIR$/resources/frontend/AppSchNk/src/app/Models/materials.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/frontend/AppSchNk/src/app/components/material/material.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/resources/frontend/AppSchNk/src/app/components/material/material.component.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/frontend/AppSchNk/src/app/components/materials/materials.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/resources/frontend/AppSchNk/src/app/components/materials/materials.component.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/frontend/AppSchNk/src/app/components/materials/materials.component.sass" beforeDir="false" afterPath="$PROJECT_DIR$/resources/frontend/AppSchNk/src/app/components/materials/materials.component.sass" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/frontend/AppSchNk/src/app/components/materials/materials.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/resources/frontend/AppSchNk/src/app/components/materials/materials.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/frontend/AppSchNk/src/app/services/materials.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/resources/frontend/AppSchNk/src/app/services/materials.service.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/frontend/AppSchNk/src/styles.sass" beforeDir="false" afterPath="$PROJECT_DIR$/resources/frontend/AppSchNk/src/styles.sass" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -209,7 +211,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="jsx.switch.disabled" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/public/ckeditor4-major/plugins" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/resources/frontend/AppSchNk/src/app/Models" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -222,19 +224,19 @@
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\OpenServer\domains\SchNk\resources\frontend\AppSchNk\src\app\Models" />
+      <recent name="C:\OpenServer\domains\SchNk\public\ckeditor4-major\plugins" />
+      <recent name="C:\OpenServer\domains\SchNk\resources\frontend\AppSchNk\src\app\components\materials" />
+      <recent name="C:\OpenServer\domains\SchNk\app\Modules\Pub\Material\Models" />
+      <recent name="C:\OpenServer\domains\SchNk\app\Modules\Pub\Material" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\OpenServer\domains\SchNk\resources\frontend\AppSchNk\src\app\services" />
       <recent name="C:\OpenServer\domains\SchNk\resources\frontend\AppSchNk\src\app\services\course" />
       <recent name="C:\OpenServer\domains\SchNk\resources\frontend\AppSchNk\src\app\services\preloaders" />
       <recent name="C:\OpenServer\domains\SchNk\resources\views\Admin\Material\edit" />
       <recent name="C:\OpenServer\domains\SchNk\resources\views\Admin\Material\create" />
-    </key>
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\OpenServer\domains\SchNk\public\ckeditor4-major\plugins" />
-      <recent name="C:\OpenServer\domains\SchNk\resources\frontend\AppSchNk\src\app\components\materials" />
-      <recent name="C:\OpenServer\domains\SchNk\resources\frontend\AppSchNk\src\app\Models" />
-      <recent name="C:\OpenServer\domains\SchNk\app\Modules\Pub\Material\Models" />
-      <recent name="C:\OpenServer\domains\SchNk\app\Modules\Pub\Material" />
     </key>
   </component>
   <component name="RunManager" selected="JavaScript Debug.index.html (1)">
@@ -322,7 +324,7 @@
       <workItem from="1633279265438" duration="7827000" />
       <workItem from="1633364079616" duration="13630000" />
       <workItem from="1633453035108" duration="42604000" />
-      <workItem from="1633708616608" duration="3731000" />
+      <workItem from="1633708616608" duration="6799000" />
     </task>
     <servers />
   </component>
