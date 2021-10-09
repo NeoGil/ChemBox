@@ -14,3 +14,37 @@
 
 .preloader-background
   z-index: 10000000 !important
+
+.content
+  background-color: white
+  max-width: 1080px
+  padding: 10px
+
+.content_st
+  margin: 0 auto
+
+.mat-drawer
+  width: 20%
+  .mat-list-base,
+  .mat-list-item,
+  .mat-line
+    white-space: initial !important
+.mat-drawer-content
+  min-height: 670px
+
+
+@media screen and (max-width: 959px)
+  .content
+    img
+      width: 100% !important
+    table
+      overflow: auto
+      width: 100% !important
+    span
+      overflow-wrap: anywhere
+
+@media screen and (max-width: 993px)
+  .mat-drawer
+    display: none !important
+  .mat-drawer-content
+    margin-left: 0px !important

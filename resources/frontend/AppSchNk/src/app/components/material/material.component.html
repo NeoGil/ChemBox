@@ -1,27 +1,30 @@
 <script src="http://schnk/ckeditor4-major/ckeditor.js"></script>
 <div class="materials-content">
-  <div class="row">
-    <h1></h1>
-    <div class="col-12" >
+  <mat-drawer-container>
+    <mat-drawer class="card-panel" mode="side" opened><app-sidenav></app-sidenav></mat-drawer>
+    <mat-drawer-content >
+      <div class="row">
+      <h1></h1>
+      <div class="col-12" >
+        <div *ngIf="material.methods_id == 2">
+          <h2 style="text-align:center">
+            {{material.title}}
+          </h2>
+          <div class="card" >
+            <div class="card-body">
+              <div class="center">
 
-
-      <div *ngIf="material.methods_id == 2">
-        <h2 style="text-align:center">
-          {{material.title}}
-        </h2>
-        <div class="card" >
-          <div class="card-body">
-            <div class="center">
-
-              <div id="quiz" *ngIf="content" [innerHTML]="content | sanitizeHtml"></div>
-              <button id="submit" (click)="startQuiz()">{{isQuestionCardShow}}</button>
+                <div id="quiz" *ngIf="content" [innerHTML]="content | sanitizeHtml"></div>
+                <button id="submit" (click)="startQuiz()">{{isQuestionCardShow}}</button>
+              </div>
             </div>
           </div>
         </div>
+        <div class="card-panel content content_st" *ngIf="material.contents">
+          <p class="e2e-inner-html-bound" *ngIf="material.contents" [innerHTML]="material.contents | sanitizeHtml"></p>
+        </div>
       </div>
-      <div class="content content_st" *ngIf="material.contents">
-        <p class="e2e-inner-html-bound" *ngIf="material.contents" [innerHTML]="material.contents | sanitizeHtml"></p>
-      </div>
-    </div>
   </div>
+    </mat-drawer-content>
+  </mat-drawer-container>
 </div>

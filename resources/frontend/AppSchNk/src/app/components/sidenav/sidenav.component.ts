@@ -5,49 +5,86 @@ import {FlatTreeControl} from '@angular/cdk/tree';
 
 const TREE_DATA: ExampleFlatNode[] = [
   {
-    name: 'Fruit',
+    name: 'Next',
     expandable: true,
     level: 0,
+    learn: 2
   }, {
-    name: 'Apple',
-    expandable: false,
+    name: 'Test',
+    expandable: true,
     level: 1,
+    learn: 2
   }, {
-    name: 'Banana',
+    name: 'Название теста',
     expandable: false,
-    level: 1,
+    level: 2,
+    learn: 2
   }, {
+    name: 'Название теста',
+    expandable: false,
+    level: 2,
+    learn: 2
+  }, {
+    name: 'Название тестаа',
+    expandable: false,
+    level: 2,
+    learn: 2
+  }, {
+    name: 'Название теста',
+    expandable: false,
+    level: 2,
+    learn: 2
+  }, {
+    name: 'Text',
+    expandable: true,
+    level: 1,
+    learn: 2
+  }, {
+    name: 'Название текста',
+    expandable: false,
+    level: 2,
+    learn: 2
+  },{
     name: 'Fruit loops',
     expandable: false,
-    level: 1,
+    level: 2,
+    learn: 2
   }, {
     name: 'Vegetables',
     expandable: true,
     level: 0,
+    learn: 2
   }, {
     name: 'Green',
     expandable: true,
     level: 1,
+    learn: 2
   }, {
     name: 'Broccoli',
     expandable: false,
     level: 2,
+    isExpanded: false,
+    learn: 2
   }, {
     name: 'Brussels sprouts',
     expandable: false,
     level: 2,
+    learn: 2
   }, {
     name: 'Orange',
     expandable: true,
     level: 1,
+    learn: 2
   }, {
     name: 'Pumpkins',
     expandable: false,
     level: 2,
+    learn: 2
   }, {
     name: 'Carrots',
     expandable: false,
     level: 2,
+    learn: 2
   }
 ];
 
@@ -57,6 +94,7 @@ interface ExampleFlatNode {
   name: string;
   level: number;
   isExpanded?: boolean;
+  learn: number
 }
 
 @Component({

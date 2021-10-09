@@ -5,7 +5,11 @@
                  class="example-tree-node">
     <!-- use a disabled button to provide padding for tree leaf -->
     <button mat-icon-button disabled></button>
-    {{node.name}}
+    <mat-nav-list>
+      <mat-list-item>
+        <a matLine href="...">{{node.name}}</a>
+      </mat-list-item>
+    </mat-nav-list>
   </cdk-tree-node>
   <!-- This is the tree node template for expandable nodes -->
   <cdk-tree-node *cdkTreeNodeDef="let node; when: hasChild" cdkTreeNodePadding
@@ -19,6 +23,14 @@
         {{treeControl.isExpanded(node) ? 'expand_more' : 'chevron_right'}}
       </mat-icon>
     </button>
-    {{node.name}}
+    <mat-nav-list>
+      <a matLine href="...">
+        <mat-list-item>
+          <div class="mat-list-item-content">
+            {{node.name}}
+          </div>
+        </mat-list-item>
+      </a>
+    </mat-nav-list>
   </cdk-tree-node>
 </cdk-tree>
