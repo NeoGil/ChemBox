@@ -1,8 +1,5 @@
 <div class="curse-content">
-  <mat-drawer-container>
-    <mat-drawer class="card-panel" mode="side" opened><app-sidenav></app-sidenav></mat-drawer>
-    <mat-drawer-content>
-      <div class="row card-panel" >
+  <div class="row card-panel" >
         <h1  class="center curses-title">{{course.alias}}</h1>
         <div class="course">
           <div class="col s12 m5 l3" *ngFor="let method of methods">
@@ -21,8 +18,6 @@
             </div>
           </div>
         </div>
-      </div>
-    </mat-drawer-content>
-  </mat-drawer-container>
+  </div>
 </div>
 

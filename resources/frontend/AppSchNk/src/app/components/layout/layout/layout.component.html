@@ -9,8 +9,12 @@
       <mat-sidenav-content>
         <app-navigation [navigation]="navigation" (sidenavToggle)="sidenav.toggle()"></app-navigation>
         <main>
-          <router-outlet></router-outlet>
-
+          <mat-drawer-container>
+            <mat-drawer class="card-panel" mode="side" opened><app-sidenav></app-sidenav></mat-drawer>
+            <mat-drawer-content>
+              <router-outlet></router-outlet>
+            </mat-drawer-content>
+          </mat-drawer-container>
         </main>
       </mat-sidenav-content>
     </mat-sidenav-container>

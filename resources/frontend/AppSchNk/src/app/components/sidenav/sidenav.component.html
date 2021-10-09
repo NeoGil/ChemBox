@@ -6,9 +6,11 @@
     <!-- use a disabled button to provide padding for tree leaf -->
     <button mat-icon-button disabled></button>
     <mat-nav-list>
-      <mat-list-item>
-        <a matLine href="...">{{node.name}}</a>
-      </mat-list-item>
+      <a mat-list-item [routerLink]='node.name'>
+        <div class="mat-list-item-content">
+          {{node.name}}
+        </div>
+      </a>
     </mat-nav-list>
   </cdk-tree-node>
   <!-- This is the tree node template for expandable nodes -->
@@ -24,12 +26,10 @@
       </mat-icon>
     </button>
     <mat-nav-list>
-      <a matLine href="...">
-        <mat-list-item>
-          <div class="mat-list-item-content">
-            {{node.name}}
-          </div>
-        </mat-list-item>
+      <a mat-list-item [routerLink]='node.name'>
+        <div class="mat-list-item-content">
+          {{node.name}}
+        </div>
       </a>
     </mat-nav-list>
   </cdk-tree-node>
