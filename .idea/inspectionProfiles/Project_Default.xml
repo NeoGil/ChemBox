@@ -9,8 +9,11 @@
     <inspection_tool class="HtmlUnknownAttribute" enabled="true" level="WARNING" enabled_by_default="true">
       <option name="myValues">
         <value>
-          <list size="1">
+          <list size="4">
             <item index="0" class="java.lang.String" itemvalue="matline" />
+            <item index="1" class="java.lang.String" itemvalue="mat-icon-button" />
+            <item index="2" class="java.lang.String" itemvalue="cdktreenodetoggle" />
+            <item index="3" class="java.lang.String" itemvalue="mat-list-item" />
           </list>
         </value>
       </option>
@@ -19,7 +22,7 @@
     <inspection_tool class="HtmlUnknownTag" enabled="true" level="WARNING" enabled_by_default="true">
       <option name="myValues">
         <value>
-          <list size="18">
+          <list size="21">
             <item index="0" class="java.lang.String" itemvalue="nobr" />
             <item index="1" class="java.lang.String" itemvalue="noembed" />
             <item index="2" class="java.lang.String" itemvalue="comment" />
@@ -38,6 +41,9 @@
             <item index="15" class="java.lang.String" itemvalue="mat-drawer-content" />
             <item index="16" class="java.lang.String" itemvalue="mat-list-item" />
             <item index="17" class="java.lang.String" itemvalue="mat-icon" />
+            <item index="18" class="java.lang.String" itemvalue="cdk-tree-node" />
+            <item index="19" class="java.lang.String" itemvalue="cdk-tree" />
+            <item index="20" class="java.lang.String" itemvalue="mat-tree-node" />
           </list>
         </value>
       </option>

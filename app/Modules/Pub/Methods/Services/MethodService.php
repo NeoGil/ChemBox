@@ -31,38 +31,18 @@ class MethodService
         foreach ($courses as $course) {
             $data = [
                 'name' => "$course->title",
-                'expandable' => true,
-                'level' => 0,
                 'route' => "courses/$course->alias",
+                'children' => []
             ];
-            array_push($tree_data, $data);
             foreach ($methods as $method) {
-                $data = [
+                $data_child = [
                     'name' => "$method->title",
-                    'expandable' => false,
-                    'level' => 1,
                     'route' => "courses/$course->alias/$method->alias",
                 ];
-                array_push($tree_data, $data);
+                array_push($data['children'], $data_child);
             }
+            array_push($tree_data, $data);
         }
-
-
-//        $data = [
-//            'name' => $course[0],
-//            'expandable' => $method[0],
-//            'level' => $method[0],
-//            'route' => $method[0],
-//        ];
-//
-//        array_push($tree_data, $data);
-//
-//        $data = [
-//            'course' => $course[1],
-//            'method' => $method[2]
-//        ];
-//
-//        array_push($tree_data, $data);
 
         return $tree_data;
     }

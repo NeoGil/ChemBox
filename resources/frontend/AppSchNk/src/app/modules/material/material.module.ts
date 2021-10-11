@@ -20,6 +20,7 @@ import {MatBottomSheetModule} from '@angular/material/bottom-sheet';
 import {MatDatepickerModule} from '@angular/material/datepicker';
 import {MatTableModule} from '@angular/material/table';
 import {CdkTreeModule} from '@angular/cdk/tree';
+import {MatTreeModule} from "@angular/material/tree";
 
 const Modules: any[] = [
   CommonModule,
@@ -42,6 +43,7 @@ const Modules: any[] = [
   MatDatepickerModule,
   MatTableModule,
   CdkTreeModule,
+  MatTreeModule,
 ];
 
 @NgModule({
