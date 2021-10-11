@@ -1,20 +1,7 @@
+{{TREE_DATA.length}}
 <cdk-tree [dataSource]="dataSource" [treeControl]="treeControl">
-  <!-- This is the tree node template for leaf nodes -->
-  <cdk-tree-node *cdkTreeNodeDef="let node" cdkTreeNodePadding
-                 [style.display]="shouldRender(node) ? 'flex' : 'none'"
-                 class="example-tree-node">
-    <!-- use a disabled button to provide padding for tree leaf -->
-    <button mat-icon-button disabled></button>
-    <mat-nav-list>
-      <a mat-list-item [routerLink]='node.name'>
-        <div class="mat-list-item-content">
-          {{node.name}}
-        </div>
-      </a>
-    </mat-nav-list>
-  </cdk-tree-node>
   <!-- This is the tree node template for expandable nodes -->
-  <cdk-tree-node *cdkTreeNodeDef="let node; when: hasChild" cdkTreeNodePadding
+  <cdk-tree-node style="padding-left: 0px" *cdkTreeNodeDef="let node; when: hasChild" cdkTreeNodePadding
                  [style.display]="shouldRender(node) ? 'flex' : 'none'"
                  class="example-tree-node">
     <button mat-icon-button cdkTreeNodeToggle

@@ -10,7 +10,7 @@ import {MaterialComponent} from "./components/material/material.component";
 const routes: Routes = [
   {
     path: 'courses',
-    component: CoursesComponent
+    component: CoursesComponent,
   },
   {
     path: 'courses/:alias',

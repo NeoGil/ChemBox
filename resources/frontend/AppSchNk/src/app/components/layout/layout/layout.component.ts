@@ -10,14 +10,15 @@ import {NavigationEnd, Router} from "@angular/router";
 })
 export class LayoutComponent implements OnInit {
 
-  showFiller = false;
-  navigation: Navigation[]
-  navMenu: boolean = true;
-
   constructor(
     private navigationService: NavigationService,
     private router: Router,
   ) { }
+
+  showFiller = false;
+
+  navigation: Navigation[]
+  navMenu: boolean = true;
 
   ngOnInit(): void {
     this.getMenu();

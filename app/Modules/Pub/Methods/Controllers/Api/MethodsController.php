@@ -39,6 +39,19 @@ class MethodsController extends Controller
     }
 
     /**
+     * Display a listing of the resource.
+     *
+     * @return \Illuminate\Http\JsonResponse
+     */
+    public function getCourses_Methods()
+    {
+        $tree_data = $this->service->getCourses_Methods();
+        return ResponseServise::sendJsonResponse(true, 200,[],[
+            'items' =>  $tree_data
+        ]);
+    }
+
+    /**
      * Create of the resource.
      *
      * @return \Illuminate\Http\Response

@@ -1,100 +1,20 @@
 import { Component, OnInit } from '@angular/core';
 import {ArrayDataSource} from '@angular/cdk/collections';
 import {FlatTreeControl} from '@angular/cdk/tree';
+import {SidenavService} from "../../services/sidenav.service";
+import {Side_cm} from "../../Models/side_cm";
+import {errorObject} from "rxjs/internal-compatibility";
 
 
-const TREE_DATA: ExampleFlatNode[] = [
-  {
-    name: 'Next',
-    expandable: true,
-    level: 0,
-    learn: 2
-  }, {
-    name: 'Test',
-    expandable: true,
-    level: 1,
-    learn: 2
-  }, {
-    name: 'Название теста',
-    expandable: false,
-    level: 2,
-    learn: 2
-  }, {
-    name: 'Название теста',
-    expandable: false,
-    level: 2,
-    learn: 2
-  }, {
-    name: 'Название тестаа',
-    expandable: false,
-    level: 2,
-    learn: 2
-  }, {
-    name: 'Название теста',
-    expandable: false,
-    level: 2,
-    learn: 2
-  }, {
-    name: 'Text',
-    expandable: true,
-    level: 1,
-    learn: 2
-  }, {
-    name: 'Название текста',
-    expandable: false,
-    level: 2,
-    learn: 2
-  },{
-    name: 'Fruit loops',
-    expandable: false,
-    level: 2,
-    learn: 2
-  }, {
-    name: 'Vegetables',
-    expandable: true,
-    level: 0,
-    learn: 2
-  }, {
-    name: 'Green',
-    expandable: true,
-    level: 1,
-    learn: 2
-  }, {
-    name: 'Broccoli',
-    expandable: false,
-    level: 2,
-    isExpanded: false,
-    learn: 2
-  }, {
-    name: 'Brussels sprouts',
-    expandable: false,
-    level: 2,
-    learn: 2
-  }, {
-    name: 'Orange',
-    expandable: true,
-    level: 1,
-    learn: 2
-  }, {
-    name: 'Pumpkins',
-    expandable: false,
-    level: 2,
-    learn: 2
-  }, {
-    name: 'Carrots',
-    expandable: false,
-    level: 2,
-    learn: 2
-  }
-];
+let TREE_DATA: Side_cm[] = [];
 
 /** Flat node with expandable and level information */
 interface ExampleFlatNode {
   expandable: boolean;
   name: string;
   level: number;
+  route: string;
   isExpanded?: boolean;
-  learn: number
 }
 
 @Component({
@@ -104,14 +24,45 @@ interface ExampleFlatNode {
 })
 export class SidenavComponent implements OnInit {
 
-  treeControl = new FlatTreeControl<ExampleFlatNode>(
+  public TREE_DATA: Side_cm[];
+
+  constructor(
+    private sidenavservice: SidenavService
+  )
+  {
+    this.TREE_DATA = [];
+    this.sidenavservice.getCourses_Methods().subscribe((data) => {
+      console.log(this.TREE_DATA)
+      TREE_DATA = data;
+      console.log(this.TREE_DATA)
+    });
+
+
+  }
+
+  ngOnInit(): void {
+    // setTimeout(() => {
+    //   this.sidenavservice.getCourses_Methods().subscribe((data) => {
+    //     console.log(this.TREE_DATA)
+    //     this.TREE_DATA = data;
+    //     console.log(this.TREE_DATA)
+    //   });
+    // },10);
+    // console.log(this.TREE_DATA)
+
+
+  }
+
+
+  treeControl = new FlatTreeControl<Side_cm>(
     node => node.level, node => node.expandable);
 
   dataSource = new ArrayDataSource(TREE_DATA);
 
-  hasChild = (_: number, node: ExampleFlatNode) => node.expandable;
+  hasChild = (_: number, node: Side_cm) => node.expandable;
 
-  getParentNode(node: ExampleFlatNode) {
+
+  getParentNode(node: Side_cm) {
     const nodeIndex = TREE_DATA.indexOf(node);
 
     for (let i = nodeIndex - 1; i >= 0; i--) {
@@ -123,7 +74,7 @@ export class SidenavComponent implements OnInit {
     return null;
   }
 
-  shouldRender(node: ExampleFlatNode) {
+  shouldRender(node: Side_cm) {
     let parent = this.getParentNode(node);
     while (parent) {
       if (!parent.isExpanded) {
@@ -134,7 +85,6 @@ export class SidenavComponent implements OnInit {
     return true;
   }
 
-  ngOnInit(): void {
-  }
+
 
 }
