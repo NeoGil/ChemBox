@@ -4,7 +4,7 @@
     This padding value depends on the mat-icon-button width. -->
   <mat-tree-node *matTreeNodeDef="let node" matTreeNodeToggle>
     <mat-nav-list>
-      <a mat-list-item [routerLink]='node.route'>
+      <a mat-list-item href='http://localhost:4200/assets/AppSchNk/{{node.route}}'>
         <div class="mat-list-item-content">
           {{node.name}}
         </div>
@@ -21,7 +21,7 @@
         </mat-icon>
       </button>
       <mat-nav-list>
-        <a mat-list-item [routerLink]='node.route'>
+        <a mat-list-item href='http://localhost:4200/assets/AppSchNk/{{node.route}}'>
           <div class="mat-list-item-content">
             {{node.name}}
           </div>

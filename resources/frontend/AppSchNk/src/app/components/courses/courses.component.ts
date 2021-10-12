@@ -12,7 +12,6 @@ export class CoursesComponent implements OnInit {
 
   courses: Courses[];
 
-
   constructor(
     private coursesService: CoursesService
   ) { }

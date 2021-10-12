@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import {Component, OnInit} from '@angular/core';
 import {Courses} from "../../Models/courses";
 import {CoursesService} from "../../services/courses.service";
 import {MethodsService} from "../../services/methods.service";
@@ -12,6 +12,7 @@ import {errorObject} from "rxjs/internal-compatibility";
   styleUrls: ['./course.component.sass']
 })
 export class CourseComponent implements OnInit {
+
 
   course: Courses;
   alias: string;
@@ -42,4 +43,5 @@ export class CourseComponent implements OnInit {
       this.methods = data;
     })
   }
+
 }

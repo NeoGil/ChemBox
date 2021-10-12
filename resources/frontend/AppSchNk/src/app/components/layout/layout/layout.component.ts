@@ -12,7 +12,6 @@ export class LayoutComponent implements OnInit {
 
   constructor(
     private navigationService: NavigationService,
-    private router: Router,
   ) { }
 
   showFiller = false;
