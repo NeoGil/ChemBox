@@ -21,6 +21,7 @@ import {CommonModule} from "@angular/common";
 import {FormsModule} from "@angular/forms";
 import {SanitizeHtmlPipe} from "./components/materials/sanitizeHtml.component";
 import { SidenavComponent } from './components/sidenav/sidenav.component';
+import { BreadcrumbsComponent } from './components/breadcrumbs/breadcrumbs.component';
 
 
 @NgModule({
@@ -36,6 +37,7 @@ import { SidenavComponent } from './components/sidenav/sidenav.component';
     MaterialComponent,
     SanitizeHtmlPipe,
     SidenavComponent,
+    BreadcrumbsComponent,
   ],
   imports: [
     BrowserModule,
