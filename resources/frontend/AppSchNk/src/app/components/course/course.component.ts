@@ -19,6 +19,7 @@ export class CourseComponent implements OnInit {
   methods: Methods[];
 
   constructor(
+
     private route: ActivatedRoute,
     private coursesService: CoursesService,
     private methodsService: MethodsService

@@ -30,6 +30,14 @@ class CourseController extends Controller
         ]);
     }
 
+    public function nav_link($url)
+    {
+//        $this->service->getNavLink($url);
+        return ResponseServise::sendJsonResponse(true, 200,[],[
+            'items' =>  $this->service->getNavLink($url)
+        ]);
+    }
+
     /**
      * Create of the resource.
      *
