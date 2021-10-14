@@ -37,7 +37,9 @@ class CourseService
             $method = Method::where('alias', $urls[2])->select('title')->first()->title;
         }
         if(isset($urls[3])){
-            $material = Material::where('alias', $urls[3])->where('courses_id', $urls[1])->where('methods_id', $urls[2])->first();
+            $courses_id = Course::where('alias', $urls[1])->select('id')->first()->id;
+            $methods_id = Method::where('alias', $urls[2])->select('id')->first()->id;
+            $material = Material::where('alias', $urls[3])->where('courses_id', $courses_id)->where('methods_id', $methods_id)->select('title')->first()->title;
         }
 
 

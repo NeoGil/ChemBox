@@ -2,6 +2,7 @@
   <div class="nav-wrapper">
     <div class="col s12">
       <a  [routerLink]="'/'" class="breadcrumb">Курсы</a>
+      <a   *ngFor="let link of nlink" [routerLink]="'/'+link.route" class="breadcrumb">{{link.title}}</a>
     </div>
   </div>
 </nav>

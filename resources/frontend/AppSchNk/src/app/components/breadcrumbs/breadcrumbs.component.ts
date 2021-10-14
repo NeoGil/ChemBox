@@ -28,10 +28,9 @@ export class BreadcrumbsComponent implements OnInit {
   }
 
   getMaterials(nlink_str: string): void {
-    
+
     this.nlinkService.getNlink(nlink_str).subscribe((data: Nlink[]) => {
         this.nlink = data;
-        console.log(this.nlink)
       }
     );
   }
