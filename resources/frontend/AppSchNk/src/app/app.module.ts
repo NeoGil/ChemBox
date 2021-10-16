@@ -22,6 +22,7 @@ import {FormsModule} from "@angular/forms";
 import {SanitizeHtmlPipe} from "./components/materials/sanitizeHtml.component";
 import { SidenavComponent } from './components/sidenav/sidenav.component';
 import { BreadcrumbsComponent } from './components/breadcrumbs/breadcrumbs.component';
+import { FooterComponent } from './components/layout/footer/footer.component';
 
 
 @NgModule({
@@ -38,6 +39,7 @@ import { BreadcrumbsComponent } from './components/breadcrumbs/breadcrumbs.compo
     SanitizeHtmlPipe,
     SidenavComponent,
     BreadcrumbsComponent,
+    FooterComponent,
   ],
   imports: [
     BrowserModule,
