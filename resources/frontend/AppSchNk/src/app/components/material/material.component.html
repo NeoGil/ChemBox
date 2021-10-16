@@ -1,36 +1,31 @@
-<script src="http://schnk/ckeditor4-major/ckeditor.js"></script>
+<!--<script src="http://schnk/ckeditor4-major/ckeditor.js"></script>-->
 <app-breadcrumbs></app-breadcrumbs>
 <mat-drawer-container>
-  <mat-drawer #drawer class="card-panel drawer" mode="side" opened><app-sidenav></app-sidenav></mat-drawer>
+  <mat-drawer #drawer class="card-panel drawer" mode="side"><app-sidenav></app-sidenav></mat-drawer>
   <mat-drawer-content>
     <div class="contenC">
       <a style="position: absolute" class="btn-floating btn-large waves-effect waves-light red drawer btnd" (click)="drawer.toggle()">
         <i class="material-icons">menu</i>
       </a>
-        <div class="materials-content">
-          <div class="row">
-              <h1></h1>
-              <div class="col-12" >
-                <div *ngIf="material.methods_id == 2">
-                  <h2 style="text-align:center">
-                    {{material.title}}
-                  </h2>
-                  <div class="card" >
-                    <div class="card-body">
-                      <div class="center">
-
-                        <div id="quiz" *ngIf="content" [innerHTML]="content | sanitizeHtml"></div>
-                        <button id="submit" (click)="startQuiz()">{{isQuestionCardShow}}</button>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="card-panel content content_st" *ngIf="material.contents">
-                  <p class="e2e-inner-html-bound" *ngIf="material.contents" [innerHTML]="material.contents | sanitizeHtml"></p>
+      <div class="materials-content card-panel">
+        <div class="row ">
+            <div class="col-12" >
+              <div *ngIf="material.methods_id == 2">
+                <h2 style="text-align:center">
+                  {{material.title}}
+                </h2>
+                <div class="test">
+                  <div id="quiz" *ngIf="content" [innerHTML]="content | sanitizeHtml"></div>
+                  <a id="submit" (click)="startQuiz()" class="s13 waves-effect waves-light btn">
+                    {{isQuestionCardShow}}</a>
                 </div>
               </div>
-          </div>
+              <div class="content content_st" *ngIf="material.methods_id == 4">
+                <p class="e2e-inner-html-bound" *ngIf="material.contents" [innerHTML]="material.contents | sanitizeHtml"></p>
+              </div>
+            </div>
         </div>
+      </div>
     </div>
   </mat-drawer-content>
 </mat-drawer-container>

@@ -1,11 +1,4 @@
 <?php
-/**
- * Created by PhpStorm.
- * User: note
- * Date: 13.12.2020
- * Time: 14:21
- */
-
 namespace App\Modules\Pub\Methods\Services;
 
 

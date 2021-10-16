@@ -3,6 +3,9 @@
   <mat-drawer #drawer class="card-panel drawer" mode="side"><app-sidenav></app-sidenav></mat-drawer>
   <mat-drawer-content>
     <div class="contenC">
+      <a style="position: absolute" class="btn-floating btn-large waves-effect waves-light red drawer btnd" (click)="drawer.toggle()">
+        <i class="material-icons">menu</i>
+      </a>
     <div class="curse-content">
       <div class="row card-panel" >
         <h1  class="center curses-title">{{course.alias}}</h1>

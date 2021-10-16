@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import {Component, Inject, OnInit} from '@angular/core';
 import {Router} from "@angular/router";
 import {Nlink} from "../../Models/nlink";
 import {NlinkService} from "../../services/nlink.service";
@@ -11,6 +11,7 @@ import {Materials} from "../../Models/materials";
 })
 export class BreadcrumbsComponent implements OnInit {
 
+  //@Inject drawer
   stringUrl: string
   nlink: Nlink[]
 

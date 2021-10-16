@@ -40,6 +40,9 @@
   margin: 0 auto
 
 @media screen and (max-width: 959px)
+  .side-container_nav
+    width: 85% !important
+    height: 100%
   .content
     img
       width: 100% !important
@@ -50,9 +53,22 @@
       overflow-wrap: anywhere
 
 @media screen and (max-width: 993px)
-  .mat-drawer
+
+  .drawer
     display: none !important
   .mat-drawer-content
-    margin-left: 0px !important
+    margin-left: 0 !important
     .btnd
       display: none
+.test
+  display: flex
+  flex-direction: column
+  align-items: center
+  margin-top: 10px
+  .answers
+    display: flex
+    flex-direction: row
+    flex-wrap: wrap
+    .radio
+      display: block
+      margin: 10px
