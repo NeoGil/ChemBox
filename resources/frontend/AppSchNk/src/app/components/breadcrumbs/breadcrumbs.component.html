@@ -2,8 +2,8 @@
 
   <div class="nav-wrapper">
     <div class="col s12">
-      <a  [routerLink]="'/courses'" class="breadcrumb">Курсы</a>
-      <a   *ngFor="let link of nlink" [routerLink]="'/'+link.route" class="breadcrumb">{{link.title}}</a>
+      <a [routerLink]="'/courses'" class="breadcrumb">Курсы</a>
+      <a *ngFor="let link of nlink" [routerLink]="'/'+link.route" class="breadcrumb">{{ (link.title.length>30)? (link.title | slice:0:30)+'..':(link.title) }}</a>
     </div>
   </div>
 </nav>
