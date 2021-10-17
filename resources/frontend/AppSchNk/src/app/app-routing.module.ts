@@ -4,10 +4,15 @@ import {CoursesComponent} from "./components/courses/courses.component";
 import {CourseComponent} from "./components/course/course.component";
 import {MaterialsComponent} from "./components/materials/materials.component";
 import {MaterialComponent} from "./components/material/material.component";
+import {MainComponent} from "./components/main/main.component";
 
 
 
 const routes: Routes = [
+  {
+    path: '',
+    component: MainComponent,
+  },
   {
     path: 'courses',
     component: CoursesComponent,
@@ -28,6 +33,7 @@ const routes: Routes = [
 
 @NgModule({
   imports: [RouterModule.forRoot(routes)],
-  exports: [RouterModule]
+  exports: [RouterModule],
 })
+
 export class AppRoutingModule { }
