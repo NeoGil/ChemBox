@@ -27,8 +27,10 @@
   <component name="ChangeListManager">
     <list default="true" id="c34cc5f6-8abd-4384-aaab-abbf1e2906c8" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/frontend/AppSchNk/src/app/app-routing.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/resources/frontend/AppSchNk/src/app/app-routing.module.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/frontend/AppSchNk/src/app/app.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/resources/frontend/AppSchNk/src/app/app.module.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/frontend/AppSchNk/src/app/components/layout/navigation/navigation.component.sass" beforeDir="false" afterPath="$PROJECT_DIR$/resources/frontend/AppSchNk/src/app/components/layout/navigation/navigation.component.sass" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/frontend/AppSchNk/src/app/components/main/main.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/resources/frontend/AppSchNk/src/app/components/main/main.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/frontend/AppSchNk/src/app/components/main/main.component.sass" beforeDir="false" afterPath="$PROJECT_DIR$/resources/frontend/AppSchNk/src/app/components/main/main.component.sass" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/frontend/AppSchNk/src/app/components/main/main.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/resources/frontend/AppSchNk/src/app/components/main/main.component.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -218,19 +220,19 @@
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\OpenServer\domains\SchNk\public\userfiles\files" />
+      <recent name="C:\OpenServer\domains\SchNk\resources\frontend\AppSchNk\src\app\services" />
+      <recent name="C:\OpenServer\domains\SchNk\resources\frontend\AppSchNk\src\app\services\course" />
+      <recent name="C:\OpenServer\domains\SchNk\resources\frontend\AppSchNk\src\app\services\preloaders" />
+      <recent name="C:\OpenServer\domains\SchNk\resources\views\Admin\Material\edit" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\OpenServer\domains\SchNk\resources\frontend\AppSchNk\src\app\Models" />
       <recent name="C:\OpenServer\domains\SchNk\public\ckeditor4-major\plugins" />
       <recent name="C:\OpenServer\domains\SchNk\resources\frontend\AppSchNk\src\app\components\materials" />
       <recent name="C:\OpenServer\domains\SchNk\app\Modules\Pub\Material\Models" />
       <recent name="C:\OpenServer\domains\SchNk\app\Modules\Pub\Material" />
-    </key>
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\OpenServer\domains\SchNk\resources\frontend\AppSchNk\src\app\services" />
-      <recent name="C:\OpenServer\domains\SchNk\resources\frontend\AppSchNk\src\app\services\course" />
-      <recent name="C:\OpenServer\domains\SchNk\resources\frontend\AppSchNk\src\app\services\preloaders" />
-      <recent name="C:\OpenServer\domains\SchNk\resources\views\Admin\Material\edit" />
-      <recent name="C:\OpenServer\domains\SchNk\resources\views\Admin\Material\create" />
     </key>
   </component>
   <component name="RunManager" selected="JavaScript Debug.index.html (1)">
@@ -326,7 +328,7 @@
       <workItem from="1634132548091" duration="14946000" />
       <workItem from="1634243973692" duration="2107000" />
       <workItem from="1634322901071" duration="12834000" />
-      <workItem from="1634485642509" duration="5183000" />
+      <workItem from="1634485642509" duration="13810000" />
     </task>
     <servers />
   </component>

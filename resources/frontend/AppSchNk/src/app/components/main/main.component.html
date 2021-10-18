@@ -1,1 +1,39 @@
-<p>main works!</p>
+<section class="promo-content">
+  <div class="container center z-depth-5">
+    <div class="row">
+      <div class="s12">
+        <h1 class="promo_header">Учите химию легко и непринуждённо</h1>
+        <a [routerLink]="'courses'" class="waves-effect waves-light btn-large promo_btn"><i class="material-icons left">cloud</i>К курсам!</a>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="second-content">
+  <div class="container card-panel z-depth-5">
+    <div class="label center">случайные курсы</div>
+    <h2 class="title center">Выбери курс по химии</h2>
+    <div class="subtitle center">Изучайте теоретическую часть, лабороторые и практические работы, решайте тесты и смотрите видео материалы </div>
+    <div class="courses">
+      <div class="row">
+        <div class="col s12 m5 l3" *ngFor="let course of courses">
+          <div class="card small">
+            <div class="card-image waves-effect waves-block waves-light">
+              <img class="activator" src="http://schnk/userfiles/files/17478da42271207e1d86.jpg">
+            </div>
+            <div class="card-content">
+              <span class="card-title activator grey-text text-darken-4">{{ (course.title.length>15)? (course.title | slice:0:15)+'..':(course.title) }}<i class="material-icons right">more_vert</i></span>
+              <a [routerLink]='course.alias'>Открыть</a>
+            </div>
+            <div class="card-reveal">
+              <span class="card-title grey-text text-darken-4">{{course.title}}<i class="material-icons right">close</i></span>
+              <p>{{course.description}}</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="center">
+        <a [routerLink]="'courses'" class="waves-effect waves-light btn-large promo_btn">Все курсы</a>
+      </div>
+    </div>
+  </div>
+</section>
