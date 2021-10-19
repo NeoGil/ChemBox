@@ -73,6 +73,7 @@ class CourseController extends Base
      */
     public function store(CourseRequest $request)
     {
+        dd($request);
         if($request->alias == null) {
             $new_alias = $this->service->translit_sef($request->title);
             $request['alias'] = $new_alias;
