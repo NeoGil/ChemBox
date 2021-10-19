@@ -13,7 +13,7 @@
             <li class="collection-item" *ngFor="let material of materials.materials; let i = index">
               <div class="material">
                 <b>{{i+1}}.</b>{{ material.title }}<br>{{material.description}}
-                <a [routerLink]='material.alias' class="secondary-content"><i class="material-icons">send</i></a>
+                <a [routerLink]='"/courses/" + course + "/" + method + "/" + material.alias' class="secondary-content"><i class="material-icons">send</i></a>
               </div>
             </li>
           </ul>

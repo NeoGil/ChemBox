@@ -13,8 +13,8 @@ import {errorObject} from "rxjs/internal-compatibility";
 export class MaterialsComponent implements OnInit {
 
   materials: Materials
-  private course: string;
-  private method: string;
+  public course: string;
+  public method: string;
 
   constructor(
     private materialsService: MaterialsService,
