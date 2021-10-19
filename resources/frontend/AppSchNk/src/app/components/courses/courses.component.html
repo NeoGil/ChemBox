@@ -9,9 +9,9 @@
       <div class="curses-content">
         <div class="row card-panel" >
           <h1  class="center curses-title">Курсы</h1>
-          <div class="courses">
+          <div class="courses" *ngIf="courses">
             <div class="col s12 m5 l3 " *ngFor="let course of courses">
-              <div class="card small">
+              <div class="card small" *ngIf="course">
                 <div class="card-image waves-effect waves-block waves-light">
                   <img class="activator" src="http://schnk/userfiles/files/17478da42271207e1d86.jpg">
                 </div>

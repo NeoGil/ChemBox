@@ -7,7 +7,7 @@
         <i class="material-icons">menu</i>
       </a>
     <div class="curse-content">
-      <div class="row card-panel" >
+      <div class="row card-panel" *ngIf="course && alias && methods">
         <h1  class="center curses-title">{{course.alias}}</h1>
         <div class="course">
           <div class="col s12 m5 l3" *ngFor="let method of methods">
