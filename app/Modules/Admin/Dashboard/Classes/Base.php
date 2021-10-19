@@ -96,4 +96,5 @@ class Base extends Controller
             return $item->alias;
         })->toArray();
     }
+
 }

@@ -73,6 +73,10 @@ class CourseController extends Base
      */
     public function store(CourseRequest $request)
     {
+        if($request->alias == null) {
+            $new_alias = $this->service->translit_sef($request->title);
+            $request['alias'] = $new_alias;
+        }
         $this->service->save($request, new Course());
         return  \Redirect::route('courses.index')->with([
             'message' => __('Success')
