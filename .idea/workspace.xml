@@ -28,9 +28,14 @@
     <list default="true" id="c34cc5f6-8abd-4384-aaab-abbf1e2906c8" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Modules/Admin/Course/Controllers/CourseController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Modules/Admin/Course/Controllers/CourseController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Modules/Admin/Course/Requests/CourseRequest.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Modules/Admin/Course/Requests/CourseRequest.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Modules/Admin/Methods/Controllers/MethodsController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Modules/Admin/Methods/Controllers/MethodsController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Modules/Admin/Methods/Models/Method.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Modules/Admin/Methods/Models/Method.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Modules/Admin/Methods/Requests/MethodRequest.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Modules/Admin/Methods/Requests/MethodRequest.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Modules/Admin/Methods/Services/MethodService.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Modules/Admin/Methods/Services/MethodService.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/Admin/Course/create.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/Admin/Course/create.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/Admin/Course/edit.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/Admin/Course/edit.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/Admin/Methods/create.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/Admin/Methods/create.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/Admin/Methods/edit.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/Admin/Methods/edit.blade.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -330,7 +335,7 @@
       <workItem from="1634322901071" duration="12834000" />
       <workItem from="1634485642509" duration="19846000" />
       <workItem from="1634658875631" duration="9610000" />
-      <workItem from="1634748172776" duration="2210000" />
+      <workItem from="1634748172776" duration="6209000" />
     </task>
     <servers />
   </component>

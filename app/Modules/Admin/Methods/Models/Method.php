@@ -13,6 +13,7 @@ class Method extends Model
         'alias',
         'title',
         'type',
+        'img',
         'description',
 
     ];

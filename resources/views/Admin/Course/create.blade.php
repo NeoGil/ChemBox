@@ -31,7 +31,7 @@
                     <legend class="">{{__('Common info')}}</legend>
 
                     <div class="form-group row">
-                        <label class="col-form-label col-lg-2">{{__('Title')}}<span
+                        <label class="col-form-label col-lg-2">{{__('Заголовок')}}<span
                                 class="text-danger">*</span></label>
                         <div class="col-lg-10">
                             <div class="input-group">
@@ -53,7 +53,7 @@
                     </div>
 
                     <div class="form-group row">
-                        <label class="col-form-label col-lg-2">{{__('Alias')}}</label>
+                        <label class="col-form-label col-lg-2">{{__('Псевдоним')}}</label>
                         <div class="col-lg-10">
                             <div class="input-group">
                                 <input type="text" name="alias" class="form-control"
@@ -64,7 +64,7 @@
                     </div>
 
                     <div class="form-group row">
-                        <label class="col-form-label col-lg-2">{{__('Description')}}</label>
+                        <label class="col-form-label col-lg-2">{{__('Описание')}}</label>
                         <div class="col-lg-10">
                             <div class="input-group">
                                 <input type="text" name="description" class="form-control"

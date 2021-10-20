@@ -68,6 +68,10 @@ class MethodsController extends Base
      */
     public function store(MethodRequest $request)
     {
+        if($request->alias == null) {
+            $new_alias = $this->service->translit_sef($request->title);
+            $request['alias'] = $new_alias;
+        }
         $this->service->save($request, new Method());
         return  \Redirect::route('methods.index')->with([
             'message' => __('Success')
@@ -95,7 +99,7 @@ class MethodsController extends Base
     {
         $this->authorize('edit', Method::class);
 
-        $this->title = "Title Course edit";
+        $this->title = "Title Method edit";
 
         $this->content = view('Admin::Methods.edit')->
         with([
@@ -116,6 +120,10 @@ class MethodsController extends Base
      */
     public function update(MethodRequest $request, Method $method)
     {
+        if($request->alias == null) {
+            $new_alias = $this->service->translit_sef($request->title);
+            $request['alias'] = $new_alias;
+        }
         $this->service->save($request, $method);
         return  \Redirect::route('methods.index')->with([
             'message' => __('Success')
