@@ -3,5 +3,6 @@ export interface Methods {
     alias: string,
     title: string,
     type: string,
+    img: string,
     description: string
 }
