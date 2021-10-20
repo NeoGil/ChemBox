@@ -47,9 +47,8 @@
                                 class="text-danger">*</span></label>
                         <div class="col-lg-10">
                             <div class="input-group">
-{{--                                <button  type="button" class="btn btn-primary col-lg-12">Choose File</button>--}}
-                                <input id="ckfinder-input-1" name="resimyolu" type="text" style="width:60%">
-                                <button id="ckfinder-popup-1" class="button-a button-a-background">Выбрать на серевере</button></div>
+                                <input id="ckfinder-input-1" required name="img" type="text" style="width:60%">
+                                <a id="ckfinder-popup-1" class="btn btn-success">Выбрать на серевере</a></div>
                         </div>
                     </div>
 
