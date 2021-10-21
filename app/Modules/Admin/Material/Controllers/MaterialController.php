@@ -99,7 +99,7 @@ class MaterialController extends Base
      */
     public function store(MaterialRequest $request)
     {
-        if($request['methods_id'] == 2) {
+        if($request['methods_id'] == 9) {
             $test = serialize($request['contents']);
             $request['contents'] = $test;
         }
@@ -171,7 +171,7 @@ class MaterialController extends Base
 
     public function update(MaterialRequest $request, Material $material)
     {
-        if($request['methods_id'] == 2) {
+        if($request['methods_id'] == 9) {
             $test = serialize($request['contents']);
             $request['contents'] = $test;
         }

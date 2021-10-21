@@ -47,7 +47,7 @@ export class MaterialComponent implements OnInit {
 
   storeMaterials(): void {
     this.materialsService.storeMaterials(this.course, this.method, this.alias).subscribe((data: Material) => {
-
+        console.log(data)
         this.material = data;
       }
     );

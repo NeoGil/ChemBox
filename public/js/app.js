@@ -2131,6 +2131,7 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({
   props: ['data'],
   data: function data() {
@@ -38275,15 +38276,26 @@ var render = function() {
               _c("div", { staticClass: "input-group" }, [
                 _c("h5", [_vm._v("Вопрос-" + _vm._s(index + 1))]),
                 _vm._v(" "),
-                _c("input", {
-                  staticClass: "form-control quest",
-                  attrs: {
-                    type: "text",
-                    name: "contents[" + index + "][question]",
-                    required: ""
-                  },
-                  domProps: { value: item.question }
-                })
+                item.question
+                  ? _c("input", {
+                      staticClass: "form-control quest",
+                      attrs: {
+                        type: "text",
+                        name: "contents[" + index + "][question]",
+                        required: "",
+                        "v-model": item.question
+                      },
+                      domProps: { value: item.question }
+                    })
+                  : _c("input", {
+                      staticClass: "form-control quest",
+                      attrs: {
+                        type: "text",
+                        name: "contents[" + index + "][question]",
+                        required: "",
+                        "v-model": item.question
+                      }
+                    })
               ]),
               _vm._v(" "),
               _c(
@@ -38296,15 +38308,15 @@ var render = function() {
                         _vm._v("Вариант ответа-" + _vm._s(index_q + 1))
                       ]),
                       _vm._v(" "),
-                      _c("input", {
+                      _c("textarea", {
                         staticClass: "form-control",
                         attrs: {
                           type: "text",
                           name:
                             "contents[" + index + "][answer][" + index_q + "]",
-                          required: ""
-                        },
-                        domProps: { value: item_q }
+                          required: "",
+                          "v-model": item_q
+                        }
                       }),
                       _vm._v(" "),
                       _c("div", { staticClass: "form-check" }, [

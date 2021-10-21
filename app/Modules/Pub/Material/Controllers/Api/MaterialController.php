@@ -66,7 +66,7 @@ class MaterialController extends Controller
         $curse = Course::where('alias', $curse)->select('id')->first()->id;
         $method = Method::where('alias', $method)->select('id')->first()->id;
         $material = Material::where('alias', $alias)->where('courses_id', $curse)->where('methods_id', $method)->first();
-        if($material->methods_id == 2) {
+        if($material->methods_id == 9) {
             $material->contents = unserialize($material->contents);
         }
         return ResponseServise::sendJsonResponse(true, 200, [],[
