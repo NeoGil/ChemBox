@@ -87,7 +87,9 @@
                     </div>
 
                     <div id="app-2">
-                        <test :data='{!! json_encode($item->contents) !!}'></test>
+                        <test :data='{!! json_encode($item->contents) !!}'>
+
+                        </test>
                     </div>
 
 

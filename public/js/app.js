@@ -2133,6 +2133,7 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({
   props: ['data'],
   data: function data() {
@@ -38323,21 +38324,23 @@ var render = function() {
                             },
                             domProps: { value: item_q }
                           })
-                        : _vm._e(),
-                      _vm._v(" "),
-                      _c("textarea", {
-                        staticClass: "form-control",
-                        attrs: {
-                          type: "text",
-                          name:
-                            "contents[" + index + "][answer][" + index_q + "]",
-                          required: "",
-                          "v-model": item_q
-                        }
-                      }),
+                        : _c("textarea", {
+                            staticClass: "form-control",
+                            attrs: {
+                              type: "text",
+                              name:
+                                "contents[" +
+                                index +
+                                "][answer][" +
+                                index_q +
+                                "]",
+                              required: "",
+                              "v-model": item_q
+                            }
+                          }),
                       _vm._v(" "),
                       _c("div", { staticClass: "form-check" }, [
-                        item.choice[index_q]
+                        item.choice && item.choice[index_q]
                           ? _c("input", {
                               staticClass: "form-check-input",
                               attrs: {

@@ -27,10 +27,11 @@
   <component name="ChangeListManager">
     <list default="true" id="c34cc5f6-8abd-4384-aaab-abbf1e2906c8" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/assets/AppSchNk/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/AppSchNk/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/favicon.ico" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/public/js/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/js/app.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/js/components/Admin/test.vue" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/components/Admin/test.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/Admin/Material/edit/editTest.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/Admin/Material/edit/editTest.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/Admin/layouts/layout.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/Admin/layouts/layout.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/Admin/layouts/parts/sidebar.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/Admin/layouts/parts/sidebar.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/app.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/app.blade.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -333,7 +334,7 @@
       <workItem from="1634658875631" duration="9610000" />
       <workItem from="1634748172776" duration="10814000" />
       <workItem from="1634839086366" duration="6333000" />
-      <workItem from="1634919922206" duration="2453000" />
+      <workItem from="1634919922206" duration="5232000" />
     </task>
     <servers />
   </component>
