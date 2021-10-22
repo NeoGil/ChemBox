@@ -27,18 +27,11 @@
   <component name="ChangeListManager">
     <list default="true" id="c34cc5f6-8abd-4384-aaab-abbf1e2906c8" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Modules/Admin/Material/Controllers/MaterialController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Modules/Admin/Material/Controllers/MaterialController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Modules/Pub/Material/Controllers/Api/MaterialController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Modules/Pub/Material/Controllers/Api/MaterialController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/assets/AppSchNk/3rdpartylicenses.txt" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/AppSchNk/3rdpartylicenses.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/public/assets/AppSchNk/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/AppSchNk/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/assets/AppSchNk/main.0aed24552476087a811f.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/assets/AppSchNk/polyfills.68ab0b6520c9a57432fc.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/assets/AppSchNk/runtime.8e3e3957547951ec68b7.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/assets/AppSchNk/styles.31d6cfe0d16ae931b73c.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/favicon.ico" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/public/js/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/js/app.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/frontend/AppSchNk/src/app/components/material/material.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/resources/frontend/AppSchNk/src/app/components/material/material.component.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/frontend/AppSchNk/src/app/components/material/material.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/resources/frontend/AppSchNk/src/app/components/material/material.component.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/js/components/Admin/test.vue" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/components/Admin/test.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/app.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/app.blade.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -215,7 +208,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="jsx.switch.disabled" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/resources/frontend/AppSchNk/src/app/Models" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/public" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -228,19 +221,19 @@
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\OpenServer\domains\SchNk\public" />
+      <recent name="C:\OpenServer\domains\SchNk\public\favicon" />
+      <recent name="C:\OpenServer\domains\SchNk\public\userfiles\files" />
+      <recent name="C:\OpenServer\domains\SchNk\resources\frontend\AppSchNk\src\app\Models" />
+      <recent name="C:\OpenServer\domains\SchNk\public\ckeditor4-major\plugins" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\OpenServer\domains\SchNk\public\userfiles\files" />
       <recent name="C:\OpenServer\domains\SchNk\resources\frontend\AppSchNk\src\app\services" />
       <recent name="C:\OpenServer\domains\SchNk\resources\frontend\AppSchNk\src\app\services\course" />
       <recent name="C:\OpenServer\domains\SchNk\resources\frontend\AppSchNk\src\app\services\preloaders" />
       <recent name="C:\OpenServer\domains\SchNk\resources\views\Admin\Material\edit" />
-    </key>
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\OpenServer\domains\SchNk\resources\frontend\AppSchNk\src\app\Models" />
-      <recent name="C:\OpenServer\domains\SchNk\public\ckeditor4-major\plugins" />
-      <recent name="C:\OpenServer\domains\SchNk\resources\frontend\AppSchNk\src\app\components\materials" />
-      <recent name="C:\OpenServer\domains\SchNk\app\Modules\Pub\Material\Models" />
-      <recent name="C:\OpenServer\domains\SchNk\app\Modules\Pub\Material" />
     </key>
   </component>
   <component name="RunManager" selected="JavaScript Debug.index.html (1)">
@@ -339,7 +332,8 @@
       <workItem from="1634485642509" duration="19846000" />
       <workItem from="1634658875631" duration="9610000" />
       <workItem from="1634748172776" duration="10814000" />
-      <workItem from="1634839086366" duration="5705000" />
+      <workItem from="1634839086366" duration="6333000" />
+      <workItem from="1634919922206" duration="2453000" />
     </task>
     <servers />
   </component>

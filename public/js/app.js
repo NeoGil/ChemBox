@@ -2132,6 +2132,7 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({
   props: ['data'],
   data: function data() {
@@ -38282,8 +38283,7 @@ var render = function() {
                       attrs: {
                         type: "text",
                         name: "contents[" + index + "][question]",
-                        required: "",
-                        "v-model": item.question
+                        required: ""
                       },
                       domProps: { value: item.question }
                     })
@@ -38307,6 +38307,23 @@ var render = function() {
                       _c("h6", [
                         _vm._v("Вариант ответа-" + _vm._s(index_q + 1))
                       ]),
+                      _vm._v(" "),
+                      item_q
+                        ? _c("textarea", {
+                            staticClass: "form-control",
+                            attrs: {
+                              type: "text",
+                              name:
+                                "contents[" +
+                                index +
+                                "][answer][" +
+                                index_q +
+                                "]",
+                              required: ""
+                            },
+                            domProps: { value: item_q }
+                          })
+                        : _vm._e(),
                       _vm._v(" "),
                       _c("textarea", {
                         staticClass: "form-control",

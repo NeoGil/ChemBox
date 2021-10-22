@@ -6,13 +6,14 @@
                 <div class="test" v-for="(item, index) in inputs" >
                     <div class="input-group">
                         <h5>Вопрос-{{ index+1 }}</h5>
-                        <input type="text" :name="'contents['+ index +'][question]'" required v-if="item.question" v-bind:value="item.question" v-bind:v-model="item.question" class="form-control quest">
+                        <input type="text" :name="'contents['+ index +'][question]'" required v-if="item.question" v-bind:value="item.question" class="form-control quest">
                         <input type="text" :name="'contents['+ index +'][question]'" required v-else v-bind:v-model="item.question" class="form-control quest">
                     </div>
                     <div class="test">
                         <div class="item" v-for="(item_q, index_q) in item.answer">
                             <div class="">
                                 <h6>Вариант ответа-{{ index_q+1 }}</h6>
+                                <textarea type="text" :name="'contents['+ index +'][answer]['+ index_q +']'" v-if="item_q" required v-bind:value="item_q" class="form-control"></textarea>
                                 <textarea type="text" :name="'contents['+ index +'][answer]['+ index_q +']'" required v-bind:v-model="item_q" class="form-control"></textarea>
                                 <div class="form-check">
                                     <input type="checkbox" value="1" v-bind:name="'contents['+ index +'][choice]['+ index_q +']'" v-if="item.choice[index_q]" checked v-bind:id="'Check' + index +index_q " class="form-check-input">
