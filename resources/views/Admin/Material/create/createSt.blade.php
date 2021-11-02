@@ -4,8 +4,8 @@
 </section>
 
 <!-- /page header -->
-<script src="http://schnk/ckeditor4-major/ckeditor.js"></script>
-<script type="text/javascript" src="http://schnk/js/ckfinder/ckfinder.js"></script>
+<script src="/ckeditor4-major/ckeditor.js"></script>
+<script type="text/javascript" src="/js/ckfinder/ckfinder.js"></script>
 
 <!-- Content area -->
 <div class="content">
@@ -117,7 +117,7 @@
         });
     </script>
 
-    <script>CKFinder.config( { connectorPath: '/ckfinder/connector' } );</script>
+    <script>CKFinder.config( { connectorPath: @json(route('ckfinder_connector')) } );</script>
 </div>
 
 <!-- /content area -->
