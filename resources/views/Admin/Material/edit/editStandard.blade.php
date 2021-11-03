@@ -3,8 +3,8 @@
     <h1>{{$title}}</h1>
 </section>
 <!-- /page header -->
-<script src="http://schnk/ckeditor4-major/ckeditor.js"></script>
-<script type="text/javascript" src="http://schnk/js/ckfinder/ckfinder.js"></script>
+<script src="/ckeditor4-major/ckeditor.js"></script>
+<script type="text/javascript" src="/js/ckfinder/ckfinder.js"></script>
 @include('ckfinder::setup')
 <!-- Content area -->
 <div class="content">
