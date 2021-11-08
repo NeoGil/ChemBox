@@ -1,5 +1,7 @@
 import {Component, EventEmitter, Input, OnInit, Output} from '@angular/core';
 import {Navigation} from "../../../Models/navigation";
+import {LoaderService} from "../../../services/loader/loader.service";
+import {BreakpointObserver} from "@angular/cdk/layout";
 
 @Component({
   selector: 'app-navigation',
@@ -11,7 +13,9 @@ export class NavigationComponent implements OnInit {
   @Input() navigation: Navigation[];
   @Output() sidenavToggle = new EventEmitter();
 
-  constructor() { }
+  constructor(
+    public loaderService:LoaderService
+  ) { }
 
   ngOnInit(): void {
   }

@@ -21,6 +21,7 @@ import {MatDatepickerModule} from '@angular/material/datepicker';
 import {MatTableModule} from '@angular/material/table';
 import {CdkTreeModule} from '@angular/cdk/tree';
 import {MatTreeModule} from "@angular/material/tree";
+import {MatProgressBarModule} from "@angular/material/progress-bar";
 
 const Modules: any[] = [
   CommonModule,
@@ -44,6 +45,7 @@ const Modules: any[] = [
   MatTableModule,
   CdkTreeModule,
   MatTreeModule,
+  MatProgressBarModule,
 ];
 
 @NgModule({
