@@ -1,6 +1,7 @@
-import { Component, OnInit } from '@angular/core';
+import {Component, NgModule, OnInit} from '@angular/core';
 import {CoursesService} from "../../services/courses.service";
 import {Courses} from "../../Models/courses";
+import {NavigationEnd, Router} from "@angular/router";
 
 @Component({
   selector: 'app-courses',
@@ -8,15 +9,19 @@ import {Courses} from "../../Models/courses";
   styleUrls: ['./courses.component.sass']
 })
 
+
 export class CoursesComponent implements OnInit {
 
   courses: Courses[];
 
   constructor(
-    private coursesService: CoursesService
-  ) { }
+    private coursesService: CoursesService,
+    private router: Router
+  ) {
+  }
 
   ngOnInit(): void {
+
     this.coursesService.getCourses().subscribe((data) => {
       this.courses = data;
     })
