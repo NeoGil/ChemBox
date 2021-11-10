@@ -25,6 +25,13 @@ import { BreadcrumbsComponent } from './components/breadcrumbs/breadcrumbs.compo
 import { FooterComponent } from './components/layout/footer/footer.component';
 import { MainComponent } from './components/main/main.component';
 import {LoaderInterceptor} from "./interceptors/loader.interceptor";
+import { LayoutModule } from '@angular/cdk/layout';
+import { MatToolbarModule } from '@angular/material/toolbar';
+import { MatButtonModule } from '@angular/material/button';
+import { MatSidenavModule } from '@angular/material/sidenav';
+import { MatIconModule } from '@angular/material/icon';
+import { MatListModule } from '@angular/material/list';
+import {NavComponent} from "./components/layout/nav/nav.component";
 
 
 @NgModule({
@@ -43,6 +50,7 @@ import {LoaderInterceptor} from "./interceptors/loader.interceptor";
     BreadcrumbsComponent,
     FooterComponent,
     MainComponent,
+    NavComponent,
   ],
   imports: [
     BrowserModule,
@@ -53,6 +61,12 @@ import {LoaderInterceptor} from "./interceptors/loader.interceptor";
     MaterialModule,
     HttpClientModule,
     FormsModule,
+    LayoutModule,
+    MatToolbarModule,
+    MatButtonModule,
+    MatSidenavModule,
+    MatIconModule,
+    MatListModule,
   ],
   providers: [
     {
