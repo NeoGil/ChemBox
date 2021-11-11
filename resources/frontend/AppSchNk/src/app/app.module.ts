@@ -74,11 +74,11 @@ import {NavComponent} from "./components/layout/nav/nav.component";
       useClass: PreloaderInterceptor,
       multi: true,
     },
-    // {
-    //   provide: HTTP_INTERCEPTORS,
-    //   useClass: LoaderInterceptor,
-    //   multi: true,
-    // },
+    {
+      provide: HTTP_INTERCEPTORS,
+      useClass: LoaderInterceptor,
+      multi: true,
+    },
   ],
   bootstrap: [AppComponent]
 })
