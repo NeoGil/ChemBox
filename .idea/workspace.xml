@@ -27,21 +27,17 @@
   <component name="ChangeListManager">
     <list default="true" id="c34cc5f6-8abd-4384-aaab-abbf1e2906c8" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/frontend/AppSchNk/src/app/app.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/resources/frontend/AppSchNk/src/app/app.component.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/frontend/AppSchNk/src/app/app.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/resources/frontend/AppSchNk/src/app/app.module.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/AppSchNk/assets/sass/styles.sass" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/AppSchNk/assets/sass/styles.sass" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/AppSchNk/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/AppSchNk/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/AppSchNk/main.20f8737005064b217259.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/AppSchNk/styles.05fcf2ae86547276a6a7.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/frontend/AppSchNk/src/app/components/breadcrumbs/breadcrumbs.component.sass" beforeDir="false" afterPath="$PROJECT_DIR$/resources/frontend/AppSchNk/src/app/components/breadcrumbs/breadcrumbs.component.sass" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/frontend/AppSchNk/src/app/components/course/course.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/resources/frontend/AppSchNk/src/app/components/course/course.component.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/frontend/AppSchNk/src/app/components/course/course.component.sass" beforeDir="false" afterPath="$PROJECT_DIR$/resources/frontend/AppSchNk/src/app/components/course/course.component.sass" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/frontend/AppSchNk/src/app/components/courses/courses.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/resources/frontend/AppSchNk/src/app/components/courses/courses.component.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/frontend/AppSchNk/src/app/components/courses/courses.component.sass" beforeDir="false" afterPath="$PROJECT_DIR$/resources/frontend/AppSchNk/src/app/components/courses/courses.component.sass" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/frontend/AppSchNk/src/app/components/courses/courses.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/resources/frontend/AppSchNk/src/app/components/courses/courses.component.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/frontend/AppSchNk/src/app/components/layout/layout/layout.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/resources/frontend/AppSchNk/src/app/components/layout/layout/layout.component.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/frontend/AppSchNk/src/app/components/layout/layout/layout.component.sass" beforeDir="false" afterPath="$PROJECT_DIR$/resources/frontend/AppSchNk/src/app/components/layout/layout/layout.component.sass" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/frontend/AppSchNk/src/app/components/layout/nav/nav.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/resources/frontend/AppSchNk/src/app/components/layout/nav/nav.component.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/frontend/AppSchNk/src/app/components/layout/nav/nav.component.sass" beforeDir="false" afterPath="$PROJECT_DIR$/resources/frontend/AppSchNk/src/app/components/layout/nav/nav.component.sass" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/frontend/AppSchNk/src/app/components/layout/nav/nav.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/resources/frontend/AppSchNk/src/app/components/layout/nav/nav.component.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/frontend/AppSchNk/src/app/components/layout/preloader/preloader.component.sass" beforeDir="false" afterPath="$PROJECT_DIR$/resources/frontend/AppSchNk/src/app/components/layout/preloader/preloader.component.sass" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/frontend/AppSchNk/src/app/modules/material/material.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/resources/frontend/AppSchNk/src/app/modules/material/material.module.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/frontend/AppSchNk/src/assets/sass/styles.sass" beforeDir="false" afterPath="$PROJECT_DIR$/resources/frontend/AppSchNk/src/assets/sass/styles.sass" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/frontend/AppSchNk/src/app/components/main/main.component.sass" beforeDir="false" afterPath="$PROJECT_DIR$/resources/frontend/AppSchNk/src/app/components/main/main.component.sass" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/frontend/AppSchNk/src/app/components/material/material.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/resources/frontend/AppSchNk/src/app/components/material/material.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/frontend/AppSchNk/src/app/components/materials/materials.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/resources/frontend/AppSchNk/src/app/components/materials/materials.component.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -355,7 +351,8 @@
       <workItem from="1636038437678" duration="2557000" />
       <workItem from="1636295798002" duration="6160000" />
       <workItem from="1636389497025" duration="13012000" />
-      <workItem from="1636574542455" duration="10727000" />
+      <workItem from="1636574542455" duration="11887000" />
+      <workItem from="1636992041597" duration="3719000" />
     </task>
     <servers />
   </component>

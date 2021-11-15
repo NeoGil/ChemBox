@@ -3,10 +3,11 @@
   <mat-drawer #drawer class="card-panel drawer" mode="side"><app-sidenav></app-sidenav></mat-drawer>
   <mat-drawer-content>
     <div class="contenC">
-      <a style="position: absolute" class="btn-floating btn-large waves-effect waves-light red drawer btnd" (click)="drawer.toggle()">
+      <!--<a style="position: absolute" class="btn-floating btn-large waves-effect waves-light red drawer btnd" (click)="drawer.toggle()">
         <i class="material-icons">menu</i>
-      </a>
+      </a>-->
       <div class="materials-content">
+        <app-preloader></app-preloader>
         <div class="materials card-panel">
           <ul class="collection with-header ">
             <li class="collection-header"><h4>{{materials.method}} курсса {{materials.course}}</h4></li>
