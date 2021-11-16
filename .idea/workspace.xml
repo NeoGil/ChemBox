@@ -26,18 +26,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="c34cc5f6-8abd-4384-aaab-abbf1e2906c8" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/watcherTasks.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/watcherTasks.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/assets/AppSchNk/assets/sass/styles.sass" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/AppSchNk/assets/sass/styles.sass" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/assets/AppSchNk/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/AppSchNk/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/assets/AppSchNk/main.20f8737005064b217259.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/assets/AppSchNk/styles.05fcf2ae86547276a6a7.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/frontend/AppSchNk/src/app/components/breadcrumbs/breadcrumbs.component.sass" beforeDir="false" afterPath="$PROJECT_DIR$/resources/frontend/AppSchNk/src/app/components/breadcrumbs/breadcrumbs.component.sass" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/frontend/AppSchNk/src/app/components/course/course.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/resources/frontend/AppSchNk/src/app/components/course/course.component.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/frontend/AppSchNk/src/app/components/courses/courses.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/resources/frontend/AppSchNk/src/app/components/courses/courses.component.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/frontend/AppSchNk/src/app/components/layout/nav/nav.component.sass" beforeDir="false" afterPath="$PROJECT_DIR$/resources/frontend/AppSchNk/src/app/components/layout/nav/nav.component.sass" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/frontend/AppSchNk/src/app/components/main/main.component.sass" beforeDir="false" afterPath="$PROJECT_DIR$/resources/frontend/AppSchNk/src/app/components/main/main.component.sass" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/frontend/AppSchNk/src/app/components/material/material.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/resources/frontend/AppSchNk/src/app/components/material/material.component.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/frontend/AppSchNk/src/app/components/materials/materials.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/resources/frontend/AppSchNk/src/app/components/materials/materials.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Modules/Admin/Dashboard/Controllers/DashboardController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Modules/Admin/Dashboard/Controllers/DashboardController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/sass/app.scss" beforeDir="false" afterPath="$PROJECT_DIR$/resources/sass/app.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/Admin/Dashboard/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/Admin/Dashboard/index.blade.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -214,7 +208,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="jsx.switch.disabled" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/resources/frontend/AppSchNk/src/app/components/layout/nav" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/app/Modules/Admin/Dashboard" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -224,22 +218,23 @@
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="settings.editor.selected.configurable" value="watcher.settings" />
     <property name="ts.external.directory.path" value="C:\OpenServer\domains\SchNk\resources\frontend\AppSchNk\node_modules\typescript\lib" />
+    <property name="two.files.diff.last.used.file" value="$PROJECT_DIR$/resources/sass/_dashboard.scss" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\OpenServer\domains\SchNk\resources\frontend\AppSchNk\src\app\components\layout\nav" />
-      <recent name="C:\OpenServer\domains\SchNk\public" />
-      <recent name="C:\OpenServer\domains\SchNk\public\favicon" />
-      <recent name="C:\OpenServer\domains\SchNk\public\userfiles\files" />
-      <recent name="C:\OpenServer\domains\SchNk\resources\frontend\AppSchNk\src\app\Models" />
-    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\OpenServer\domains\SchNk\public\userfiles\files" />
       <recent name="C:\OpenServer\domains\SchNk\resources\frontend\AppSchNk\src\app\services" />
       <recent name="C:\OpenServer\domains\SchNk\resources\frontend\AppSchNk\src\app\services\course" />
       <recent name="C:\OpenServer\domains\SchNk\resources\frontend\AppSchNk\src\app\services\preloaders" />
       <recent name="C:\OpenServer\domains\SchNk\resources\views\Admin\Material\edit" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\OpenServer\domains\SchNk\app\Modules\Admin\Dashboard" />
+      <recent name="C:\OpenServer\domains\SchNk\public\userfiles\files" />
+      <recent name="C:\OpenServer\domains\SchNk\resources\sass" />
+      <recent name="C:\OpenServer\domains\SchNk\resources\frontend\AppSchNk\src\app\components\layout\nav" />
+      <recent name="C:\OpenServer\domains\SchNk\public" />
     </key>
   </component>
   <component name="RunManager" selected="JavaScript Debug.index.html (1)">
@@ -352,7 +347,8 @@
       <workItem from="1636295798002" duration="6160000" />
       <workItem from="1636389497025" duration="13012000" />
       <workItem from="1636574542455" duration="11887000" />
-      <workItem from="1636992041597" duration="3719000" />
+      <workItem from="1636992041597" duration="4365000" />
+      <workItem from="1637080707633" duration="5199000" />
     </task>
     <servers />
   </component>
@@ -400,18 +396,26 @@
       <screen x="0" y="40" width="1536" height="824" />
     </state>
     <state x="450" y="40" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.40.1536.824@0.40.1536.824" timestamp="1631223040278" />
-    <state x="499" y="207" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1634154716991">
+    <state x="499" y="207" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1637085489169">
       <screen x="0" y="40" width="1536" height="824" />
     </state>
-    <state x="499" y="207" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.40.1536.824@0.40.1536.824" timestamp="1634154716991" />
+    <state x="499" y="207" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.40.1536.824@0.40.1536.824" timestamp="1637085489169" />
     <state x="545" y="364" width="445" height="239" key="ComposerInitDialogKey" timestamp="1630529423788">
       <screen x="0" y="40" width="1536" height="824" />
     </state>
     <state x="545" y="364" width="445" height="239" key="ComposerInitDialogKey/0.40.1536.824@0.40.1536.824" timestamp="1630529423788" />
-    <state x="549" y="207" key="FileChooserDialogImpl" timestamp="1631536361898">
+    <state x="93" y="133" width="1350" height="638" key="DiffContextDialog" timestamp="1637082097053">
       <screen x="0" y="40" width="1536" height="824" />
     </state>
-    <state x="549" y="207" key="FileChooserDialogImpl/0.40.1536.824@0.40.1536.824" timestamp="1631536361898" />
+    <state x="93" y="133" width="1350" height="638" key="DiffContextDialog/0.40.1536.824@0.40.1536.824" timestamp="1637082097053" />
+    <state x="438" y="230" key="EditFileWatcherDialog" timestamp="1637082105185">
+      <screen x="0" y="40" width="1536" height="824" />
+    </state>
+    <state x="438" y="230" key="EditFileWatcherDialog/0.40.1536.824@0.40.1536.824" timestamp="1637082105185" />
+    <state x="549" y="207" key="FileChooserDialogImpl" timestamp="1637081989118">
+      <screen x="0" y="40" width="1536" height="824" />
+    </state>
+    <state x="549" y="207" key="FileChooserDialogImpl/0.40.1536.824@0.40.1536.824" timestamp="1637081989118" />
     <state width="1493" height="210" key="GridCell.Tab.0.bottom" timestamp="1633645640125">
       <screen x="0" y="40" width="1536" height="824" />
     </state>
