@@ -7,25 +7,32 @@ use Illuminate\Support\Facades\DB;
 class DashboardService
 {
 
-    public function getMaterilals($curse, $method)
+    public function getMaterilals()
     {
-        $material = DB::table('materials')->
-        select('id', 'alias', 'title', 'courses_id', 'methods_id', 'description')->
-        where('courses_id', $curse)->
-        where('methods_id', $method)->
-        get();
 
-        return $material;
+        return [
+            'all' => count(DB::table('materials')->get()),
+            'Active' => count(DB::table('materials')->where('activity', true)->get()),
+            'NonActive' => count(DB::table('materials')->where('activity', false)->get()),
+        ];
     }
 
     public function getCourses()
     {
-        $material = [
+        return [
             'all' => count(DB::table('courses')->get()),
             'Active' => count(DB::table('courses')->where('activity', true)->get()),
             'NonActive' => count(DB::table('courses')->where('activity', false)->get()),
         ];
+    }
 
-        return $material;
+    public function getMethods()
+    {
+
+        return [
+            'all' => count(DB::table('methods')->get()),
+            'Active' => count(DB::table('methods')->where('activity', true)->get()),
+            'NonActive' => count(DB::table('methods')->where('activity', false)->get()),
+        ];
     }
 }

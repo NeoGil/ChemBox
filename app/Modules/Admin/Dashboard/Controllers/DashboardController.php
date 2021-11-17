@@ -25,7 +25,9 @@ class DashboardController extends Base
         $this->title = __("admin.dashboard_title_page");
         $this->content  = view('Admin::Dashboard.index')->with([
             'title' => $this->title,
-            'activity' => $this->service->getCourses()
+            'activity_C' => $this->service->getCourses(),
+            'activity_M' => $this->service->getMaterilals(),
+            'activity_Methods' => $this->service->getMethods(),
         ])->render();
 
         return $this->renderOutput();
