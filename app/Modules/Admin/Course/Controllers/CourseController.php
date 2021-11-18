@@ -32,7 +32,7 @@ class CourseController extends Base
 
         $courses = Course::all();
 
-        $this->title = "Title Course Index";
+        $this->title = "Курсы";
 
         $this->content = view('Admin::Course.index')->
         with([
@@ -54,7 +54,7 @@ class CourseController extends Base
         $this->authorize('create', Course::class);
 
 
-        $this->title = "Title Course create";
+        $this->title = "Создание курса";
 
         $this->content = view('Admin::Course.create')->
         with([
@@ -105,7 +105,7 @@ class CourseController extends Base
     {
         $this->authorize('edit', Course::class);
 
-        $this->title = "Title Course edit";
+        $this->title = "Редактирование курса";
 
         $this->content = view('Admin::Course.edit')->
         with([

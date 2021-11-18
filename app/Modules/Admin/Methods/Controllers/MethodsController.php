@@ -27,7 +27,7 @@ class MethodsController extends Base
 
         $methods = Method::all();
 
-        $this->title = "Title Methods Index";
+        $this->title = "Методы";
 
         $this->content = view('Admin::Methods.index')->
         with([
@@ -49,7 +49,7 @@ class MethodsController extends Base
         $this->authorize('create', Method::class);
 
 
-        $this->title = "Title Method create";
+        $this->title = "Создание метода";
 
         $this->content = view('Admin::Methods.create')->
         with([
@@ -99,7 +99,7 @@ class MethodsController extends Base
     {
         $this->authorize('edit', Method::class);
 
-        $this->title = "Title Method edit";
+        $this->title = "Редактирование метода";
 
         $this->content = view('Admin::Methods.edit')->
         with([

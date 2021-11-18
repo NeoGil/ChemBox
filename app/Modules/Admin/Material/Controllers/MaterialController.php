@@ -36,7 +36,7 @@ class MaterialController extends Base
 
         $materials = Material::all();
         $methods = Method::all();
-        $this->title = "Title Materials Index";
+        $this->title = "Материалы";
 
         $this->content = view('Admin::Material.index')->
         with([
@@ -62,7 +62,7 @@ class MaterialController extends Base
     {
         $this->authorize('create', Material::class);
 
-        $this->title = "Title Material create";
+        $this->title = "Создание материала";
 
         $courses = Course::all();
 
@@ -71,7 +71,7 @@ class MaterialController extends Base
         if($method->type == self::TYPE_METHOD && $method->alias == self::TEST_METHOD) {
 
             $create_name = 'createTEST';
-            $this->title = "Title Material Test create";
+            $this->title = "Создание теста";
 
         }
         elseif ($method->type == self::TYPE_METHOD) {
@@ -134,7 +134,7 @@ class MaterialController extends Base
     {
         $this->authorize('edit', Material::class);
 
-        $this->title = "Title Course edit";
+        $this->title = "Редактирование материала";
 
         $courses = Course::all();
 
@@ -145,6 +145,7 @@ class MaterialController extends Base
         if($method->alias == self::TEST_METHOD) {
             $material->contents = unserialize($material->contents);
             $edit_name = 'editTest';
+            $this->title = "Редактирование теста";
         }
         $this->content = view('Admin::Material.edit.'.$edit_name)->
         with([
