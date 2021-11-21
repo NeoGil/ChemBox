@@ -22,7 +22,7 @@
           *ngIf="isHandset$ | async">
           <mat-icon aria-label="Side nav toggle icon">menu</mat-icon>
         </button>
-        <a [routerLink]="'/'" class="brand-logo">SchNk</a>
+        <a [routerLink]="'/'" class="brand-logo">ChemBox</a>
         <ul class="right hide-on-med-and-down">
           <li *ngFor="let item of navigation"><a [routerLink]="item.path">{{item.title}}</a></li>
         </ul>

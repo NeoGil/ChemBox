@@ -27,9 +27,19 @@
   <component name="ChangeListManager">
     <list default="true" id="c34cc5f6-8abd-4384-aaab-abbf1e2906c8" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Modules/Admin/Course/Controllers/CourseController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Modules/Admin/Course/Controllers/CourseController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Modules/Admin/Material/Controllers/MaterialController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Modules/Admin/Material/Controllers/MaterialController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Modules/Admin/Methods/Controllers/MethodsController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Modules/Admin/Methods/Controllers/MethodsController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/AppSchNk/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/AppSchNk/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/AppSchNk/main.8d6dfb8c2069be15e01b.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/favicon.ico" beforeDir="false" afterPath="$PROJECT_DIR$/public/favicon.ico" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/frontend/AppSchNk/src/app/app.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/resources/frontend/AppSchNk/src/app/app.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/frontend/AppSchNk/src/app/components/layout/footer/footer.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/resources/frontend/AppSchNk/src/app/components/layout/footer/footer.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/frontend/AppSchNk/src/app/components/layout/nav/nav.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/resources/frontend/AppSchNk/src/app/components/layout/nav/nav.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/frontend/AppSchNk/src/app/components/layout/navigation/navigation.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/resources/frontend/AppSchNk/src/app/components/layout/navigation/navigation.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/frontend/AppSchNk/src/app/components/material/material.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/resources/frontend/AppSchNk/src/app/components/material/material.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/frontend/AppSchNk/src/environments/environment.prod.ts" beforeDir="false" afterPath="$PROJECT_DIR$/resources/frontend/AppSchNk/src/environments/environment.prod.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/frontend/AppSchNk/src/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/resources/frontend/AppSchNk/src/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/Admin/layouts/layout.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/Admin/layouts/layout.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/Admin/layouts/parts/sidebar.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/Admin/layouts/parts/sidebar.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/app.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/app.blade.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -206,7 +216,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="jsx.switch.disabled" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/app/Modules/Admin/Dashboard" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/public" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -220,19 +230,19 @@
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\OpenServer\domains\SchNk\public" />
+      <recent name="C:\OpenServer\domains\SchNk\app\Modules\Admin\Dashboard" />
+      <recent name="C:\OpenServer\domains\SchNk\public\userfiles\files" />
+      <recent name="C:\OpenServer\domains\SchNk\resources\sass" />
+      <recent name="C:\OpenServer\domains\SchNk\resources\frontend\AppSchNk\src\app\components\layout\nav" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\OpenServer\domains\SchNk\public\userfiles\files" />
       <recent name="C:\OpenServer\domains\SchNk\resources\frontend\AppSchNk\src\app\services" />
       <recent name="C:\OpenServer\domains\SchNk\resources\frontend\AppSchNk\src\app\services\course" />
       <recent name="C:\OpenServer\domains\SchNk\resources\frontend\AppSchNk\src\app\services\preloaders" />
       <recent name="C:\OpenServer\domains\SchNk\resources\views\Admin\Material\edit" />
-    </key>
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\OpenServer\domains\SchNk\app\Modules\Admin\Dashboard" />
-      <recent name="C:\OpenServer\domains\SchNk\public\userfiles\files" />
-      <recent name="C:\OpenServer\domains\SchNk\resources\sass" />
-      <recent name="C:\OpenServer\domains\SchNk\resources\frontend\AppSchNk\src\app\components\layout\nav" />
-      <recent name="C:\OpenServer\domains\SchNk\public" />
     </key>
   </component>
   <component name="RunManager" selected="JavaScript Debug.index.html (1)">
@@ -347,7 +357,9 @@
       <workItem from="1636574542455" duration="11887000" />
       <workItem from="1636992041597" duration="4365000" />
       <workItem from="1637080707633" duration="8792000" />
-      <workItem from="1637260439175" duration="1341000" />
+      <workItem from="1637260439175" duration="1956000" />
+      <workItem from="1637428328141" duration="3439000" />
+      <workItem from="1637500114319" duration="830000" />
     </task>
     <servers />
   </component>

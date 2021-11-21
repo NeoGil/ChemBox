@@ -4,7 +4,7 @@
 <nav>
   <div class="nav-wrapper">
     <a (click)="onToggleSidenav()" class="sidenav-trigger"><i class="material-icons">menu</i></a>
-    <a [routerLink]="'/'" class="brand-logo">SchNk</a>
+    <a [routerLink]="'/'" class="brand-logo">ChemBox</a>
     <ul class="right hide-on-med-and-down">
       <li *ngFor="let item of navigation"><a [routerLink]="item.path">{{item.title}}</a></li>
     </ul>
