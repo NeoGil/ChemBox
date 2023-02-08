@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import {Courses} from "../../Models/courses";
 import {CoursesService} from "../../services/courses.service";
-import {errorObject} from "rxjs/internal-compatibility";
+
 
 @Component({
   selector: 'app-main',

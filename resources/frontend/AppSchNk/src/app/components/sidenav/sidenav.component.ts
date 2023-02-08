@@ -37,7 +37,6 @@ export class SidenavComponent implements OnInit {
   ngOnInit(): void {
     this.sidenavservice.getCourses_Methods().subscribe((data) => {
       this.dataSource.data = data;
-      console.log(this.dataSource.data)
     });
   }
 
