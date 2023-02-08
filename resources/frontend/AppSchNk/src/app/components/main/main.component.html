@@ -1,43 +1,51 @@
-<section class="promo-content">
-  <div class="container center z-depth-5">
-    <div class="row">
-      <div class="s12">
-        <h1 class="promo_header">Учите химию легко и непринуждённо</h1>
-        <a [routerLink]="'courses'" class="waves-effect waves-light btn-large promo_btn"><i class="material-icons left">cloud</i>К курсам!</a>
+<div class="main">
+  <section class="promo-content">
+    <div class="container center z-depth-5">
+      <div class="row">
+        <div class="s12">
+          <h1 class="promo_header">Учите химию легко</h1>
+          <a [routerLink]="'courses'" class="waves-effect waves-light btn-large promo_btn"><i class="material-icons left">cloud</i>К курсам!</a>
+        </div>
       </div>
     </div>
-  </div>
-</section>
-<section class="second-content">
-  <div class="container card-panel z-depth-5">
-    <div class="label center">случайные курсы</div>
-    <h2 class="title center">Выбери курс по химии</h2>
-    <div class="subtitle center">Изучайте теоретическую часть, лабороторые и практические работы, решайте тесты и смотрите видео материалы </div>
-    <div class="courses">
-      <div class="row" *ngIf="courses">
-        <div class="col s12 m5 l3" *ngFor="let course of courses">
-          <div class="card small" *ngIf="course">
-            <div class="card-image waves-effect waves-block waves-light">
-              <img class="activator" bind-src="course.img">
-            </div>
-            <div class="card-content">
-              <span class="card-title activator grey-text text-darken-4">{{ (course.title.length>23)? (course.title | slice:0:23)+'..':(course.title) }}<i class="material-icons right">more_vert</i></span>
-            </div>
-            <div class="card-reveal">
-              <span class="card-title grey-text text-darken-4">{{course.title}}<i class="material-icons right">close</i></span>
-              <p>{{course.description}}</p>
-            </div>
-            <div class="card-action">
-              <div class="example-button-row center">
-                <button [routerLink]='"courses/" + course.alias' mat-raised-button color="primary">Открыть</button>
+  </section>
+  <section class="second-content">
+    <div class="container card-panel z-depth-5">
+      <div class="label center">случайные курсы</div>
+      <h2 class="title center">Выбери курс по химии</h2>
+      <div class="subtitle center">Изучайте теоретическую часть, лабороторые и практические работы, решайте тесты и смотрите видео материалы </div>
+      <div class="courses">
+        <div class="row" *ngIf="courses">
+          <div class="col s12 m5 l3" *ngFor="let course of courses">
+            <div class="card small" *ngIf="course">
+              <div class="card-image waves-effect waves-block waves-light">
+                <img class="activator" bind-src="course.img">
+              </div>
+              <div class="card-content">
+                <span class="card-title activator grey-text text-darken-4">{{ (course.title.length>23)? (course.title | slice:0:23)+'..':(course.title) }}<i class="material-icons right">more_vert</i></span>
+              </div>
+              <div class="card-reveal">
+                <span class="card-title grey-text text-darken-4">{{course.title}}<i class="material-icons right">close</i></span>
+                <p>{{course.description}}</p>
+              </div>
+              <div class="card-action">
+                <div class="example-button-row center">
+                  <button [routerLink]='"courses/" + course.alias' mat-raised-button color="primary">Открыть</button>
+                </div>
               </div>
             </div>
           </div>
         </div>
-      </div>
-      <div class="center">
-        <a [routerLink]="'courses'" class="waves-effect waves-light btn-large promo_btn">Все курсы</a>
+        <div class="center">
+          <a [routerLink]="'courses'" class="waves-effect waves-light btn-large promo_btn">Все курсы</a>
+        </div>
       </div>
     </div>
-  </div>
-</section>
+  </section>
+  <section class="second-content">
+    <div class="container card-panel z-depth-5">
+      <h2 class="title center">Наши будни химиков</h2>
+      <img class="z-depth-5 center-align" style="width: 100%" src="https://sun9-51.userapi.com/impg/sRDBGMF_BU7jo8u9TgezLl47G4gqxN0-GzHIVw/cPxSMUhaHU0.jpg?size=1600x1200&quality=95&sign=97e10ffe57c83006a164eb27dece985c&type=album">
+    </div>
+  </section>
+</div>
