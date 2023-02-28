@@ -1,4 +1,4 @@
 export const environment = {
   production: true,
-  apiUrl: 'https://chem-box.ru/',
+  apiUrl: 'http://chem-box.ru/',
 };
